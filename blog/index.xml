@@ -142,7 +142,9 @@
       <pubDate>Thu, 15 Jan 2015 22:42:00 +0000</pubDate>
       
       <guid>https://technicalhat.github.io/beercave-web/blog/2015/01/15/beermans-adventures-voxel-land-part-one-triangles-cubes-blocks-oh-my/</guid>
-      <description>&lt;p&gt;As &lt;a href=&#34;https://technicalhat.github.io/beercave-web/blog/2015/01/14/beermans-adventures-voxel-land&#34;&gt;previously mentioned&lt;/a&gt;, I&amp;rsquo;m having a crack at building my own voxel engine, because that&amp;rsquo;s the sort of thing we do for entertainment around these parts. Here&amp;rsquo;s how it&amp;rsquo;s looking after a couple of evenings of development.&lt;/p&gt;</description>
+      <description>&lt;p&gt;As &lt;a href=&#34;https://technicalhat.github.io/beercave-web/blog/2015/01/14/beermans-adventures-voxel-land&#34;&gt;previously mentioned&lt;/a&gt;, I&amp;rsquo;m having a crack at building my own voxel engine, because that&amp;rsquo;s the sort of thing we do for entertainment around these parts.&lt;/p&gt;
+
+&lt;p&gt;Here&amp;rsquo;s how it&amp;rsquo;s looking after a couple of evenings of development.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -177,7 +179,18 @@ News&lt;/a&gt; :&lt;/p&gt;
       <pubDate>Thu, 10 Apr 2014 21:00:00 +0000</pubDate>
       
       <guid>https://technicalhat.github.io/beercave-web/blog/2014/04/10/things-you-should-be-playing-we-are-doomed/</guid>
-      <description>&lt;p&gt;It&amp;rsquo;s no great secret that I like me some &lt;a href=&#34;https://technicalhat.github.io/beercave-web/games/rogueotron-1gam-edition&#34;&gt;Arena&lt;/a&gt; &lt;a href=&#34;https://technicalhat.github.io/beercave-web/games/lagertron&#34;&gt;Shooter&lt;/a&gt;, so when &lt;a href=&#34;http://www.merseyremakes.co.uk/gibber/&#34;&gt;Rob&lt;/a&gt; started tweeting incessantly about something called &lt;a href=&#34;http://www.caffeinemonstersoftware.com/wearedoomed/&#34;&gt;We Are Doomed&lt;/a&gt; I figured I should give it a look. It&amp;rsquo;s rather tasty&amp;hellip;&lt;/p&gt;</description>
+      <description>&lt;p&gt;It&amp;rsquo;s no great secret that I like me some &lt;a href=&#34;https://technicalhat.github.io/beercave-web/games/rogueotron-1gam-edition&#34;&gt;Arena&lt;/a&gt; &lt;a href=&#34;https://technicalhat.github.io/beercave-web/games/lagertron&#34;&gt;Shooter&lt;/a&gt;, so when &lt;a href=&#34;http://www.merseyremakes.co.uk/gibber/&#34;&gt;Rob&lt;/a&gt; started tweeting incessantly about something called &lt;a href=&#34;http://www.caffeinemonstersoftware.com/wearedoomed/&#34;&gt;We Are Doomed&lt;/a&gt; I figured I should give it a look. It&amp;rsquo;s rather tasty&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;For starters, it has the BEST GUN.
+&lt;div&gt;
+&lt;figure&gt;
+   
+    &lt;img src=&#39;https://technicalhat.github.io/beercave-web/blog/2014/04/10/things-you-should-be-playing-we-are-doomed/doomed_laser.png&#39;
+         alt=&#34;BEST. GUN.&#34;/&gt; &lt;figcaption&gt;
+            &lt;p&gt;BEST. GUN.&lt;/p&gt;
+        &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;/div&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -186,7 +199,9 @@ News&lt;/a&gt; :&lt;/p&gt;
       <pubDate>Wed, 09 Apr 2014 21:00:00 +0000</pubDate>
       
       <guid>https://technicalhat.github.io/beercave-web/blog/2014/04/09/rom/</guid>
-      <description>&lt;p&gt;It was when I careered into the pub car park in a vehicle with no brakes for the second time in one day that I knew it was going to be a good weekend. The Beermobile had thoughtfully held it together for the preceding 200 miles or so before finally deciding to dump hydraulic fluid all over the road about half a mile from my final destination. Not the most auspicious of starts to the ROM retro gaming festival, but it could only get better from there&amp;hellip;&lt;/p&gt;</description>
+      <description>&lt;p&gt;It was when I careered into the pub car park in a vehicle with no brakes for the second time in one day that I knew it was going to be a good weekend. The Beermobile had thoughtfully held it together for the preceding 200 miles or so before finally deciding to dump hydraulic fluid all over the road about half a mile from my final destination.&lt;/p&gt;
+
+&lt;p&gt;Not the most auspicious of starts to the ROM retro gaming festival, but it could only get better from there&amp;hellip;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -761,7 +776,9 @@ I think I&amp;rsquo;m onto a winner here :D&lt;/p&gt;</description>
       <pubDate>Mon, 11 Mar 2013 16:48:45 +0000</pubDate>
       
       <guid>https://technicalhat.github.io/beercave-web/blog/2013/03/11/wild-game-idea-approaches/</guid>
-      <description>&lt;p&gt;Slight change of direction pending for my March game - more details shortly&amp;hellip;&lt;/p&gt;</description>
+      <description>&lt;p&gt;Slight change of direction pending for my March game - more details shortly&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;&lt;p&gt;&lt;/p&gt;&lt;!-- cheeky hack to fix the styles--&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -781,11 +798,7 @@ I think I&amp;rsquo;m onto a winner here :D&lt;/p&gt;</description>
       <pubDate>Mon, 04 Mar 2013 14:11:58 +0000</pubDate>
       
       <guid>https://technicalhat.github.io/beercave-web/blog/2013/03/04/two-row/</guid>
-      <description>&lt;p&gt;&lt;p style=&#34;float:right;&#34;&gt;&lt;a href=&#34;https://technicalhat.github.io/beercave-web/games/junohunter-prologue&#34; &gt;
-&lt;img src=&#34;https://s3.amazonaws.com/beercave.co.uk/gameamonth2013/month2/logo_cropped.png&#34; style=&#34;width:250px;&#34; /&gt;
-&lt;/a&gt;
-&lt;/p&gt;
-Damn, that was a close one. The trip to Texas ended up eating a bit more of my dev time than I&amp;rsquo;d expected since it took me a good few days to get back into gear once we returned.&lt;/p&gt;
+      <description>&lt;p&gt;Damn, that was a close one. The trip to Texas ended up eating a bit more of my dev time than I&amp;rsquo;d expected since it took me a good few days to get back into gear once we returned.&lt;/p&gt;
 
 &lt;p&gt;Luckily, #1GAM comes with a 96 hour grace period for submissions, which worked out nicely to give me an extra weekend to play with before the deadline.&lt;/p&gt;
 
@@ -1025,7 +1038,9 @@ So - hey, everyone! &lt;a href=&#34;https://play.google.com/store/apps/details?i
       <guid>https://technicalhat.github.io/beercave-web/blog/2012/03/06/game-change/</guid>
       <description>&lt;p&gt;Not so very long ago, someone around these parts said something very much like this:&lt;/p&gt;
 
-&lt;p&gt;&lt;em&gt;&lt;a href=&#34;https://technicalhat.github.io/beercave-web/2012/02/23/state-play&#34;&gt;Still, I think I&amp;rsquo;ve pretty much found my toolset for the forseeable - Unity for 3D and heavy lifting, Java/libGDX for smaller stuff. I&amp;rsquo;m hoping to be able to bang out smallish mobile games reasonably quickly&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://technicalhat.github.io/beercave-web/2012/02/23/state-play&#34;&gt;Still, I think I&amp;rsquo;ve pretty much found my toolset for the forseeable - Unity for 3D and heavy lifting, Java/libGDX for smaller stuff. I&amp;rsquo;m hoping to be able to bang out smallish mobile games reasonably quickly&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;p&gt;You&amp;rsquo;d think I&amp;rsquo;d know by now not to go making grand pronouncements of The Way Things Are Gonna Be - seems like it&amp;rsquo;s a great way to bring about Change.&lt;/p&gt;
 
@@ -1122,8 +1137,14 @@ I finished the first fully working build of the client code back in January. Bac
 
 &lt;p&gt;Playing Gods is coming along nicely. Had a minor hiccup in the early playtesting where it looked like the App Engine server I&amp;rsquo;d built wasn&amp;rsquo;t really up to the job. I was having some pretty major stability issues with the Channel API, and some concerns about getting it talking to Unity. Fortunately, while poking around the Unity forums, I ran across &lt;a href=&#34;http://www.smartfoxserver.com&#34;&gt;SmartFox Server&lt;/a&gt;, a server platform designed for building multiplayer online games with a Unity API. Since SmartFox talks python it was a fairly minor job to port all the game logic from the App Enging server across, and I&amp;rsquo;m now much happier with what I&amp;rsquo;ve got.&lt;/p&gt;
 
-&lt;p&gt;I&amp;rsquo;m currently working on rebuilding the client in Unity. So far I&amp;rsquo;ve got a simplified board, player movement and card collection working, and it looks a little bit like this:
-&lt;a href=&#34;http://s24.photobucket.com/albums/c12/b33rman/beercave/?action=view&amp;amp;current=Unity2.jpg&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;http://i24.photobucket.com/albums/c12/b33rman/beercave/Unity2.jpg&#34; border=&#34;0&#34; alt=&#34;Photobucket&#34;&gt;&lt;/a&gt;&lt;/p&gt;</description>
+&lt;p&gt;I&amp;rsquo;m currently working on rebuilding the client in Unity. So far I&amp;rsquo;ve got a simplified board, player movement and card collection working, and it looks a little bit like this:&lt;/p&gt;
+
+&lt;div&gt;
+&lt;figure&gt;
+   
+    &lt;img src=&#39;http://i24.photobucket.com/albums/c12/b33rman/beercave/Unity2.jpg&#39;/&gt; 
+&lt;/figure&gt;
+&lt;/div&gt;</description>
     </item>
     
     <item>
@@ -1151,12 +1172,23 @@ I finished the first fully working build of the client code back in January. Bac
 
 &lt;p&gt;So the weekly blog/daily update thing never quite took off. I&amp;rsquo;ve managed to at least maintain some development momentum though. I&amp;rsquo;ve added the world map and territories to the board and got the add chip mechanic in place, and the board currently looks a bit like this:&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://s24.photobucket.com/albums/c12/b33rman/beercave/?action=view&amp;amp;current=20111008smaller.png&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;http://i24.photobucket.com/albums/c12/b33rman/beercave/20111008.png&#34; border=&#34;0&#34; alt=&#34;Photobucket&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;div&gt;
+&lt;figure&gt;
+   
+    &lt;img src=&#39;http://i24.photobucket.com/albums/c12/b33rman/beercave/20111008.png&#39;/&gt; 
+&lt;/figure&gt;
+&lt;/div&gt;
 
 &lt;p&gt;Not exactly pretty I know, but I&amp;rsquo;ve got pretty much all the UI elements in place now so I can make sure the server code is behaving. Right now I&amp;rsquo;m in the middle of implementing the Wrath card mechanic, so that the various gods can lay down some almighty smitings!&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://s24.photobucket.com/albums/c12/b33rman/beercave/?action=view&amp;amp;current=20111008-smitingsmaller.png&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;http://i24.photobucket.com/albums/c12/b33rman/beercave/20111008-smiting.png&#34; border=&#34;0&#34; alt=&#34;Photobucket&#34;&gt;&lt;/a&gt;
-Hopefully I can get the rest of it in place fairly early tomorrow, then there&amp;rsquo;s just the conversion mechanic and victory conditions left to do before I start work on the shiny 3D front-end stuff.&lt;/p&gt;</description>
+&lt;div&gt;
+&lt;figure&gt;
+   
+    &lt;img src=&#39;http://i24.photobucket.com/albums/c12/b33rman/beercave/20111008-smiting.png&#39;/&gt; 
+&lt;/figure&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Hopefully I can get the rest of it in place fairly early tomorrow, then there&amp;rsquo;s just the conversion mechanic and victory conditions left to do before I start work on the shiny 3D front-end stuff.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -1171,7 +1203,12 @@ Hopefully I can get the rest of it in place fairly early tomorrow, then there&am
 
 &lt;p&gt;Enough wittering on though - the main point of todays update was that I wanted to finally get a screenshot out there of what I&amp;rsquo;m working on. It&amp;rsquo;s not hugely exciting visually but at least it&amp;rsquo;s something to look at.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://s24.photobucket.com/albums/c12/b33rman/beercave/?action=view&amp;amp;current=20110918.png&#34;&gt;&lt;img src=&#34;http://i24.photobucket.com/albums/c12/b33rman/beercave/20110918smaller.png&#34;/&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;div&gt;
+&lt;figure&gt;
+   
+    &lt;img src=&#39;http://i24.photobucket.com/albums/c12/b33rman/beercave/20110918smaller.png&#39;/&gt; 
+&lt;/figure&gt;
+&lt;/div&gt;
 
 &lt;p&gt;That&amp;rsquo;s how it looks right now - currently you can connect multiple players and they get to take turns rolling the die and moving around the board. Now that I&amp;rsquo;ve got a bit neater codebase to work with I be able to should start adding features a bit more rapidly.&lt;/p&gt;</description>
     </item>
@@ -1450,8 +1487,11 @@ Hopefully I can get the rest of it in place fairly early tomorrow, then there&am
       <pubDate>Thu, 02 Jun 2011 21:59:46 +0000</pubDate>
       
       <guid>https://technicalhat.github.io/beercave-web/blog/2011/06/02/now-what/</guid>
-      <description>&lt;p&gt;So with &lt;a href=&#34;https://technicalhat.github.io/beercave-web/content/sheep-snaggers-2&#34;&gt;Sheep Snaggers 2&lt;/a&gt; all done with (pending &lt;a href=&#34;https://technicalhat.github.io/beercave-web/2011/06/01/found-problem&#34;&gt;bug fixes&lt;/a&gt; passing testing), I guess it&amp;rsquo;s time to find a new project to play with. Which of course brings me to the eternal quandary of the indie developer :
-&lt;h3&gt;Which one of my countless unrealised ideas do I work on next?&lt;/h3&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;So with &lt;a href=&#34;https://technicalhat.github.io/beercave-web/content/sheep-snaggers-2&#34;&gt;Sheep Snaggers 2&lt;/a&gt; all done with (pending &lt;a href=&#34;https://technicalhat.github.io/beercave-web/2011/06/01/found-problem&#34;&gt;bug fixes&lt;/a&gt; passing testing), I guess it&amp;rsquo;s time to find a new project to play with.&lt;/p&gt;
+
+&lt;p&gt;Which of course brings me to the eternal quandary of the indie developer :&lt;/p&gt;
+
+&lt;h3 id=&#34;which-one-of-my-countless-unrealised-ideas-do-i-work-on-next&#34;&gt;Which one of my countless unrealised ideas do I work on next?&lt;/h3&gt;</description>
     </item>
     
     <item>
@@ -1778,15 +1818,21 @@ self&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;axisMap &lt;span sty
       <pubDate>Sun, 17 Oct 2010 18:49:55 +0000</pubDate>
       
       <guid>https://technicalhat.github.io/beercave-web/blog/2010/10/17/dethtank-demo-released/</guid>
-      <description>&lt;p&gt;&lt;div style=&#34;float:right; margin-right:20px;&#34;&gt;&lt;a href=&#34;http://i24.photobucket.com/albums/c12/b33rman/gamedev/dethtank/DethTankDemo.png&#34;&gt;&lt;img src=&#34;http://i24.photobucket.com/albums/c12/b33rman/gamedev/dethtank/th_DethTankDemo.png&#34;&gt;&lt;/a&gt;&lt;/div&gt;
-The initial demo version of DethTank is now available.
-Windows installer (15MB)
+      <description>&lt;div style=&#34;float:right; margin-right:20px;&#34;&gt;&lt;a href=&#34;http://i24.photobucket.com/albums/c12/b33rman/gamedev/dethtank/DethTankDemo.png&#34;&gt;&lt;img src=&#34;http://i24.photobucket.com/albums/c12/b33rman/gamedev/dethtank/th_DethTankDemo.png&#34;&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;The initial demo version of DethTank is now available.
+Windows installer (15MB)&lt;/p&gt;
+
 &lt;div class=&#34;download&#34;&gt;
 &lt;a href=&#34;https://s3.amazonaws.com/beercave.co.uk/DethTankDemo.zip&#34;&gt;Download&lt;/a&gt;
 &lt;/div&gt;
-System requirements:
-Must be running at least Windows XP Service Pack 2.
-Must have a video card that supports at least Shader Model 1.1.&lt;/p&gt;
+
+&lt;p&gt;System requirements:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Must be running at least Windows XP Service Pack 2.&lt;/li&gt;
+&lt;li&gt;Must have a video card that supports at least Shader Model 1.1.&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;Any feedback or bug reports are very welcome.&lt;/p&gt;</description>
     </item>
@@ -1871,6 +1917,8 @@ Must have a video card that supports at least Shader Model 1.1.&lt;/p&gt;
       
       <guid>https://technicalhat.github.io/beercave-web/blog/2010/09/26/dethtank-day-1/</guid>
       <description>&lt;p&gt;Got some decent progress made today on a prototype for my October Challenge game, currently going by the name of DETHTANK.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
 
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
@@ -2326,7 +2374,9 @@ The first obvious point of attack for performance is that I was doing the 3D sca
       <pubDate>Tue, 24 Feb 2009 00:00:00 +0000</pubDate>
       
       <guid>https://technicalhat.github.io/beercave-web/blog/2009/02/24/bastard-motion/</guid>
-      <description>&lt;p&gt;I knocked up a quick gameplay video of Gun Bastard - it&amp;rsquo;s not looking too shabby.&lt;/p&gt;</description>
+      <description>&lt;p&gt;I knocked up a quick gameplay video of Gun Bastard - it&amp;rsquo;s not looking too shabby.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -2371,7 +2421,9 @@ The first obvious point of attack for performance is that I was doing the 3D sca
       <pubDate>Mon, 09 Feb 2009 00:00:00 +0000</pubDate>
       
       <guid>https://technicalhat.github.io/beercave-web/blog/2009/02/09/sheep-snaggers-released/</guid>
-      <description>&lt;p&gt;Following a successful weekend&amp;rsquo;s testing at Retrovision, Sheep Snaggers v1.0 for windows is now available from the &lt;a href=&#34;https://technicalhat.github.io/beercave-web/content/downloads&#34;&gt;downloads page&lt;/a&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;Following a successful weekend&amp;rsquo;s testing at Retrovision, Sheep Snaggers v1.0 for windows is now available from the &lt;a href=&#34;https://technicalhat.github.io/beercave-web/content/downloads&#34;&gt;downloads page&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -2462,7 +2514,9 @@ The first obvious point of attack for performance is that I was doing the 3D sca
       <pubDate>Sat, 03 Jan 2009 00:00:00 +0000</pubDate>
       
       <guid>https://technicalhat.github.io/beercave-web/blog/2009/01/03/sheep-snaggers-latest-update/</guid>
-      <description>&lt;p&gt;Ladies and Gentlebeasts. We are now 100% feature complete!&lt;/p&gt;</description>
+      <description>&lt;p&gt;Ladies and Gentlebeasts. We are now 100% feature complete!&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>

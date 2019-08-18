@@ -456,7 +456,9 @@ The colours in the video are a bit washed out for some reason - the actual game 
       <pubDate>Mon, 11 Mar 2013 16:48:45 +0000</pubDate>
       
       <guid>https://technicalhat.github.io/beercave-web/blog/2013/03/11/wild-game-idea-approaches/</guid>
-      <description>&lt;p&gt;Slight change of direction pending for my March game - more details shortly&amp;hellip;&lt;/p&gt;</description>
+      <description>&lt;p&gt;Slight change of direction pending for my March game - more details shortly&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;&lt;p&gt;&lt;/p&gt;&lt;!-- cheeky hack to fix the styles--&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -476,11 +478,7 @@ The colours in the video are a bit washed out for some reason - the actual game 
       <pubDate>Mon, 04 Mar 2013 14:11:58 +0000</pubDate>
       
       <guid>https://technicalhat.github.io/beercave-web/blog/2013/03/04/two-row/</guid>
-      <description>&lt;p&gt;&lt;p style=&#34;float:right;&#34;&gt;&lt;a href=&#34;https://technicalhat.github.io/beercave-web/games/junohunter-prologue&#34; &gt;
-&lt;img src=&#34;https://s3.amazonaws.com/beercave.co.uk/gameamonth2013/month2/logo_cropped.png&#34; style=&#34;width:250px;&#34; /&gt;
-&lt;/a&gt;
-&lt;/p&gt;
-Damn, that was a close one. The trip to Texas ended up eating a bit more of my dev time than I&amp;rsquo;d expected since it took me a good few days to get back into gear once we returned.&lt;/p&gt;
+      <description>&lt;p&gt;Damn, that was a close one. The trip to Texas ended up eating a bit more of my dev time than I&amp;rsquo;d expected since it took me a good few days to get back into gear once we returned.&lt;/p&gt;
 
 &lt;p&gt;Luckily, #1GAM comes with a 96 hour grace period for submissions, which worked out nicely to give me an extra weekend to play with before the deadline.&lt;/p&gt;
 
