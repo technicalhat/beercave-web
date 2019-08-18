@@ -6,10 +6,28 @@
     <description>Recent content in Tags on Beercave Games - putting the fun back into functional alcoholism!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 25 Mar 2015 20:30:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 18 Aug 2019 19:36:00 +0000</lastBuildDate>
     
 	<atom:link href="https://technicalhat.github.io/beercave-web/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>burnout</title>
+      <link>https://technicalhat.github.io/beercave-web/tags/burnout/</link>
+      <pubDate>Sun, 18 Aug 2019 19:36:00 +0000</pubDate>
+      
+      <guid>https://technicalhat.github.io/beercave-web/tags/burnout/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ramblings</title>
+      <link>https://technicalhat.github.io/beercave-web/tags/ramblings/</link>
+      <pubDate>Sun, 18 Aug 2019 19:36:00 +0000</pubDate>
+      
+      <guid>https://technicalhat.github.io/beercave-web/tags/ramblings/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>voxel engine</title>

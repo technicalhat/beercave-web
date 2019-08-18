@@ -49,6 +49,55 @@
             <article>
                 <header class="post-header">
                     <h1>
+                        <a href="https://technicalhat.github.io/beercave-web/blog/2011/06/02/now-what/">Now what?</a>
+                    </h1>
+                    <time datetime='2006-06-06'>
+                        <span class="day">2</span>
+                        <span class="month">Jun 2011</span>
+                    </time>
+                </header>
+                <section class="post-content">
+                    <p>So with <a href="/content/sheep-snaggers-2">Sheep Snaggers 2</a> all done with (pending <a href="/2011/06/01/found-problem">bug fixes</a> passing testing), I guess it&rsquo;s time to find a new project to play with.</p>
+
+<p>Which of course brings me to the eternal quandary of the indie developer :</p>
+
+<h3 id="which-one-of-my-countless-unrealised-ideas-do-i-work-on-next">Which one of my countless unrealised ideas do I work on next?</h3>
+ 
+                    
+                </section>
+                <section class="post-footer clearfix row justify-content-between">
+                    <div class="col sharing-links">
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2011%2f06%2f02%2fnow-what%2f" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="facebook">
+                            <i class="fab fa-facebook" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                        
+                        <a href="https://twitter.com/intent/tweet?url=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2011%2f06%2f02%2fnow-what%2f&text=now-what" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="twitter">
+                            <i class="fab fa-twitter" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                        
+                        <a href="https://www.stumbleupon.com/badge/?url=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2011%2f06%2f02%2fnow-what%2f" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="stumbleupon">
+                            <i class="fab fa-stumbleupon" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                        <a href="https://www.reddit.com/submit?url=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2011%2f06%2f02%2fnow-what%2f" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="reddit">
+                            <i class="fab fa-reddit-alien" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                    </div>
+                    <div class="col text-right">
+                           
+                            <a href='https://technicalhat.github.io/beercave-web/blog/2011/06/02/now-what/'>
+                                    Continue reading <i class="fa fa-angle-right"></i></a>
+                            
+                    </div>
+                </section>
+            </article>
+            
+            <article>
+                <header class="post-header">
+                    <h1>
                         <a href="https://technicalhat.github.io/beercave-web/blog/2011/06/01/found-problem/">Found the problem</a>
                     </h1>
                     <time datetime='1006-06-06'>
@@ -576,63 +625,6 @@ self<span style="color:#f92672">.</span>axisMap <span style="color:#f92672">=</s
                 </section>
             </article>
             
-            <article>
-                <header class="post-header">
-                    <h1>
-                        <a href="https://technicalhat.github.io/beercave-web/blog/2011/01/03/ss2-picking-where-i-left/">SS2 : Picking up where I left off</a>
-                    </h1>
-                    <time datetime='3001-01-01'>
-                        <span class="day">3</span>
-                        <span class="month">Jan 2011</span>
-                    </time>
-                </header>
-                <section class="post-content">
-                    <p>Hmm, seems I&rsquo;ve been here <a href="http://www.beercave.co.uk/2009/09/08/buggeration">before</a>.</p>
-
-<p>I&rsquo;m taking a look around at Sheep Snaggers 2 before I get back on with it, and while it&rsquo;s not actually <em>crap</em>, there&rsquo;s an awful lot of &ldquo;ooh, I wouldn&rsquo;t do it like <em>that</em>&rdquo; in there.</p>
-
-<p>Worst offender has got to be the way I&rsquo;m running 3 separate rendering loops to cope with the world wraparound effect, then running them <em>again</em> to render the radar. That&rsquo;s basically down to broken thinking - I got stuck on the idea of the gameworld as fixed, which leads to having to pile up a variety of hacks in order to deal with the world wrapping around at the ends.</p>
-
-<p>Since everything in the game is getting updated every frame anyway, it&rsquo;d be a wee bit more efficient to just have the ship/camera x position fixed at zero and move everything else around it. That way my render loop is just &ldquo;draw everything within the screen boundaries&rdquo; and the radar loop is just &ldquo;draw everything&rdquo;</p>
-
-<p>While I&rsquo;m doing that, it&rsquo;s probably not a bad idea to resurrect some of the component architecture stuff I was playing with for <a href="/category/tags/dethtank">DethTank</a>, which should help tidy up the hierarchy a bit.</p>
-
-<p>Gamewise, there&rsquo;s one or two things that need throwing out. I&rsquo;m planning to lose the title screen and just run the main game scene continuously as an attract mode with some title text as a HUD overlay when not in play. I can just swap out the player controller for a simple AI routine easily enough.</p>
-
-<p>The fireball/ramming power up needs to go too. It&rsquo;s a fun mechanic, and one I plan on exploring in a later project, but it just doesn&rsquo;t fit in well with the Sheep Snaggers theme. The whole point of the game is about rescuing sheep from aliens before they can build their death star so I need to stick closer to the original Defender template.</p>
- 
-                    
-                </section>
-                <section class="post-footer clearfix row justify-content-between">
-                    <div class="col sharing-links">
-                        <a href="https://www.facebook.com/sharer/sharer.php?u=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2011%2f01%2f03%2fss2-picking-where-i-left%2f" class="Share-buttons-item Share-buttons-item--social"
-                            target="_blank" data-service="facebook">
-                            <i class="fab fa-facebook" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
-                        </a>
-                        
-                        <a href="https://twitter.com/intent/tweet?url=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2011%2f01%2f03%2fss2-picking-where-i-left%2f&text=ss2-picking-up-where-i-left-off" class="Share-buttons-item Share-buttons-item--social"
-                            target="_blank" data-service="twitter">
-                            <i class="fab fa-twitter" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
-                        </a>
-                        
-                        <a href="https://www.stumbleupon.com/badge/?url=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2011%2f01%2f03%2fss2-picking-where-i-left%2f" class="Share-buttons-item Share-buttons-item--social"
-                            target="_blank" data-service="stumbleupon">
-                            <i class="fab fa-stumbleupon" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
-                        </a>
-                        <a href="https://www.reddit.com/submit?url=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2011%2f01%2f03%2fss2-picking-where-i-left%2f" class="Share-buttons-item Share-buttons-item--social"
-                            target="_blank" data-service="reddit">
-                            <i class="fab fa-reddit-alien" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
-                        </a>
-                    </div>
-                    <div class="col text-right">
-                           
-                            <a href='https://technicalhat.github.io/beercave-web/blog/2011/01/03/ss2-picking-where-i-left/'>
-                                    Continue reading <i class="fa fa-angle-right"></i></a>
-                            
-                    </div>
-                </section>
-            </article>
-            
             
             
 
@@ -855,6 +847,10 @@ self<span style="color:#f92672">.</span>axisMap <span style="color:#f92672">=</s
                         <ul>
                             
                             <li>
+                                <a href="https://technicalhat.github.io/beercave-web/blog/2019/08/18/he-s-alive-alive/">He&#39;s alive! ALIVE!</a>
+                            </li>
+                            
+                            <li>
                                 <a href="https://technicalhat.github.io/beercave-web/blog/2015/07/06/egad-a-post/">Egad! A post!</a>
                             </li>
                             
@@ -868,10 +864,6 @@ self<span style="color:#f92672">.</span>axisMap <span style="color:#f92672">=</s
                             
                             <li>
                                 <a href="https://technicalhat.github.io/beercave-web/blog/2015/03/25/beermans-adventures-voxel-land-part-five-the-hard-parts/">Beerman&#39;s adventures in voxel-land, part 5 : The hard parts</a>
-                            </li>
-                            
-                            <li>
-                                <a href="https://technicalhat.github.io/beercave-web/blog/2015/01/25/beermans-adventures-voxel-land-part-four-now-featuring-actual-gameplay/">Beerman&#39;s adventures in voxel-land, part 4 : Now featuring actual gameplay</a>
                             </li>
                             
                         </ul>
