@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>juno hunter on Beercave Games - putting the fun back into functional alcoholism!</title>
+    <link>https://technicalhat.github.io/beercave-web/tags/juno-hunter/</link>
+    <description>Recent content in juno hunter on Beercave Games - putting the fun back into functional alcoholism!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 04 Mar 2013 19:27:20 +0000</lastBuildDate>
+    
+	<atom:link href="https://technicalhat.github.io/beercave-web/tags/juno-hunter/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Juno Hunter : Prologue post-mortem and March game announcement</title>
+      <link>https://technicalhat.github.io/beercave-web/blog/2013/03/04/juno-hunter-prologue-post-mortem-and-march-game-announcement/</link>
+      <pubDate>Mon, 04 Mar 2013 19:27:20 +0000</pubDate>
+      
+      <guid>https://technicalhat.github.io/beercave-web/blog/2013/03/04/juno-hunter-prologue-post-mortem-and-march-game-announcement/</guid>
+      <description>&lt;p&gt;Note to self : don&amp;rsquo;t pick the shortest month of the year - when you&amp;rsquo;re away for a week and a half - to get ambitious with your game design&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;So yeah, the original plan was to have something more or less based on Spy Hunter, with the driving and the shooting and the chasing enemy vehicles, only with a Juno First style take on 3D perspective. That didn&amp;rsquo;t quite happen but I&amp;rsquo;m pretty pleased with the eventual result anyway.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Two in a row</title>
+      <link>https://technicalhat.github.io/beercave-web/blog/2013/03/04/two-row/</link>
+      <pubDate>Mon, 04 Mar 2013 14:11:58 +0000</pubDate>
+      
+      <guid>https://technicalhat.github.io/beercave-web/blog/2013/03/04/two-row/</guid>
+      <description>&lt;p&gt;&lt;p style=&#34;float:right;&#34;&gt;&lt;a href=&#34;https://technicalhat.github.io/beercave-web/games/junohunter-prologue&#34; &gt;
+&lt;img src=&#34;https://s3.amazonaws.com/beercave.co.uk/gameamonth2013/month2/logo_cropped.png&#34; style=&#34;width:250px;&#34; /&gt;
+&lt;/a&gt;
+&lt;/p&gt;
+Damn, that was a close one. The trip to Texas ended up eating a bit more of my dev time than I&amp;rsquo;d expected since it took me a good few days to get back into gear once we returned.&lt;/p&gt;
+
+&lt;p&gt;Luckily, #1GAM comes with a 96 hour grace period for submissions, which worked out nicely to give me an extra weekend to play with before the deadline.&lt;/p&gt;
+
+&lt;p&gt;Proper post to follow with a bit of a post mortem and announcement of this month&amp;rsquo;s game, but for now here&amp;rsquo;s &lt;a href=&#34;https://technicalhat.github.io/beercave-web/games/junohunter-prologue&#34;&gt;Juno Hunter : Prologue&lt;/a&gt;&lt;/p&gt;
+
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//www.youtube.com/embed/UDQ5u21aLgQ&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;&lt;strong style=&#34;width:100%; display:inline-block; text-align:center&#34;&gt;Quite pretty, isn&amp;rsquo;t it?&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

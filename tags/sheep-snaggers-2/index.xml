@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sheep Snaggers 2 on Beercave Games - putting the fun back into functional alcoholism!</title>
+    <link>https://technicalhat.github.io/beercave-web/tags/sheep-snaggers-2/</link>
+    <description>Recent content in Sheep Snaggers 2 on Beercave Games - putting the fun back into functional alcoholism!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 27 Oct 2009 21:58:15 +0000</lastBuildDate>
+    
+	<atom:link href="https://technicalhat.github.io/beercave-web/tags/sheep-snaggers-2/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Sheep Snaggers 2 update</title>
+      <link>https://technicalhat.github.io/beercave-web/blog/2009/10/27/sheep-snaggers-2-update/</link>
+      <pubDate>Tue, 27 Oct 2009 21:58:15 +0000</pubDate>
+      
+      <guid>https://technicalhat.github.io/beercave-web/blog/2009/10/27/sheep-snaggers-2-update/</guid>
+      <description>&lt;p&gt;SS2&amp;rsquo;s starting to come together a bit now. Still doesn&amp;rsquo;t have that classic Defender twitch feel going on, but the basic groundwork&amp;rsquo;s in place now. Just need to make it &lt;em&gt;fun&lt;/em&gt;&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;Spent a bit of time at the weekend gutting the mode switching code, cos the appalling half-arsed state machine I had in there really wasn&amp;rsquo;t up to scratch.&lt;/p&gt;
+
+&lt;p&gt;Swapped it out for a scene-based system that&amp;rsquo;s much easier to work with, then used that as the basis of a level switching system that seems to be working out OK.&lt;/p&gt;
+
+&lt;p&gt;Next thing on the list is probably going to be lives and scoring, but I wasn&amp;rsquo;t really in the mood tonight. Instead, I spent a bit of time twatting about with a cheesy scanline effect.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://i24.photobucket.com/albums/c12/b33rman/gamedev/SS2/screen045.jpg&#34; /&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

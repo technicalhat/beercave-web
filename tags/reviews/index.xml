@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>reviews on Beercave Games - putting the fun back into functional alcoholism!</title>
-    <link>http://example.org/tags/reviews/</link>
+    <link>https://technicalhat.github.io/beercave-web/tags/reviews/</link>
     <description>Recent content in reviews on Beercave Games - putting the fun back into functional alcoholism!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 10 Apr 2014 21:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://example.org/tags/reviews/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://technicalhat.github.io/beercave-web/tags/reviews/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Things you should be playing : We Are Doomed</title>
-      <link>http://example.org/blog/2014/04/10/things-you-should-be-playing-we-are-doomed/</link>
+      <link>https://technicalhat.github.io/beercave-web/blog/2014/04/10/things-you-should-be-playing-we-are-doomed/</link>
       <pubDate>Thu, 10 Apr 2014 21:00:00 +0000</pubDate>
       
-      <guid>http://example.org/blog/2014/04/10/things-you-should-be-playing-we-are-doomed/</guid>
-      <description>&lt;p&gt;It&amp;rsquo;s no great secret that I like me some &lt;a href=&#34;http://example.org/games/rogueotron-1gam-edition&#34;&gt;Arena&lt;/a&gt; &lt;a href=&#34;http://example.org/games/lagertron&#34;&gt;Shooter&lt;/a&gt;, so when &lt;a href=&#34;http://www.merseyremakes.co.uk/gibber/&#34;&gt;Rob&lt;/a&gt; started tweeting incessantly about something called &lt;a href=&#34;http://www.caffeinemonstersoftware.com/wearedoomed/&#34;&gt;We Are Doomed&lt;/a&gt; I figured I should give it a look. It&amp;rsquo;s rather tasty&amp;hellip;&lt;/p&gt;</description>
+      <guid>https://technicalhat.github.io/beercave-web/blog/2014/04/10/things-you-should-be-playing-we-are-doomed/</guid>
+      <description>&lt;p&gt;It&amp;rsquo;s no great secret that I like me some &lt;a href=&#34;https://technicalhat.github.io/beercave-web/games/rogueotron-1gam-edition&#34;&gt;Arena&lt;/a&gt; &lt;a href=&#34;https://technicalhat.github.io/beercave-web/games/lagertron&#34;&gt;Shooter&lt;/a&gt;, so when &lt;a href=&#34;http://www.merseyremakes.co.uk/gibber/&#34;&gt;Rob&lt;/a&gt; started tweeting incessantly about something called &lt;a href=&#34;http://www.caffeinemonstersoftware.com/wearedoomed/&#34;&gt;We Are Doomed&lt;/a&gt; I figured I should give it a look. It&amp;rsquo;s rather tasty&amp;hellip;&lt;/p&gt;</description>
     </item>
     
   </channel>

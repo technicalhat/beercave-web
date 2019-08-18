@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="robots" content="noindex, nofollow">
+    <title>October Challenge : End of week one</title>
+
+    
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" >
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href='https://technicalhat.github.io/beercave-web/css/beercave.css' >
+    <link href="https://fonts.googleapis.com/css?family=Orbitron|Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css" integrity="sha256-PF6MatZtiJ8/c9O9HQ8uSUXr++R9KBYu4gbNG5511WE=" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+
+
+</head><body><nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark-bc">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/" aria-label="home">
+        <img src='https://technicalhat.github.io/beercave-web/img/logo.png'/>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href='https://technicalhat.github.io/beercave-web/games'>Games</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href='https://technicalhat.github.io/beercave-web/blog'>Blog</a>
+            </li>
+        </ul>
+    </div>
+    </div>
+</nav><div id="content">
+<div class="container mt-3">
+    <div class="row">
+        <div class="col-md-8 posts">
+            
+            <article>
+                <header class="post-header">
+                    <h1>
+                        <a href="https://technicalhat.github.io/beercave-web/blog/2010/10/03/october-challenge-end-week-one/">October Challenge : End of week one</a>
+                    </h1>
+                    <time datetime='3010-10-10'>
+                        <span class="day">3</span>
+                        <span class="month">Oct 2010</span>
+                    </time>
+                </header>
+                <section class="post-content">
+                    <p>One week down on the October Challenge, and what do I have to show for it?</p>
+
+<p>Well, the BeerEngine is coming along nicely. I&rsquo;m about 90% of the way to feature complete now, with only the collision detection as a significant piece of missing functionality.</p>
+
+<p>Other that that, I&rsquo;ve pretty much got the prototype I knocked together last weekend rebuilt using the BeerEngine, and I&rsquo;m just starting to hit a point where I&rsquo;m seeing the benefit of having a reasonably well defined platform to build on top of. In the (currently on hiatus) XNA shooter game I was working on I was regularly running into the old <a href="http://en.wikipedia.org/wiki/Diamond_problem">Diamond of Death</a>, particularly when it came to setting up the &ldquo;Piano Roll&rdquo; level event system. Swapping inheritance for composition makes life much easier, at the expense of a little more verbosity in the setup code.</p>
+
+<p>What was:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">var</span> ship = <span style="color:#66d9ef">new</span> Ship(<span style="color:#66d9ef">this</span>)
+            {
+                position = <span style="color:#66d9ef">new</span> Vector2(<span style="color:#ae81ff">640</span>, <span style="color:#ae81ff">700</span>)
+            };
+</code></pre></div>
+
+<p>Currently looks more like:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-csharp" data-lang="csharp"><span style="color:#66d9ef">new</span> GameEntity()            
+  .AddBehaviour(<span style="color:#66d9ef">new</span> MappedSpriteBehaviour(<span style="color:#ae81ff">2</span>))
+  .AddBehaviour(<span style="color:#66d9ef">new</span> CameraBehaviour())
+  .AddBehaviour(<span style="color:#66d9ef">new</span> TankControllerBehaviour())
+  .SetProperty&lt;PositionProperty&gt;(<span style="color:#66d9ef">new</span> PositionProperty()
+    {
+      Position = Vector2.Zero
+    }
+  )
+  .SetProperty&lt;TextureProperty&gt;(<span style="color:#66d9ef">new</span> TextureProperty()
+    {
+       Texture = ContentManager.GetTexture(<span style="color:#e6db74">&#34;sprites&#34;</span>)
+    }
+  )
+  .SetProperty&lt;PositionProperty&gt;(<span style="color:#66d9ef">new</span> PositionProperty(){ 
+     Position = <span style="color:#66d9ef">new</span> Vector2(<span style="color:#ae81ff">500</span>,<span style="color:#ae81ff">300</span>)}
+  )
+  .SetProperty&lt;RotationProperty&gt;(<span style="color:#66d9ef">new</span> RotationProperty(){
+    Rotation = (<span style="color:#66d9ef">float</span>)Math.PI
+    }
+  )
+  .SetProperty&lt;SpriteMapProperty&gt;(<span style="color:#66d9ef">new</span> SpriteMapProperty(){
+    TileX = <span style="color:#ae81ff">0</span>,
+    TileY = <span style="color:#ae81ff">1</span>,
+    TileWidth = <span style="color:#ae81ff">63</span>,
+    TileHeight = <span style="color:#ae81ff">63</span>,
+    OffsetX = <span style="color:#ae81ff">3</span>,
+    OffsetY = <span style="color:#ae81ff">3</span>}
+  )
+  .SetProperty&lt;OriginProperty&gt;(<span style="color:#66d9ef">new</span> OriginProperty(){
+    Origin = <span style="color:#66d9ef">new</span> Vector2(<span style="color:#ae81ff">31</span>,<span style="color:#ae81ff">31</span>))
+  );
+</code></pre></div>
+
+<p>Wrapping the various types of game object in some sort of Factory class ought to cut down on the noise level a tad.</p>
+
+<p>So, what&rsquo;s the plan for Week 2? Well, I still need to get collisions working, obviously. I&rsquo;m thinking I&rsquo;ll start with a fairly quick &amp; dirty implementation of the <a href="http://en.wikipedia.org/wiki/Separating_axis_theorem">Separating Axis Theorem</a> once I wrap my head around the requisite maths, then add in additional optimisations as the need arises. Once that&rsquo;s in place, I can move ahead with some more game content. I figure given the time frame I&rsquo;ve got to work within I can maybe afford 5 levels - just need to figure out what they should be without drifting <i>too</i> far into the old &ldquo;ice level&rdquo;, &ldquo;water level&rdquo; etc. cliches</p>
+
+<p>28 days remaining! I&rsquo;m not panicking, I&rsquo;m not panicking, I&rsquo;m not panicking&hellip;</p> 
+                </section>
+                <section class="post-footer clearfix row justify-content-between">
+                    <div class="col sharing-links">
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2010%2f10%2f03%2foctober-challenge-end-week-one%2f" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="facebook">
+                            <i class="fab fa-facebook" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                        
+                        <a href="https://twitter.com/intent/tweet?url=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2010%2f10%2f03%2foctober-challenge-end-week-one%2f&text=october-challenge-end-of-week-one" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="twitter">
+                            <i class="fab fa-twitter" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                        
+                        <a href="https://www.stumbleupon.com/badge/?url=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2010%2f10%2f03%2foctober-challenge-end-week-one%2f" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="stumbleupon">
+                            <i class="fab fa-stumbleupon" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                        <a href="https://www.reddit.com/submit?url=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2010%2f10%2f03%2foctober-challenge-end-week-one%2f" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="reddit">
+                            <i class="fab fa-reddit-alien" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                    </div>
+                   
+                </section>
+            </article>
+            
+            
+            <section class="prev-next">
+              
+            <a href="https://technicalhat.github.io/beercave-web/blog/2010/09/27/dethtank-day-2/" class="float-left">&lt; DETHTANK day 2</a>
+            
+        
+              
+                <a href="https://technicalhat.github.io/beercave-web/blog/2010/10/09/dethtank-gets-new-look/" class="float-right">Dethtank gets a new look &gt;</a>
+            
+            </section>
+        </div>
+        
+        <div class="col-md-4">
+            <div class="sidebar">
+                <section class="sidebar-content">
+                    <article id="profile">
+                        <a href='https://technicalhat.github.io/img/beerman-cutout.png' data-toggle="lightbox">
+                            <img src='https://technicalhat.github.io/img/beerman-cutout-smol.png' title="Judge Beerman">
+                        </a>
+                        <h1>
+                            Beerman's blog
+                        </h1>
+                        <p>Real nerds. Real talk. Call now.</p>
+                        <div class="social-links">
+                            <a href="https://twitter.com/BeercaveGames">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+
+                            <a href="https://www.youtube.com/user/b33rman/videos">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                            
+                        </div>
+                    </article>
+                    <article id="post-list">
+                        <h1>Latest posts</h1>
+                        
+                        <ul>
+                            
+                            <li>
+                                <a href="https://technicalhat.github.io/beercave-web/blog/2015/07/06/egad-a-post/">Egad! A post!</a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://technicalhat.github.io/beercave-web/blog/2015/03/31/beermans-adventures-voxel-land-part-seven-need-for-speed/">Beerman&#39;s adventures in voxel-land, part 7 : Need for speed</a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://technicalhat.github.io/beercave-web/blog/2015/03/25/beermans-adventures-voxel-land-part-six-the-best-laid-plans/">Beerman&#39;s adventures in voxel-land, part 6 : The best laid plans</a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://technicalhat.github.io/beercave-web/blog/2015/03/25/beermans-adventures-voxel-land-part-five-the-hard-parts/">Beerman&#39;s adventures in voxel-land, part 5 : The hard parts</a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://technicalhat.github.io/beercave-web/blog/2015/01/25/beermans-adventures-voxel-land-part-four-now-featuring-actual-gameplay/">Beerman&#39;s adventures in voxel-land, part 4 : Now featuring actual gameplay</a>
+                            </li>
+                            
+                        </ul>
+                    </article>
+                    <article id="post-tags">
+                        <h1>Tags</h1>
+                        
+                        <ul>
+                        
+                        
+                        
+                        
+                        
+                        
+                        <li>
+                        <a href="/beercave-web/tags/1gam" class="btn btn-default" role="button">1gam <span class="badge badge-dark">32</span></a>
+                        </li>
+                        
+                        
+                        
+                        
+                        <li>
+                        <a href="/beercave-web/tags/releases" class="btn btn-default" role="button">releases <span class="badge badge-dark">8</span></a>
+                        </li>
+                        
+                        
+                        
+                        
+                        <li>
+                        <a href="/beercave-web/tags/lagertron" class="btn btn-default" role="button">lagertron <span class="badge badge-dark">5</span></a>
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        <li>
+                        <a href="/beercave-web/tags/beercave-racer" class="btn btn-default" role="button">beercave-racer <span class="badge badge-dark">4</span></a>
+                        </li>
+                        
+                        
+                        
+                        
+                        <li>
+                        <a href="/beercave-web/tags/chaosball" class="btn btn-default" role="button">chaosball <span class="badge badge-dark">4</span></a>
+                        </li>
+                        
+                        
+                        
+                        
+                        <li>
+                        <a href="/beercave-web/tags/rogueotron" class="btn btn-default" role="button">rogueotron <span class="badge badge-dark">4</span></a>
+                        </li>
+                        
+                        
+                        
+                        
+                        <li>
+                        <a href="/beercave-web/tags/april" class="btn btn-default" role="button">april <span class="badge badge-dark">3</span></a>
+                        </li>
+                        
+                        
+                        
+                        
+                        <li>
+                        <a href="/beercave-web/tags/march" class="btn btn-default" role="button">march <span class="badge badge-dark">3</span></a>
+                        </li>
+                        
+                        
+                        
+                        
+                        <li>
+                        <a href="/beercave-web/tags/voxel-engine" class="btn btn-default" role="button">voxel-engine <span class="badge badge-dark">3</span></a>
+                        </li>
+                        
+                        
+                        
+                        
+                        <li>
+                        <a href="/beercave-web/tags/web-runner" class="btn btn-default" role="button">web-runner <span class="badge badge-dark">3</span></a>
+                        </li>
+                        
+                        
+                        </ul>
+                    </article>
+                    </ul>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+        </div><footer>
+    <section class="container">
+       
+TODO : Add a nice looking footer here with links and stuff
+    </section>
+</footer></body>
+</html>

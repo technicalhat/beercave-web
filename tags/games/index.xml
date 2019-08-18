@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>games on Beercave Games - putting the fun back into functional alcoholism!</title>
+    <link>https://technicalhat.github.io/beercave-web/tags/games/</link>
+    <description>Recent content in games on Beercave Games - putting the fun back into functional alcoholism!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 01 Nov 2013 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://technicalhat.github.io/beercave-web/tags/games/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Web Runner</title>
+      <link>https://technicalhat.github.io/beercave-web/games/1gam-2013/web-runner/</link>
+      <pubDate>Fri, 01 Nov 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://technicalhat.github.io/beercave-web/games/1gam-2013/web-runner/</guid>
+      <description>You know the drill. The galactic webs have been invaded by evil aliens,and it&amp;rsquo;s your job to take them out. Piloting the latest in fighter craft you must clear the web of ever more deadly enemies.
+Web Runner is a classic retro styled tube shooter made as my November entry for One Game a Month 2013.
+  </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Games page on Beercave Games - putting the fun back into functional alcoholism!</title>
-    <link>http://example.org/games/</link>
+    <link>https://technicalhat.github.io/beercave-web/games/</link>
     <description>Recent content in Games page on Beercave Games - putting the fun back into functional alcoholism!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 10 Jun 2016 10:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://example.org/games/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://technicalhat.github.io/beercave-web/games/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Space Bastards</title>
-      <link>http://example.org/games/space-bastards/</link>
+      <link>https://technicalhat.github.io/beercave-web/games/space-bastards/</link>
       <pubDate>Fri, 10 Jun 2016 10:00:00 +0000</pubDate>
       
-      <guid>http://example.org/games/space-bastards/</guid>
+      <guid>https://technicalhat.github.io/beercave-web/games/space-bastards/</guid>
       <description> The Bastards have landed! The latest instalment in the ongoing Sheep Snaggers series throws the heroic Starsheep into an endless arena battle to the death against hordes of monstrous Ming heads.
 Released to thunderous acclaim as part of the ROM 2016 homebrew games tournament, Space Bastards is a lightning-fast take on the Asteroids-style shooter complete with mind-bending visuals and a thumping techno soundtrack.
   </description>
@@ -24,10 +24,10 @@ Released to thunderous acclaim as part of the ROM 2016 homebrew games tournament
     
     <item>
       <title>Trench Run</title>
-      <link>http://example.org/games/trench-run/</link>
+      <link>https://technicalhat.github.io/beercave-web/games/trench-run/</link>
       <pubDate>Mon, 06 Jul 2015 10:00:00 +0000</pubDate>
       
-      <guid>http://example.org/games/trench-run/</guid>
+      <guid>https://technicalhat.github.io/beercave-web/games/trench-run/</guid>
       <description>A simple voxel-based game inspired by the classic trench run scene from Star Wars.
 A little bit of endless runner, a little bit of Flappy Bird and a little bit of Star Wars. Guide your THXWing down an endless space trench, but watch out for those carelessly placed pipes!
 Built in a week for ROM 2015. There&amp;rsquo;s only minimal sound, but I recommend sticking the Imperial March on in the background when you&amp;rsquo;re playing it - really adds to the ambience.</description>
@@ -35,20 +35,20 @@ Built in a week for ROM 2015. There&amp;rsquo;s only minimal sound, but I recomm
     
     <item>
       <title>Zap! Pocalypse</title>
-      <link>http://example.org/games/zap-pocalypse/</link>
+      <link>https://technicalhat.github.io/beercave-web/games/zap-pocalypse/</link>
       <pubDate>Mon, 06 Jul 2015 10:00:00 +0000</pubDate>
       
-      <guid>http://example.org/games/zap-pocalypse/</guid>
+      <guid>https://technicalhat.github.io/beercave-web/games/zap-pocalypse/</guid>
       <description>Zap!Pocalypse is a voxel-based retro arcade shooter. Loosely inspired by the classic Juno First, with a little bit of Jarvis and Minter in the mix.
   </description>
     </item>
     
     <item>
       <title>Lagertron : 1664</title>
-      <link>http://example.org/games/lagertron-1664/</link>
+      <link>https://technicalhat.github.io/beercave-web/games/lagertron-1664/</link>
       <pubDate>Wed, 31 Oct 2012 10:00:00 +0000</pubDate>
       
-      <guid>http://example.org/games/lagertron-1664/</guid>
+      <guid>https://technicalhat.github.io/beercave-web/games/lagertron-1664/</guid>
       <description>Get the beer. Kill the baddies. Save the world!   They came for our beer&amp;hellip; The evil aliens of planet Lagertron have invaded the pub.
 Their mission : drink all the beer!
 Only one hero can stand against this menace :
@@ -57,10 +57,10 @@ The Mighty Beerman! Powered by his insatiable thirst, Earth&amp;rsquo;s drunkest
     
     <item>
       <title>Sheep Snaggers 2</title>
-      <link>http://example.org/games/sheep-snaggers-2/</link>
+      <link>https://technicalhat.github.io/beercave-web/games/sheep-snaggers-2/</link>
       <pubDate>Fri, 20 May 2011 10:00:00 +0000</pubDate>
       
-      <guid>http://example.org/games/sheep-snaggers-2/</guid>
+      <guid>https://technicalhat.github.io/beercave-web/games/sheep-snaggers-2/</guid>
       <description>It is the dawn of the Fourth Age of Mankind.
 Contact has been made
 When the Visitors first arrived we thought they were peaceful, but we were wrong
@@ -71,10 +71,10 @@ Rescue the sheepies and destroy the sinister Factory to save the planet - but be
     
     <item>
       <title>Dump and Jump</title>
-      <link>http://example.org/games/dump-and-jump/</link>
+      <link>https://technicalhat.github.io/beercave-web/games/dump-and-jump/</link>
       <pubDate>Fri, 31 Dec 2010 10:00:00 +0000</pubDate>
       
-      <guid>http://example.org/games/dump-and-jump/</guid>
+      <guid>https://technicalhat.github.io/beercave-web/games/dump-and-jump/</guid>
       <description>Holy Crab! It&amp;rsquo;s curry night, and Beerman&amp;rsquo;s favourite curry house has been overrun by an an army of gentleman crabs!
 But no top-hatted upper-class crustacean can come between Beerman and a vindaloo&amp;hellip;
 Guide our hero around the restaurant, collecting the curries and &amp;lsquo;delivering&amp;rsquo; them to the bathroom, but watch out for those swanky shellfish. If the heat gets too much, you can slow them down by leaving them a little &amp;lsquo;present&amp;rsquo;.</description>
@@ -82,20 +82,20 @@ Guide our hero around the restaurant, collecting the curries and &amp;lsquo;deli
     
     <item>
       <title>Markie&#39;s Revenge</title>
-      <link>http://example.org/games/markies-revenge/</link>
+      <link>https://technicalhat.github.io/beercave-web/games/markies-revenge/</link>
       <pubDate>Sat, 25 Jul 2009 10:00:00 +0000</pubDate>
       
-      <guid>http://example.org/games/markies-revenge/</guid>
+      <guid>https://technicalhat.github.io/beercave-web/games/markies-revenge/</guid>
       <description>The aim of Markie&amp;rsquo;s Revenge is very simple. Guide the Starsheep to stay alive as long as possible and don&amp;rsquo;t get killed by the green Markie Ming heads!
 The controls are also very simple, pressing space bar to start the game and move around the screen by using the arrow keys on the keyboard. You can also drink Beer and eat Curry to increase your score, but these also have realistic effects!</description>
     </item>
     
     <item>
       <title>Sheep Snaggers</title>
-      <link>http://example.org/games/sheep-snaggers/</link>
+      <link>https://technicalhat.github.io/beercave-web/games/sheep-snaggers/</link>
       <pubDate>Mon, 09 Feb 2009 10:00:00 +0000</pubDate>
       
-      <guid>http://example.org/games/sheep-snaggers/</guid>
+      <guid>https://technicalhat.github.io/beercave-web/games/sheep-snaggers/</guid>
       <description>Sheep Snaggers is a fast action-based shoot-em-up loosely based on the Williams arcade classic Sinistar.
 I started development after a request on the YakYak gaming forum for submissions for a disk of member-developed games for the annual Retrovision event.
 The game is written in Python, using Pygame and the OpenGL based Rabbyt sprite library for enhanced performance.

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>april on Beercave Games - putting the fun back into functional alcoholism!</title>
+    <link>https://technicalhat.github.io/beercave-web/tags/april/</link>
+    <description>Recent content in april on Beercave Games - putting the fun back into functional alcoholism!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 11 Apr 2013 23:36:10 +0000</lastBuildDate>
+    
+	<atom:link href="https://technicalhat.github.io/beercave-web/tags/april/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>#1GAM 4 : Speed don&#39;t kill and I&#39;m the proof</title>
+      <link>https://technicalhat.github.io/beercave-web/blog/2013/04/11/1gam-4-speed-dont-kill-and-im-proof/</link>
+      <pubDate>Thu, 11 Apr 2013 23:36:10 +0000</pubDate>
+      
+      <guid>https://technicalhat.github.io/beercave-web/blog/2013/04/11/1gam-4-speed-dont-kill-and-im-proof/</guid>
+      <description>&lt;p&gt;Another quick update on my racing game. Since the last update I&amp;rsquo;ve added textured roads and sprite scaling for cars and roadside scenery. Some of the test sprites I used may look a little familiar - obviously I need to replace those with some slightly more legal ones before release!&lt;/p&gt;
+
+&lt;p&gt;
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//www.youtube.com/embed/zWnQuRZb8Bc&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;strong style=&#34;width:600px; display:inline-block; text-align:center&#34;&gt;This might actually turn out to be fun&amp;hellip;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;The sprite scaling looks to be very slightly out of sync with the road, but before I worry about that I think the next job is adding in some kind of control system - there&amp;rsquo;s not much point in a racing game where you can&amp;rsquo;t steer&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;So obviously if I want to get this right the best course of action is to spend the weekend &amp;ldquo;researching&amp;rdquo; &lt;a href=&#34;http://www.youtube.com/watch?v=WiWiTXq4yYY&#34;&gt;OutRun&lt;/a&gt; and &lt;a href=&#34;http://www.youtube.com/watch?v=aAk27BvWpsg&#34;&gt;Lotus&lt;/a&gt; and &lt;a href=&#34;http://www.youtube.com/watch?v=q3MEYIbchaE&#34;&gt;Crazy Cars III&lt;/a&gt; ;)&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>#1GAM 4 : We are the Road Crew</title>
+      <link>https://technicalhat.github.io/beercave-web/blog/2013/04/08/1gam-4-we-are-road-crew/</link>
+      <pubDate>Mon, 08 Apr 2013 21:59:13 +0000</pubDate>
+      
+      <guid>https://technicalhat.github.io/beercave-web/blog/2013/04/08/1gam-4-we-are-road-crew/</guid>
+      <description>&lt;p&gt;As &lt;a href=&#34;https://technicalhat.github.io/beercave-web/2013/04/07/april-magical-sound-showers&#34;&gt;hinted at yesterday&lt;/a&gt;, for April&amp;rsquo;s game I&amp;rsquo;m working on an Outrun-style pseudo-3D racing game, based on the techniques described &lt;a href=&#34;http://www.extentofthejam.com/pseudo/&#34;&gt;here.&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;So far I&amp;rsquo;m two days in and I&amp;rsquo;ve got the basics of the renderer up and running and looking a little bit like this:&lt;/p&gt;
+
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//www.youtube.com/embed/dgwx8yOltxU&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;Needs a little tweaking to get the best out of the effect, but that should do to be going on with. Next up is proper textured roads and some roadside scenery - hopefully I should have something drivable by the weekend&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>April (magical sound) Showers</title>
+      <link>https://technicalhat.github.io/beercave-web/blog/2013/04/07/april-magical-sound-showers/</link>
+      <pubDate>Sun, 07 Apr 2013 22:45:18 +0000</pubDate>
+      
+      <guid>https://technicalhat.github.io/beercave-web/blog/2013/04/07/april-magical-sound-showers/</guid>
+      <description>&lt;p&gt;Quick taster of what I&amp;rsquo;ve got in mind for game #4&amp;hellip;&lt;/p&gt;
+
+&lt;div&gt;
+&lt;figure&gt;
+   
+    &lt;img src=&#39;https://s3.amazonaws.com/beercave.co.uk/gameamonth2013/month4/pics/racer1.png&#39;
+         alt=&#34;Looks like a nice day to go Out for a Run&amp;amp;hellip;&#34;/&gt; &lt;figcaption&gt;
+            &lt;p&gt;Looks like a nice day to go &lt;i&gt;Out&lt;/i&gt; for a &lt;i&gt;Run&lt;/i&gt;&amp;hellip;&lt;/p&gt;
+        &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;/div&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

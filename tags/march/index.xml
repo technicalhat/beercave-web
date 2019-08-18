@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>march on Beercave Games - putting the fun back into functional alcoholism!</title>
+    <link>https://technicalhat.github.io/beercave-web/tags/march/</link>
+    <description>Recent content in march on Beercave Games - putting the fun back into functional alcoholism!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 14 Mar 2013 20:46:35 +0000</lastBuildDate>
+    
+	<atom:link href="https://technicalhat.github.io/beercave-web/tags/march/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Rogueotron - Adventures in Procedural Generation</title>
+      <link>https://technicalhat.github.io/beercave-web/blog/2013/03/14/rogueotron-adventures-procedural-generation/</link>
+      <pubDate>Thu, 14 Mar 2013 20:46:35 +0000</pubDate>
+      
+      <guid>https://technicalhat.github.io/beercave-web/blog/2013/03/14/rogueotron-adventures-procedural-generation/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;m a couple of days into development on Rogueotron now and the basics are starting to come together a bit.  Thanks to the horrors of Regular Paid Employment I&amp;rsquo;ve only been able to put a couple of hours a night into it during the week but I&amp;rsquo;ve managed to get the basic movement/firing and transitions between rooms working with some stylishly blocky placeholder graphics.&lt;/p&gt;
+
+&lt;p&gt;&lt;a target=&#34;_new&#34; href=&#34;https://s3.amazonaws.com/beercave.co.uk/gameamonth2013/month3/pics/rogueotron1.png&#34;&gt;&lt;img width=&#34;280&#34; src=&#34;https://s3.amazonaws.com/beercave.co.uk/gameamonth2013/month3/pics/rogueotron1.png&#34;/&gt;&lt;/a&gt;
+&lt;a target=&#34;_new&#34; href=&#34;https://s3.amazonaws.com/beercave.co.uk/gameamonth2013/month3/pics/rogueotron2.png&#34;&gt;&lt;img width=&#34;280&#34; src=&#34;https://s3.amazonaws.com/beercave.co.uk/gameamonth2013/month3/pics/rogueotron2.png&#34;/&gt;&lt;/a&gt;
+&lt;strong style=&#34;width:600px; display:inline-block; text-align:center&#34;&gt;Not about to win any awards for visuals any time soon, I admit&amp;hellip;&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>March Game : Change of plan</title>
+      <link>https://technicalhat.github.io/beercave-web/blog/2013/03/11/march-game-change-plan/</link>
+      <pubDate>Mon, 11 Mar 2013 21:36:49 +0000</pubDate>
+      
+      <guid>https://technicalhat.github.io/beercave-web/blog/2013/03/11/march-game-change-plan/</guid>
+      <description>&lt;p&gt;So yeah, slight change of plan on the March game front. The theme for this month is &amp;ldquo;Rogue&amp;rdquo;, which I was planning on just ignoring and doing my own thing again, but it&amp;rsquo;s been nagging at me a little. Trouble is, roguelikes tend to be all turn-based and about planning and stuff, which isn&amp;rsquo;t really my style. Lasers and explosions, that&amp;rsquo;s me.&lt;/p&gt;
+
+&lt;p&gt;But then today I hit upon the ideal solution - I get to play with some roguelike tropes while still getting to shoot things and have them explode all over the place. Plus, I get to indulge my love of awful puns.&lt;/p&gt;
+
+&lt;p&gt;&lt;img style=&#34;display:block; margin-left:auto; margin-right:auto;&#34; src=&#34;https://s3.amazonaws.com/beercave.co.uk/gameamonth2013/month3/rogueotron.png&#34;/&gt;
+&lt;a href=&#34;http://www.youtube.com/watch?v=TxWN8AhNER0&#34;&gt;So what is it?&lt;/a&gt; Well, it&amp;rsquo;s Robotron again, but with levels and XP and stuff. I&amp;rsquo;ve got some procedural map generator code that I originally wrote for Gun Bastard lying around somewhere as well, should be able to dig that out and plug it in and then that&amp;rsquo;s most of a game right there.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>A wild Game Idea approaches</title>
+      <link>https://technicalhat.github.io/beercave-web/blog/2013/03/11/wild-game-idea-approaches/</link>
+      <pubDate>Mon, 11 Mar 2013 16:48:45 +0000</pubDate>
+      
+      <guid>https://technicalhat.github.io/beercave-web/blog/2013/03/11/wild-game-idea-approaches/</guid>
+      <description>&lt;p&gt;Slight change of direction pending for my March game - more details shortly&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

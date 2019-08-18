@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>october on Beercave Games - putting the fun back into functional alcoholism!</title>
+    <link>https://technicalhat.github.io/beercave-web/tags/october/</link>
+    <description>Recent content in october on Beercave Games - putting the fun back into functional alcoholism!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 03 Nov 2013 20:47:20 +0000</lastBuildDate>
+    
+	<atom:link href="https://technicalhat.github.io/beercave-web/tags/october/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Ten in a row!</title>
+      <link>https://technicalhat.github.io/beercave-web/blog/2013/11/03/ten-row/</link>
+      <pubDate>Sun, 03 Nov 2013 20:47:20 +0000</pubDate>
+      
+      <guid>https://technicalhat.github.io/beercave-web/blog/2013/11/03/ten-row/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://technicalhat.github.io/beercave-web/games/1gam-2013/candy-castle-chaos&#34;&gt;&lt;b&gt;Play Candy Castle Chaos&lt;/b&gt;&lt;/A&gt;&lt;/p&gt;
+
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//www.youtube.com/embed/tfeR2G6n6yE&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;So yeah, that&amp;rsquo;s game number ten in the bag. Just two more to go and I&amp;rsquo;ll have beaten this ridiculous self-imposed burden and be free again!&lt;/p&gt;
+
+&lt;p&gt;Looks like I made a good call when I decided to go with something less content heavy for this month. As it turned out I didn&amp;rsquo;t end up with a whole lot of time to work on it, so having a pretty much fully working prototype up and running in the first weekend was a major bonus.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m well into the home stretch now with just two more games to go. December I&amp;rsquo;ve already got planned, but I don&amp;rsquo;t want to spoil the surprise just yet. For November? Well I&amp;rsquo;m really pleased with how well the heavily saturated vectors and particle frenzy worked out this month so I&amp;rsquo;m thinking of staying in the same style. And what&amp;rsquo;s the undisputed king of the vector games?&lt;/p&gt;
+
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//www.youtube.com/embed/MO1fid9sD8U&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;Given the time constraints, it&amp;rsquo;s obviously going to be a lot closer to the original than the psychedelic loveliness of &lt;a href=&#34;http://www.youtube.com/watch?v=Q2TTa0z2o0M&#34;&gt;TxK&lt;/a&gt;, but I reckon I should be able to make a fairly decent stab at it nontheless.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Shaping up nicely</title>
+      <link>https://technicalhat.github.io/beercave-web/blog/2013/10/08/shaping-nicely/</link>
+      <pubDate>Tue, 08 Oct 2013 23:22:25 +0000</pubDate>
+      
+      <guid>https://technicalhat.github.io/beercave-web/blog/2013/10/08/shaping-nicely/</guid>
+      <description>&lt;p&gt;Just a couple of days into development of October&amp;rsquo;s game and it&amp;rsquo;s looking like I&amp;rsquo;m onto a winner for once. Saturday was spent mostly swearing at &lt;a href=&#34;http://box2d.org/&#34;&gt;Box2D&lt;/a&gt; as I figured out how to plug it into my existing engine code, but now that I&amp;rsquo;ve got a handle on it I really wish I&amp;rsquo;d made an effort to get it working before now. Would have saved me a &lt;em&gt;lot&lt;/em&gt; of messing around with half-baked homebrewed physics systems for this year&amp;rsquo;s games.&lt;/p&gt;
+
+&lt;p&gt;So, that state of play right now is I&amp;rsquo;ve got most of the basic elements of the game up and running in prototype form. A rectangular arena with four walled castles defended by a paddle. As of Sunday night, it looked a bit like this:&lt;/p&gt;
+
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//www.youtube.com/embed/VmIggzo931E&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;Since then, I&amp;rsquo;ve got the paddles fully touch-controllable on Android. It&amp;rsquo;s ever-so-slightly ridiculous to play on the Nexus 4 given the screen size, so I think tablets might be the minimum sensible form factor for the mobile version, but it&amp;rsquo;s working, and that&amp;rsquo;s a hell of a lot better state than I&amp;rsquo;m usually in this early in the month. I&amp;rsquo;ve got a good feeling about this one :D&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>gunboat on Beercave Games - putting the fun back into functional alcoholism!</title>
+    <link>https://technicalhat.github.io/beercave-web/tags/gunboat/</link>
+    <description>Recent content in gunboat on Beercave Games - putting the fun back into functional alcoholism!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 30 Apr 2013 23:37:58 +0000</lastBuildDate>
+    
+	<atom:link href="https://technicalhat.github.io/beercave-web/tags/gunboat/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Ludum Dare 26 / 1GAM April : GunBoat</title>
+      <link>https://technicalhat.github.io/beercave-web/blog/2013/04/30/ludum-dare-26-1gam-april-gunboat/</link>
+      <pubDate>Tue, 30 Apr 2013 23:37:58 +0000</pubDate>
+      
+      <guid>https://technicalhat.github.io/beercave-web/blog/2013/04/30/ludum-dare-26-1gam-april-gunboat/</guid>
+      <description>&lt;p&gt;&amp;ldquo;Hey, weren&amp;rsquo;t you making some kind of OutRun-inspired racing game?&amp;rdquo;, you&amp;rsquo;re no doubt wondering. Well yes, that was indeed the plan - but as (according to the internets) every famous military leader in history&lt;a href=&#34;#footnote1&#34;&gt;*&lt;/a&gt; said, &amp;ldquo;No battle plan ever survived contact with the enemy.&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;So yeah, that game&amp;rsquo;s not by any means dead yet, but with the end of the month approaching far too quickly it was becoming apparent that I wasn&amp;rsquo;t going to get it anywhere near done in time., Too much time spent twatting around trying to get the rendering perfectm not enough spent making it actually playable.&lt;/p&gt;
+
+&lt;p&gt;Fortunately, last weekend was &lt;a href=&#34;http://www.ludumdare.com/compo&#34;&gt;Ludum Dare 26&lt;/a&gt;, which gave me an excuse to temporarily shelve the racer and get down to some Jammin&amp;rsquo;. The theme this time around was &amp;ldquo;minimalism&amp;rdquo;, and I conveniently had an idea lying around that I reckoned would more or less fit.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://technicalhat.github.io/beercave-web/games/gunboat&#34;&gt;&lt;b&gt;Enough already - show me the damn game!!!&lt;/b&gt;&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

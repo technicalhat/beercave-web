@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="robots" content="noindex, nofollow">
+    <title>Ludum Dare 26 / 1GAM April : GunBoat</title>
+
+    
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" >
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href='https://technicalhat.github.io/beercave-web/css/beercave.css' >
+    <link href="https://fonts.googleapis.com/css?family=Orbitron|Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css" integrity="sha256-PF6MatZtiJ8/c9O9HQ8uSUXr++R9KBYu4gbNG5511WE=" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+
+
+</head><body><nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark-bc">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/" aria-label="home">
+        <img src='https://technicalhat.github.io/beercave-web/img/logo.png'/>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href='https://technicalhat.github.io/beercave-web/games'>Games</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href='https://technicalhat.github.io/beercave-web/blog'>Blog</a>
+            </li>
+        </ul>
+    </div>
+    </div>
+</nav><div id="content">
+<div class="container mt-3">
+    <div class="row">
+        <div class="col-md-8 posts">
+            
+            <article>
+                <header class="post-header">
+                    <h1>
+                        <a href="https://technicalhat.github.io/beercave-web/blog/2013/04/30/ludum-dare-26-1gam-april-gunboat/">Ludum Dare 26 / 1GAM April : GunBoat</a>
+                    </h1>
+                    <time datetime='30004-04-04'>
+                        <span class="day">30</span>
+                        <span class="month">Apr 2013</span>
+                    </time>
+                </header>
+                <section class="post-content">
+                    <p>&ldquo;Hey, weren&rsquo;t you making some kind of OutRun-inspired racing game?&rdquo;, you&rsquo;re no doubt wondering. Well yes, that was indeed the plan - but as (according to the internets) every famous military leader in history<a href="#footnote1">*</a> said, &ldquo;No battle plan ever survived contact with the enemy.&rdquo;</p>
+
+<p>So yeah, that game&rsquo;s not by any means dead yet, but with the end of the month approaching far too quickly it was becoming apparent that I wasn&rsquo;t going to get it anywhere near done in time., Too much time spent twatting around trying to get the rendering perfectm not enough spent making it actually playable.</p>
+
+<p>Fortunately, last weekend was <a href="http://www.ludumdare.com/compo">Ludum Dare 26</a>, which gave me an excuse to temporarily shelve the racer and get down to some Jammin&rsquo;. The theme this time around was &ldquo;minimalism&rdquo;, and I conveniently had an idea lying around that I reckoned would more or less fit.</p>
+
+<p><a href="/games/gunboat"><b>Enough already - show me the damn game!!!</b></a></p>
+
+<p>So where did this one come from? Well, weirdly enough I had a dream last week where I was playing a 3D boat-shooting game with nicely animated waves. Woke up around 4am and thought &ldquo;thanks, subconscious - that&rsquo;s a great idea&rdquo;, and promptly emailed it to myself. This living in The Future thing comes in handy sometimes :) So early Saturday I got up, checked the theme and thought &ldquo;yeah, I can use that&rdquo;.</p>
+
+<p>Visually, I wanted something fairly retro, with a call-out to the old UKResistance <a href="http://www.ukresistance.co.uk/2005/11/blue-sky-in-games-campaign-launched.html">blue skies</a> aesthetic, because far too many LD entries seem to go down the &ldquo;must make art. must be depressing&rdquo; route. So job number one was making a nice sunny day&hellip;</p>
+
+<div style="width:600px; margin-left:auto; margin-right:auto;">
+<a href="/games/gunboat"><img width="600" src="https://s3.amazonaws.com/beercave.co.uk/gameamonth2013/month4/pics/1.sky.png"/></a>
+<strong style="width:600px; display:inline-block; text-align:center">Yeah, that'll do nicely :)
+</strong>
+</div>
+
+<p>Next job was getting the sea in place. Basically each layer is just a row of blocks in a sine wave, with the amplitude and frequency scaled relative to the z distance so that they don&rsquo;t all sync up.</p>
+
+<div style="width:600px; margin-left:auto; margin-right:auto;">
+<a href="/games/gunboat"><img width="600" src="https://s3.amazonaws.com/beercave.co.uk/gameamonth2013/month4/pics/2.sea.png"/></a>
+<strong style="width:600px; display:inline-block; text-align:center">Quite relaxing, isn't it?
+</strong>
+</div>
+
+<p>After that, I needed some happy little boats sailing on the peaceful seas.</p>
+
+<div style="width:600px; margin-left:auto; margin-right:auto;">
+<a href="/games/gunboat"><img width="600" src="https://s3.amazonaws.com/beercave.co.uk/gameamonth2013/month4/pics/3.boats.png"/></a>
+<strong style="width:600px; display:inline-block; text-align:center">One might even say "picturesque"
+</strong>
+</div>
+
+<div style="width:600px; margin-left:auto; margin-right:auto;">
+<a href="/games/gunboat"><img width="600" src="https://s3.amazonaws.com/beercave.co.uk/gameamonth2013/month4/pics/4.gun.png"/></a>
+<strong style="width:600px; display:inline-block; text-align:center">Yeah, sod that. Eat laser, you bastards!
+</strong>
+</div>
+
+<p>And a sod-off big gun, because hey, videogames. Sod-off big guns kind of go with the territory.</p>
+
+<p>So, if we&rsquo;re going to be shooting things they should probably explode. If only there was <a href="http://www.merseyremakes.co.uk/gibber/2010/08/the-videogame-explosion/">somewhere I could learn all about how to do explosions</a>]</p>
+
+<div style="width:600px; margin-left:auto; margin-right:auto;">
+<a href="/games/gunboat"><img width="600" src="https://s3.amazonaws.com/beercave.co.uk/gameamonth2013/month4/pics/5.crazysplode.png"/></a>
+<strong style="width:600px; display:inline-block; text-align:center">OK, that might be a little *too* much explosion
+</strong>
+</div>
+
+<div style="width:600px; margin-left:auto; margin-right:auto;">
+<a href="/games/gunboat"><img width="600" src="https://s3.amazonaws.com/beercave.co.uk/gameamonth2013/month4/pics/sanesplode.png"/></a>
+<strong style="width:600px; display:inline-block; text-align:center">That's a bit more like it
+</strong>
+</div>
+
+<p>So with that lot done, Saturday was drawing to a close and I was feeling pretty confident about getting something finished. Clearly there was nothing else for it but to catch an early showing of Evil Dead on Sunday. Wow - they did not fuck around with that one&hellip;</p>
+
+<p>OK, back to it and it&rsquo;s Sunday evening, I&rsquo;ve got most of a game, it just needs a little polish. Titles, level transitions, being able to lose. You know - the boring stuff ;) So I stuck on my hacking hat<a href="#footnote2">**</a> and just barely managed to bash something together before bedtime. There was just one thing missing&hellip;</p>
+
+<div style="width:600px; margin-left:auto; margin-right:auto;">
+<a href="/games/gunboat"><img width="600" src="https://s3.amazonaws.com/beercave.co.uk/gameamonth2013/month4/pics/spudbonus.png"/></a>
+<strong style="width:600px; display:inline-block; text-align:center">The People's Theme : "Potato"</strong>
+</div>
+
+<p>You can <a href="/games/gunboat"><b>download GunBoat</b></a> from the <a href="/games">games page</a></p>
+
+<p><a id="footnote1">*<a>Seriously - I&rsquo;ve seen that quote attributed to everyone from Patton to Napoleon to Sun-Tzu to, I dunno, some fucking Klingon dude. It gets around.</p>
+
+<p><a id="footnote2">**</a>OK, not literally. I&rsquo;ve got a Viking hat and a cowboy hat but no hacking hat. Maybe I should get one&hellip;</p> 
+                </section>
+                <section class="post-footer clearfix row justify-content-between">
+                    <div class="col sharing-links">
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2013%2f04%2f30%2fludum-dare-26-1gam-april-gunboat%2f" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="facebook">
+                            <i class="fab fa-facebook" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                        
+                        <a href="https://twitter.com/intent/tweet?url=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2013%2f04%2f30%2fludum-dare-26-1gam-april-gunboat%2f&text=ludum-dare-26-%2f-1gam-april-gunboat" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="twitter">
+                            <i class="fab fa-twitter" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                        
+                        <a href="https://www.stumbleupon.com/badge/?url=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2013%2f04%2f30%2fludum-dare-26-1gam-april-gunboat%2f" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="stumbleupon">
+                            <i class="fab fa-stumbleupon" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                        <a href="https://www.reddit.com/submit?url=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2013%2f04%2f30%2fludum-dare-26-1gam-april-gunboat%2f" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="reddit">
+                            <i class="fab fa-reddit-alien" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                    </div>
+                   
+                </section>
+            </article>
+            
+            
+            <section class="prev-next">
+              
+            <a href="https://technicalhat.github.io/beercave-web/blog/2013/04/11/1gam-4-speed-dont-kill-and-im-proof/" class="float-left">&lt; #1GAM 4 : Speed don&#39;t kill and I&#39;m the proof</a>
+            
+        
+              
+                <a href="https://technicalhat.github.io/beercave-web/blog/2013/05/14/checking/" class="float-right">Checking in &gt;</a>
+            
+            </section>
+        </div>
+        
+        <div class="col-md-4">
+            <div class="sidebar">
+                <section class="sidebar-content">
+                    <article id="profile">
+                        <a href='https://technicalhat.github.io/img/beerman-cutout.png' data-toggle="lightbox">
+                            <img src='https://technicalhat.github.io/img/beerman-cutout-smol.png' title="Judge Beerman">
+                        </a>
+                        <h1>
+                            Beerman's blog
+                        </h1>
+                        <p>Real nerds. Real talk. Call now.</p>
+                        <div class="social-links">
+                            <a href="https://twitter.com/BeercaveGames">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+
+                            <a href="https://www.youtube.com/user/b33rman/videos">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                            
+                        </div>
+                    </article>
+                    <article id="post-list">
+                        <h1>Latest posts</h1>
+                        
+                        <ul>
+                            
+                            <li>
+                                <a href="https://technicalhat.github.io/beercave-web/blog/2015/07/06/egad-a-post/">Egad! A post!</a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://technicalhat.github.io/beercave-web/blog/2015/03/31/beermans-adventures-voxel-land-part-seven-need-for-speed/">Beerman&#39;s adventures in voxel-land, part 7 : Need for speed</a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://technicalhat.github.io/beercave-web/blog/2015/03/25/beermans-adventures-voxel-land-part-six-the-best-laid-plans/">Beerman&#39;s adventures in voxel-land, part 6 : The best laid plans</a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://technicalhat.github.io/beercave-web/blog/2015/03/25/beermans-adventures-voxel-land-part-five-the-hard-parts/">Beerman&#39;s adventures in voxel-land, part 5 : The hard parts</a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://technicalhat.github.io/beercave-web/blog/2015/01/25/beermans-adventures-voxel-land-part-four-now-featuring-actual-gameplay/">Beerman&#39;s adventures in voxel-land, part 4 : Now featuring actual gameplay</a>
+                            </li>
+                            
+                        </ul>
+                    </article>
+                    <article id="post-tags">
+                        <h1>Tags</h1>
+                        
+                        <ul>
+                        
+                        
+                        
+                        
+                        
+                        
+                        <li>
+                        <a href="/beercave-web/tags/1gam" class="btn btn-default" role="button">1gam <span class="badge badge-dark">32</span></a>
+                        </li>
+                        
+                        
+                        
+                        
+                        <li>
+                        <a href="/beercave-web/tags/releases" class="btn btn-default" role="button">releases <span class="badge badge-dark">8</span></a>
+                        </li>
+                        
+                        
+                        
+                        
+                        <li>
+                        <a href="/beercave-web/tags/lagertron" class="btn btn-default" role="button">lagertron <span class="badge badge-dark">5</span></a>
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        <li>
+                        <a href="/beercave-web/tags/beercave-racer" class="btn btn-default" role="button">beercave-racer <span class="badge badge-dark">4</span></a>
+                        </li>
+                        
+                        
+                        
+                        
+                        <li>
+                        <a href="/beercave-web/tags/chaosball" class="btn btn-default" role="button">chaosball <span class="badge badge-dark">4</span></a>
+                        </li>
+                        
+                        
+                        
+                        
+                        <li>
+                        <a href="/beercave-web/tags/rogueotron" class="btn btn-default" role="button">rogueotron <span class="badge badge-dark">4</span></a>
+                        </li>
+                        
+                        
+                        
+                        
+                        <li>
+                        <a href="/beercave-web/tags/april" class="btn btn-default" role="button">april <span class="badge badge-dark">3</span></a>
+                        </li>
+                        
+                        
+                        
+                        
+                        <li>
+                        <a href="/beercave-web/tags/march" class="btn btn-default" role="button">march <span class="badge badge-dark">3</span></a>
+                        </li>
+                        
+                        
+                        
+                        
+                        <li>
+                        <a href="/beercave-web/tags/voxel-engine" class="btn btn-default" role="button">voxel-engine <span class="badge badge-dark">3</span></a>
+                        </li>
+                        
+                        
+                        
+                        
+                        <li>
+                        <a href="/beercave-web/tags/web-runner" class="btn btn-default" role="button">web-runner <span class="badge badge-dark">3</span></a>
+                        </li>
+                        
+                        
+                        </ul>
+                    </article>
+                    </ul>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+        </div><footer>
+    <section class="container">
+       
+TODO : Add a nice looking footer here with links and stuff
+    </section>
+</footer></body>
+</html>

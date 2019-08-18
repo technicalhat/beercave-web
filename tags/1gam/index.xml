@@ -1,0 +1,600 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>1gam on Beercave Games - putting the fun back into functional alcoholism!</title>
+    <link>https://technicalhat.github.io/beercave-web/tags/1gam/</link>
+    <description>Recent content in 1gam on Beercave Games - putting the fun back into functional alcoholism!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 30 Dec 2013 18:27:27 +0000</lastBuildDate>
+    
+	<atom:link href="https://technicalhat.github.io/beercave-web/tags/1gam/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Twelvety!</title>
+      <link>https://technicalhat.github.io/beercave-web/blog/2013/12/30/twelvety/</link>
+      <pubDate>Mon, 30 Dec 2013 18:27:27 +0000</pubDate>
+      
+      <guid>https://technicalhat.github.io/beercave-web/blog/2013/12/30/twelvety/</guid>
+      <description>&lt;p&gt;Bit late for the pre-Christmas release I&amp;rsquo;d planned, but still comfortably inside the 1GAM deadline, game number twelve is Brown Christmas : a retro style multi-room platformer with a Christmas theme and added toilet humour. Because I&amp;rsquo;m a child :D&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://technicalhat.github.io/beercave-web/games/1gam-2013/brown-christmas&#34;&gt;Play Brown Christmas now!&lt;/a&gt;&lt;/p&gt;
+
+&lt;div&gt;
+&lt;figure&gt;
+   
+    &lt;img src=&#39;https://s3.amazonaws.com/beercave.co.uk/gameamonth2013/month12/screenshots/titles.png&#39;
+         alt=&#34;Sorry&amp;amp;hellip;&#34;/&gt; &lt;figcaption&gt;
+            &lt;p&gt;Sorry&amp;hellip;&lt;/p&gt;
+        &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Which means I bloody well made it! I made 12 games in 12 months, and surprisingly a few of them are even quite decent. I&amp;rsquo;ll do a proper retrospective post of the whole thing shortly, but for now I think it&amp;rsquo;s time for a celebratory beer or 10!&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>This one goes up to Eleven!</title>
+      <link>https://technicalhat.github.io/beercave-web/blog/2013/12/04/one-goes-eleven/</link>
+      <pubDate>Wed, 04 Dec 2013 17:17:17 +0000</pubDate>
+      
+      <guid>https://technicalhat.github.io/beercave-web/blog/2013/12/04/one-goes-eleven/</guid>
+      <description>&lt;p&gt;Squeaking in just before the deadline again, that&amp;rsquo;s my eleventh game of the year finished. And it&amp;rsquo;s a really bloody nice too :D&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://technicalhat.github.io/beercave-web/games/1gam-2013/web-runner&#34;&gt;&lt;b&gt;Play Web Runner NOW!&lt;/b&gt;&lt;/A&gt;&lt;/p&gt;
+
+&lt;p&gt;
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//www.youtube.com/embed/tSP3IOwH2pA&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+The colours in the video are a bit washed out for some reason - the actual game looks more like this:
+&lt;p style=&#34;width:600px; margin-left:auto; margin-right:auto;&#34;&gt;
+&lt;img style=&#34;display:block;width:600px;&#34; src=&#34;https://s3.amazonaws.com/beercave.co.uk/gameamonth2013/month11/screenshots/splode2.png&#34;/&gt;
+&lt;span style=&#34;text-align:center;width:600px; display:block&#34;&gt;&lt;b&gt;A bit more colourful!&lt;/b&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;So, there&amp;rsquo;s just one more to go before the finish now, and being December there&amp;rsquo;s only one place to take this : Christmas theme! December&amp;rsquo;s game will be Brown Christmas, in which an angry Santa takes revenge on the naughty kids - by leaving a rather unexpected &amp;ldquo;present&amp;rdquo; in their stockings&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>More like YESvember</title>
+      <link>https://technicalhat.github.io/beercave-web/blog/2013/11/10/more-yesvember/</link>
+      <pubDate>Sun, 10 Nov 2013 21:11:25 +0000</pubDate>
+      
+      <guid>https://technicalhat.github.io/beercave-web/blog/2013/11/10/more-yesvember/</guid>
+      <description>&lt;p&gt;Finally got a chance to make a start on November&amp;rsquo;s game this weekend, and so far it&amp;rsquo;s going rather nicely.&lt;/p&gt;
+
+&lt;p&gt;Saturday was mostly spent updating the vector graphics code from &lt;a href=&#34;https://technicalhat.github.io/beercave-web/games/1gam-2013/candy-castle-chaos&#34;&gt;Candy Casle Chaos&lt;/a&gt; to use GL2, meaning with a bit of luck I might get to start playing with some shader effects this time around. With that sorted (and CCC&amp;rsquo;s menu screen appropriated to get things up and running), I spent a few hours today getting the basics of the game in place. So far it looks a bit like this.&lt;/p&gt;
+
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//www.youtube.com/embed/XSdm_r6PVuY&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;If I can find a couple of hours this week to start putting some enemies in, this should be approaching playable pretty quickly :)&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Ten in a row!</title>
+      <link>https://technicalhat.github.io/beercave-web/blog/2013/11/03/ten-row/</link>
+      <pubDate>Sun, 03 Nov 2013 20:47:20 +0000</pubDate>
+      
+      <guid>https://technicalhat.github.io/beercave-web/blog/2013/11/03/ten-row/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://technicalhat.github.io/beercave-web/games/1gam-2013/candy-castle-chaos&#34;&gt;&lt;b&gt;Play Candy Castle Chaos&lt;/b&gt;&lt;/A&gt;&lt;/p&gt;
+
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//www.youtube.com/embed/tfeR2G6n6yE&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;So yeah, that&amp;rsquo;s game number ten in the bag. Just two more to go and I&amp;rsquo;ll have beaten this ridiculous self-imposed burden and be free again!&lt;/p&gt;
+
+&lt;p&gt;Looks like I made a good call when I decided to go with something less content heavy for this month. As it turned out I didn&amp;rsquo;t end up with a whole lot of time to work on it, so having a pretty much fully working prototype up and running in the first weekend was a major bonus.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m well into the home stretch now with just two more games to go. December I&amp;rsquo;ve already got planned, but I don&amp;rsquo;t want to spoil the surprise just yet. For November? Well I&amp;rsquo;m really pleased with how well the heavily saturated vectors and particle frenzy worked out this month so I&amp;rsquo;m thinking of staying in the same style. And what&amp;rsquo;s the undisputed king of the vector games?&lt;/p&gt;
+
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//www.youtube.com/embed/MO1fid9sD8U&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;Given the time constraints, it&amp;rsquo;s obviously going to be a lot closer to the original than the psychedelic loveliness of &lt;a href=&#34;http://www.youtube.com/watch?v=Q2TTa0z2o0M&#34;&gt;TxK&lt;/a&gt;, but I reckon I should be able to make a fairly decent stab at it nontheless.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Shaping up nicely</title>
+      <link>https://technicalhat.github.io/beercave-web/blog/2013/10/08/shaping-nicely/</link>
+      <pubDate>Tue, 08 Oct 2013 23:22:25 +0000</pubDate>
+      
+      <guid>https://technicalhat.github.io/beercave-web/blog/2013/10/08/shaping-nicely/</guid>
+      <description>&lt;p&gt;Just a couple of days into development of October&amp;rsquo;s game and it&amp;rsquo;s looking like I&amp;rsquo;m onto a winner for once. Saturday was spent mostly swearing at &lt;a href=&#34;http://box2d.org/&#34;&gt;Box2D&lt;/a&gt; as I figured out how to plug it into my existing engine code, but now that I&amp;rsquo;ve got a handle on it I really wish I&amp;rsquo;d made an effort to get it working before now. Would have saved me a &lt;em&gt;lot&lt;/em&gt; of messing around with half-baked homebrewed physics systems for this year&amp;rsquo;s games.&lt;/p&gt;
+
+&lt;p&gt;So, that state of play right now is I&amp;rsquo;ve got most of the basic elements of the game up and running in prototype form. A rectangular arena with four walled castles defended by a paddle. As of Sunday night, it looked a bit like this:&lt;/p&gt;
+
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//www.youtube.com/embed/VmIggzo931E&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;Since then, I&amp;rsquo;ve got the paddles fully touch-controllable on Android. It&amp;rsquo;s ever-so-slightly ridiculous to play on the Nexus 4 given the screen size, so I think tablets might be the minimum sensible form factor for the mobile version, but it&amp;rsquo;s working, and that&amp;rsquo;s a hell of a lot better state than I&amp;rsquo;m usually in this early in the month. I&amp;rsquo;ve got a good feeling about this one :D&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Game number nine</title>
+      <link>https://technicalhat.github.io/beercave-web/blog/2013/10/03/game-number-nine/</link>
+      <pubDate>Thu, 03 Oct 2013 22:40:06 +0000</pubDate>
+      
+      <guid>https://technicalhat.github.io/beercave-web/blog/2013/10/03/game-number-nine/</guid>
+      <description>&lt;p&gt;Tired.&lt;/p&gt;
+
+&lt;p&gt;Very tired.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=https://technicalhat.github.io/beercave-web/games/1gam-2013/electric-sex-cannon&#34;&gt;Game.&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;p style=&#34;width:600px; margin-left:auto; margin-right:auto;&#34;&gt;
+&lt;img style=&#34;display:block;width:600px;&#34; src=&#34;https://s3.amazonaws.com/beercave.co.uk/gameamonth2013/month9/screenshots/walker.png&#34;/&gt;
+&lt;span style=&#34;text-align:center;width:600px; display:block&#34;&gt;&lt;b&gt;Looks like this.&lt;/b&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;p style=&#34;width:600px; margin-left:auto; margin-right:auto;&#34;&gt;
+&lt;img style=&#34;display:block;width:600px;&#34; src=&#34;https://s3.amazonaws.com/beercave.co.uk/gameamonth2013/month9/screenshots/skull.png&#34;/&gt;
+&lt;span style=&#34;text-align:center;width:600px; display:block&#34;&gt;&lt;b&gt;And this.&lt;/b&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;So yeah, that&amp;rsquo;s nine down, three more to go. I may actually finish this thing yet.&lt;/p&gt;
+
+&lt;p&gt;If there&amp;rsquo;s one thing I&amp;rsquo;ve noticed so far with #1GAM, it&amp;rsquo;s the months when I decide to make something content-heavy that really screw me over. Everything tends to start out well, then once I get the mechanics nailed down I realise I need to start doing some level design and it all goes a bit wrong.&lt;/p&gt;
+
+&lt;p&gt;So as &lt;a href=&#34;http://www.beercave.co.uk/2013/09/25/mission-retromission-2013&#34;&gt;previously mentioned,&lt;/a&gt; for October I&amp;rsquo;m having a go at something that&amp;rsquo;s pure game. Atari classic, Warlords&lt;/p&gt;
+
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//www.youtube.com/embed/TGB0Fb_6N5I&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;I&amp;rsquo;m actually looking forward to this one. Plan is to get it in a place where it&amp;rsquo;s fun to play as quickly as possible then start sexying it up. I&amp;rsquo;ll know I&amp;rsquo;ve got it right when I&amp;rsquo;m too busy playing it to do any more development&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>We can&#39;t stop here! This is Bat Coun^w^w September!</title>
+      <link>https://technicalhat.github.io/beercave-web/blog/2013/09/01/we-cant-stop-here-bat-counww-september/</link>
+      <pubDate>Sun, 01 Sep 2013 22:32:51 +0000</pubDate>
+      
+      <guid>https://technicalhat.github.io/beercave-web/blog/2013/09/01/we-cant-stop-here-bat-counww-september/</guid>
+      <description>&lt;p&gt;Thanks to an early finish, courtesy of &lt;a href=&#34;http://www.ludumdare.com/compo&#34;&gt;Ludum Dare 27&lt;/a&gt;, I was able to take last week off from gamedev. Which was nice, because I was bloody knackered. So I got to spend a few evenings vegetating on the couch and catching up on some TV (and temporarily rescuing Mrs. Beerman from the horrors of her self-imposed Netflix &amp;ldquo;My Hero&amp;rdquo; marathon.)&lt;/p&gt;
+
+&lt;p&gt;So, reasonably refreshed after a few nights away from the IDE, I figured it was about time I made a start on September&amp;rsquo;s game. As &lt;a href=&#34;http://www.beercave.co.uk/2013/08/22/staying-game&#34;&gt;previously mentioned&lt;/a&gt;, I&amp;rsquo;m temporarily shelving Philosofist while I get up to speed on a few things I need to grok better before I can build it.&lt;/p&gt;
+
+&lt;p&gt;And thus we come to September&amp;rsquo;s game : &lt;i&gt;Electric Sex Cannon.&lt;/i&gt; It&amp;rsquo;s an endlessly scrolling run-and-gun where your avatar battles through a dystopian greyscape to bring love and sex and colour to a drab and depressing world. Hopefully it should let me work of some of the level-design and event scripting stuff that PhilosoFist needs without needing to worry yet about the more fiddly bits of melee collision detection and the endless stream of dreadful gags that a title like PhilosoFist depends on.&lt;/p&gt;
+
+&lt;p&gt;So, after a fairly relaxed-pace Sunday of development, I&amp;rsquo;ve got a reasonable looking player avatar running and shooting against a parallax city background and a placeholder title screen, and the bare bones of a plot.  Hopefully that should put me far enough ahead of the game that I can comfortably flesh this out over the course of the month without frying my brain.&lt;/p&gt;
+
+&lt;p&gt;So anyway : screenshots&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Staying in the game</title>
+      <link>https://technicalhat.github.io/beercave-web/blog/2013/08/22/staying-game/</link>
+      <pubDate>Thu, 22 Aug 2013 22:25:15 +0000</pubDate>
+      
+      <guid>https://technicalhat.github.io/beercave-web/blog/2013/08/22/staying-game/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Looks at calendar. Looks at game. Looks at calendar again. Looks back at game&amp;hellip;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;So yeah, basically there ain&amp;rsquo;t no way in hell I&amp;rsquo;m getting this one out by the end of the month. Work&amp;rsquo;s hotting up and seriously messing with my free time, and there&amp;rsquo;s just too much of a learning curve given that it&amp;rsquo;s a genre I&amp;rsquo;ve not played in before. Similarly, there ain&amp;rsquo;t no way in hell I&amp;rsquo;m failing #1gam at this point - I&amp;rsquo;ve dropped more than half a year on this thing so far and I&amp;rsquo;m damn well gonna make it to the end. And yes, I am mainly motivated by not losing that sweet, sweet XP bonus accumulator for sequential releases and I&amp;rsquo;m not ashamed to admit it!&lt;/p&gt;
+
+&lt;p&gt;All of which means I need to switch gears to something a little smaller in scale that I can realistically get working in a couple of weekends. Preferably something that fills in at least a few gaps in what I need to know before I can do something decent with Philosofist, because I really love the idea and don&amp;rsquo;t want to waste it on something that sucks.&lt;/p&gt;
+
+&lt;p&gt;So what I&amp;rsquo;m thinking is, if I take what I&amp;rsquo;ve got and strip it back a bit I can probably hack out a halfway decent endless runner, and with a bit of luck add some kind of punching mechanic that&amp;rsquo;ll let me test-drive the fighting physics I need on a smaller scale. Then I can hopefully build on that next month and have Philosofist be actually good and not just some half-assed rush job.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Enter the Fist</title>
+      <link>https://technicalhat.github.io/beercave-web/blog/2013/08/18/enter-fist/</link>
+      <pubDate>Sun, 18 Aug 2013 01:02:20 +0000</pubDate>
+      
+      <guid>https://technicalhat.github.io/beercave-web/blog/2013/08/18/enter-fist/</guid>
+      <description>&lt;p&gt;Little slow off the mark this month. I&amp;rsquo;ve been a bit under the weather the last week or so, and that combined with a sudden uptick in workload from the day job and some unexpected Beermobile-related expenses have left me somewhat burnt-out in the evenings and unfit for anything more mentally taxing than staring at the screen going &amp;ldquo;bleh&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;Finally though, the weekend hit and I got a chance to shut down and recharge. There&amp;rsquo;s something intensely therapeutic about rolling out of bed at lunchtime :)&lt;/p&gt;
+
+&lt;p&gt;So, suitably recharged, I made a start by implementing the first of many terrible gags. This is the player select screen&amp;hellip;&lt;/p&gt;
+
+&lt;div style=&#34;width:600px; margin-left:auto; margin-right:auto;&#34;&gt;
+&lt;img style=&#34;display:block;width:600px;&#34; src=&#34;https://s3.amazonaws.com/beercave.co.uk/gameamonth2013/month8/pics/choose.png&#34;/&gt;
+&lt;span style=&#34;text-align:center;width:600px; display:block&#34;&gt;&lt;b&gt;DYSWIDT?&lt;/b&gt;&lt;/span&gt; 
+&lt;/div&gt;
+
+&lt;p&gt;I&amp;rsquo;m definitely getting less crap at the whole graphics thing. Mostly down to reading through the excellent &lt;a href=&#34;http://2dgameartforprogrammers.blogspot.co.uk/&#34;&gt;2D game art for programmers&lt;/a&gt; series of tutorials. While I&amp;rsquo;m still not exactly brilliant, it&amp;rsquo;s really helped in being able to at least start to figure out how to turn the pictures in my head into pictures on the screen.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>That would be a philosophical matter</title>
+      <link>https://technicalhat.github.io/beercave-web/blog/2013/08/08/would-be-philosophical-matter/</link>
+      <pubDate>Thu, 08 Aug 2013 22:08:53 +0000</pubDate>
+      
+      <guid>https://technicalhat.github.io/beercave-web/blog/2013/08/08/would-be-philosophical-matter/</guid>
+      <description>&lt;p&gt;I didn&amp;rsquo;t have anything specific lined up for August, so I thought I might take a crack at the theme again, see if that sparked any ideas. Then &lt;a href=&#34;http://mcfunkypants.com/&#34;&gt;McFunkypants&lt;/a&gt; announced the theme for August :&lt;/p&gt;
+
+&lt;p&gt;&lt;h3&gt;Philosophy.&lt;/h3&gt;
+&lt;img src=&#34;https://s3.amazonaws.com/beercave.co.uk/blogpics/dougal.jpg&#34; style=&#34;width:200px;display:block; margin-left:auto; margin-right:auto&#34;/&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;Fuck.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>And that’s Seven. Magnificent!</title>
+      <link>https://technicalhat.github.io/beercave-web/blog/2013/08/08/and-thats-seven-magnificent/</link>
+      <pubDate>Thu, 08 Aug 2013 21:11:04 +0000</pubDate>
+      
+      <guid>https://technicalhat.github.io/beercave-web/blog/2013/08/08/and-thats-seven-magnificent/</guid>
+      <description>&lt;p&gt;Oh yeah, I have a blog, don&amp;rsquo;t I? That would be a sensible place to announce game releases, wouldn&amp;rsquo;t it? Oops!&lt;/p&gt;
+
+&lt;p&gt;So yeah, I finished up Head Banger on Sunday, added it to the &lt;a href=&#34;https://technicalhat.github.io/beercave-web/games&#34;&gt;games page&lt;/a&gt; and alerted various parts of the internets, while somehow neglecting to mention it here. Anyway, it&amp;rsquo;s done now so:&lt;/p&gt;
+
+&lt;p&gt;&lt;a style=&#34;text-align:center;&#34; href=&#34;http://www.beercave.co.uk/games/1gam-2013/head-banger&#34;&gt;&lt;h3&gt;[Play Head Banger for Windows/Mac/Linux/Android]&lt;/h3&gt;&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>In which Time is Running Out</title>
+      <link>https://technicalhat.github.io/beercave-web/blog/2013/06/26/which-time-running-out/</link>
+      <pubDate>Wed, 26 Jun 2013 21:23:45 +0000</pubDate>
+      
+      <guid>https://technicalhat.github.io/beercave-web/blog/2013/06/26/which-time-running-out/</guid>
+      <description>&lt;p&gt;So yeah, bit of a late start this month. Partly I&amp;rsquo;m putting that down to mild burnout, but also I just plain wasn&amp;rsquo;t in love with the idea I was planning to work on. As previously mentioned, the original plan was to be a sort of 1-dimensional golf/curling game inspired &lt;a href=&#34;http://www.ludumdare.com/compo/ludum-dare-26/?action=preview&amp;uid=10718&#34;&gt;by this ld26 entry&lt;/a&gt;. It seemed like a fun little thing I could put together over a weekend, which may have been part of the problem.&lt;/p&gt;
+
+&lt;p&gt;In case it wasn&amp;rsquo;t already obvious, I&amp;rsquo;m a bit on the lazy side. Elevating procrastination to an art form is on my to-do list but I haven&amp;rsquo;t quite got around to it yet. So faced with a project that should only take a weekend, my immediate response is along the lines of &amp;ldquo;why this weekend?&amp;rdquo;. So far I&amp;rsquo;ve managed to still get stuff done out of sheer of enthusiasm for the games I&amp;rsquo;ve been working on, but this one just didn&amp;rsquo;t grab me enough to overcome that inertia.&lt;/p&gt;
+
+&lt;p&gt;Anyway, I finally sat down on Monday and forced myself to start coding, and after a couple of hours of swearing at the 3d camera setup I&amp;rsquo;d got the very basics in place and chucked a screenshot on twitter before calling it a night.&lt;/p&gt;
+
+&lt;div style=&#34;width:600px; margin-left:auto; margin-right:auto;&#34;&gt;
+&lt;img style=&#34;display:inline-block; width:600px;&#34; src=&#34;https://s3.amazonaws.com/beercave.co.uk/gameamonth2013/month6/pics/mg1_600.png&#34;/&gt;
+&lt;strong style=&#34;width:600px; display:inline-block; text-align:center&#34;&gt;Exciting, huh?&lt;/strong&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Looking at it again the next morning though, all I could think was &amp;ldquo;that grid needs things on it to shoot at. With lasers. Great big, fuck-off lasers that go WHOMP!&amp;rdquo;. So, following the First Law of successful game design - &amp;ldquo;Everything&amp;rsquo;s Better With Lasers&amp;rdquo; I&amp;rsquo;m deviating a bit from the original plan and instead aiming to build the very best scrolling shooter that I can put together in the space of a week.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>High Five?</title>
+      <link>https://technicalhat.github.io/beercave-web/blog/2013/06/04/high-five/</link>
+      <pubDate>Tue, 04 Jun 2013 23:09:47 +0000</pubDate>
+      
+      <guid>https://technicalhat.github.io/beercave-web/blog/2013/06/04/high-five/</guid>
+      <description>&lt;p&gt;I seem to be making a bit of a habit of this last-minute exploit-every-second-of-the-grace-period thing&amp;hellip; Yep, the racing game is &lt;a href=&#34;https://technicalhat.github.io/beercave-web/games/1gam-2013/beercave-racer&#34;&gt;done&lt;/a&gt; - for certain values of &amp;ldquo;done&amp;rdquo;. I&amp;rsquo;m not 100% happy with it, but the whole point of 1GAM is &amp;ldquo;quit fucking around and release something&amp;rdquo;, so that&amp;rsquo;s what I&amp;rsquo;m doing.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://technicalhat.github.io/beercave-web/games/1gam-2013/beercave-racer&#34;&gt;DOWNLOAD BEERCAVE RACER&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;So yeah, there were two major problems here:
+&lt;ol&gt;
+&lt;li&gt;I massively underestimated the amount of work involved in this one. After reading a couple of articles about the rendering tech I figured &amp;ldquo;yeah, I can hack that together in a weekend or so.&amp;rdquo; And I wasn&amp;rsquo;t wrong. Building an actual game on top of it though - that&amp;rsquo;s an entirely different kettle of fish&amp;hellip;&lt;/li&gt;
+&lt;li&gt;After pushing it back to May, it didn&amp;rsquo;t entirely help that 3 of my weekends were pre-booked for &lt;a href=&#34;http://www.revivalretroevents.com/&#34;&gt;Retro Revival&lt;/a&gt; and a family holiday to Disneyland Paris, so I really only got an extra week out of it and I was knackered for most of that.&lt;/li&gt;
+&lt;/ol&gt;&lt;/p&gt;
+
+&lt;p&gt;So in conclusion, I need some goddamn &lt;i&gt;rest&lt;/i&gt;. June&amp;rsquo;s game is going to be about the most minimal thing I can think of right now, pretty much 1-dimensional digital &lt;a href=&#34;http://en.wikipedia.org/wiki/Curling&#34;&gt;curling&lt;/a&gt; where you shoot a dot at a target. Maybe I&amp;rsquo;ll try something crazy and ambitious in July, but right now I need some downtime before I flip my shit.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Checking in</title>
+      <link>https://technicalhat.github.io/beercave-web/blog/2013/05/14/checking/</link>
+      <pubDate>Tue, 14 May 2013 20:43:57 +0000</pubDate>
+      
+      <guid>https://technicalhat.github.io/beercave-web/blog/2013/05/14/checking/</guid>
+      <description>&lt;p&gt;Well, this game&amp;rsquo;s certainly turning out to be a learning experience. And the main lesson is &amp;ldquo;don&amp;rsquo;t pick your projects just because you think it&amp;rsquo;d be cool to play with the tech.&amp;rdquo; The main factor in deciding to try this one was that I thought the retro-3D rendering looked fun and like something I could reasonably implement in a weekend. What I didn&amp;rsquo;t take into account is that once that was done I&amp;rsquo;d be in need of a big old stack of graphical content to make it interesting.&lt;/p&gt;
+
+&lt;p&gt;It didn&amp;rsquo;t take me long to figure out that there wasn&amp;rsquo;t a hope in hell of me generating the vehicle sprites by hand unless I was planning on releasing &amp;ldquo;poorly drawn blob racer 2013&amp;rdquo;. Letting computers do the hard parts is pretty much my job description though, so I figured I could offload all that tricky perspective business to software by using renders of a bunch of 3D models as sprites.  With that in mind I popped on my trusty learnin&amp;rsquo;-hat, fired up &lt;a href=&#34;http://www.blender.org&#34;&gt;Blender&lt;/a&gt; and prepared to dive into the exciting world of &lt;a href=&#34;http://theorangeduck.com/page/subdivision-modelling&#34;&gt;subdivision modelling&lt;/a&gt;.&lt;/p&gt;
+
+&lt;div style=&#34;width:300px; margin-left:auto; margin-right:auto;&#34;&gt;
+&lt;img style=&#34;display:inline-block; width:300px;&#34; src=&#34;https://s3.amazonaws.com/beercave.co.uk/blogpics/hat_300.jpg&#34;/&gt;
+&lt;strong style=&#34;width:300px; display:inline-block; text-align:center&#34;&gt;My trusty learnin&#39; hat.&lt;/strong&gt;
+&lt;/div&gt;</description>
+    </item>
+    
+    <item>
+      <title>Ludum Dare 26 / 1GAM April : GunBoat</title>
+      <link>https://technicalhat.github.io/beercave-web/blog/2013/04/30/ludum-dare-26-1gam-april-gunboat/</link>
+      <pubDate>Tue, 30 Apr 2013 23:37:58 +0000</pubDate>
+      
+      <guid>https://technicalhat.github.io/beercave-web/blog/2013/04/30/ludum-dare-26-1gam-april-gunboat/</guid>
+      <description>&lt;p&gt;&amp;ldquo;Hey, weren&amp;rsquo;t you making some kind of OutRun-inspired racing game?&amp;rdquo;, you&amp;rsquo;re no doubt wondering. Well yes, that was indeed the plan - but as (according to the internets) every famous military leader in history&lt;a href=&#34;#footnote1&#34;&gt;*&lt;/a&gt; said, &amp;ldquo;No battle plan ever survived contact with the enemy.&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;So yeah, that game&amp;rsquo;s not by any means dead yet, but with the end of the month approaching far too quickly it was becoming apparent that I wasn&amp;rsquo;t going to get it anywhere near done in time., Too much time spent twatting around trying to get the rendering perfectm not enough spent making it actually playable.&lt;/p&gt;
+
+&lt;p&gt;Fortunately, last weekend was &lt;a href=&#34;http://www.ludumdare.com/compo&#34;&gt;Ludum Dare 26&lt;/a&gt;, which gave me an excuse to temporarily shelve the racer and get down to some Jammin&amp;rsquo;. The theme this time around was &amp;ldquo;minimalism&amp;rdquo;, and I conveniently had an idea lying around that I reckoned would more or less fit.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://technicalhat.github.io/beercave-web/games/gunboat&#34;&gt;&lt;b&gt;Enough already - show me the damn game!!!&lt;/b&gt;&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>#1GAM 4 : Speed don&#39;t kill and I&#39;m the proof</title>
+      <link>https://technicalhat.github.io/beercave-web/blog/2013/04/11/1gam-4-speed-dont-kill-and-im-proof/</link>
+      <pubDate>Thu, 11 Apr 2013 23:36:10 +0000</pubDate>
+      
+      <guid>https://technicalhat.github.io/beercave-web/blog/2013/04/11/1gam-4-speed-dont-kill-and-im-proof/</guid>
+      <description>&lt;p&gt;Another quick update on my racing game. Since the last update I&amp;rsquo;ve added textured roads and sprite scaling for cars and roadside scenery. Some of the test sprites I used may look a little familiar - obviously I need to replace those with some slightly more legal ones before release!&lt;/p&gt;
+
+&lt;p&gt;
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//www.youtube.com/embed/zWnQuRZb8Bc&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;strong style=&#34;width:600px; display:inline-block; text-align:center&#34;&gt;This might actually turn out to be fun&amp;hellip;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;The sprite scaling looks to be very slightly out of sync with the road, but before I worry about that I think the next job is adding in some kind of control system - there&amp;rsquo;s not much point in a racing game where you can&amp;rsquo;t steer&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;So obviously if I want to get this right the best course of action is to spend the weekend &amp;ldquo;researching&amp;rdquo; &lt;a href=&#34;http://www.youtube.com/watch?v=WiWiTXq4yYY&#34;&gt;OutRun&lt;/a&gt; and &lt;a href=&#34;http://www.youtube.com/watch?v=aAk27BvWpsg&#34;&gt;Lotus&lt;/a&gt; and &lt;a href=&#34;http://www.youtube.com/watch?v=q3MEYIbchaE&#34;&gt;Crazy Cars III&lt;/a&gt; ;)&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>#1GAM 4 : We are the Road Crew</title>
+      <link>https://technicalhat.github.io/beercave-web/blog/2013/04/08/1gam-4-we-are-road-crew/</link>
+      <pubDate>Mon, 08 Apr 2013 21:59:13 +0000</pubDate>
+      
+      <guid>https://technicalhat.github.io/beercave-web/blog/2013/04/08/1gam-4-we-are-road-crew/</guid>
+      <description>&lt;p&gt;As &lt;a href=&#34;https://technicalhat.github.io/beercave-web/2013/04/07/april-magical-sound-showers&#34;&gt;hinted at yesterday&lt;/a&gt;, for April&amp;rsquo;s game I&amp;rsquo;m working on an Outrun-style pseudo-3D racing game, based on the techniques described &lt;a href=&#34;http://www.extentofthejam.com/pseudo/&#34;&gt;here.&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;So far I&amp;rsquo;m two days in and I&amp;rsquo;ve got the basics of the renderer up and running and looking a little bit like this:&lt;/p&gt;
+
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//www.youtube.com/embed/dgwx8yOltxU&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;Needs a little tweaking to get the best out of the effect, but that should do to be going on with. Next up is proper textured roads and some roadside scenery - hopefully I should have something drivable by the weekend&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>April (magical sound) Showers</title>
+      <link>https://technicalhat.github.io/beercave-web/blog/2013/04/07/april-magical-sound-showers/</link>
+      <pubDate>Sun, 07 Apr 2013 22:45:18 +0000</pubDate>
+      
+      <guid>https://technicalhat.github.io/beercave-web/blog/2013/04/07/april-magical-sound-showers/</guid>
+      <description>&lt;p&gt;Quick taster of what I&amp;rsquo;ve got in mind for game #4&amp;hellip;&lt;/p&gt;
+
+&lt;div&gt;
+&lt;figure&gt;
+   
+    &lt;img src=&#39;https://s3.amazonaws.com/beercave.co.uk/gameamonth2013/month4/pics/racer1.png&#39;
+         alt=&#34;Looks like a nice day to go Out for a Run&amp;amp;hellip;&#34;/&gt; &lt;figcaption&gt;
+            &lt;p&gt;Looks like a nice day to go &lt;i&gt;Out&lt;/i&gt; for a &lt;i&gt;Run&lt;/i&gt;&amp;hellip;&lt;/p&gt;
+        &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;/div&gt;</description>
+    </item>
+    
+    <item>
+      <title>Three is apparently the Magic Number...</title>
+      <link>https://technicalhat.github.io/beercave-web/blog/2013/04/03/three-apparently-magic-number/</link>
+      <pubDate>Wed, 03 Apr 2013 22:55:21 +0000</pubDate>
+      
+      <guid>https://technicalhat.github.io/beercave-web/blog/2013/04/03/three-apparently-magic-number/</guid>
+      <description>&lt;p&gt;So with three games released so far this year, when do I get my Hogwarts letter?&lt;/p&gt;
+
+&lt;p&gt;Yep, my third &lt;a href=&#34;http://www.onegameamonth.com/&#34;&gt;#1GAM&lt;/a&gt; entry is now complete and available for download on the platform of your choice. (as long as you choose Windows/Mac/Linux/Android)&lt;/p&gt;
+
+&lt;div style=&#34;width:600px; margin-left:auto; margin-right:auto;&#34;&gt;
+&lt;a href=&#34;https://technicalhat.github.io/beercave-web/games/rogueotron-1gam-edition&#34;&gt;&lt;img width=&#34;600&#34; src=&#34;https://s3.amazonaws.com/beercave.co.uk/gameamonth2013/month3/pics/featured.png&#34;/&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//www.youtube.com/embed/sbjB_ckKRe4&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;strong style=&#34;width:600px; display:inline-block; text-align:center&#34;&gt;Explode ALL THE THINGS!&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>One Game a Month : Week 3 Blues</title>
+      <link>https://technicalhat.github.io/beercave-web/blog/2013/03/25/one-game-month-week-3-blues/</link>
+      <pubDate>Mon, 25 Mar 2013 20:56:00 +0000</pubDate>
+      
+      <guid>https://technicalhat.github.io/beercave-web/blog/2013/03/25/one-game-month-week-3-blues/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;m beginning to notice a bit of a pattern developing with my #1GAM projects. I make a great start the first couple of weeks, then right around week 3 I hit a wall. It tends to go a little like this:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;*Week 1. I have an AWESOME IDEA and quickly hack together a prototype.&lt;/li&gt;
+&lt;li&gt;*Week 2. I flesh out the prototype and end up with a basic implementation of my game idea. With two more weeks to polish this I&amp;rsquo;m gonna have something AMAZING to show by the end of the month.&lt;/li&gt;
+&lt;li&gt;*Week 3. Ah, fuck this. I&amp;rsquo;m tired and nobody cares about my bullshit games anyway. This was a stupid idea, I&amp;rsquo;m gonna drink some beers and play a real game instead.&lt;/li&gt;
+&lt;li&gt;*Week 4. OSHITDEADLINEAAAARGHHACKHACKHACKCUTCUTCUTRELEASE&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;So like clockwork, phase 3 kicked in at the weekend and I didn&amp;rsquo;t get a damn thing done, so once again I&amp;rsquo;m faced with a frenzied sprint to get something finished before the deadline.&lt;/p&gt;
+
+&lt;p&gt;There&amp;rsquo;s no way I can keep repeating the same mini-burnout cycle for the whole of 2013 without losing what&amp;rsquo;s left of my marbles so I&amp;rsquo;m gonna need to step the schedule back and not try and work on this every day - as a wise man once said, &amp;ldquo;Life moves pretty fast. If you don&amp;rsquo;t stop and look around once in a while, you might miss it.&amp;rdquo;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Rogueotron - first look</title>
+      <link>https://technicalhat.github.io/beercave-web/blog/2013/03/16/rogueotron-first-look/</link>
+      <pubDate>Sat, 16 Mar 2013 22:47:09 +0000</pubDate>
+      
+      <guid>https://technicalhat.github.io/beercave-web/blog/2013/03/16/rogueotron-first-look/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve been a busy little Beerman today. The map generator is now ported across to Java and fully plugged into the game, which means I&amp;rsquo;ve got an actual consistent world to wander around rather than just spawning a random room every time you go through a door.&lt;/p&gt;
+
+&lt;p&gt;With that in place, I&amp;rsquo;ve got a very basic enemy generator (it only spawns grunts right now) in place and a Director class that locks you in the rooms until they&amp;rsquo;re cleared, which is pretty much just about enough to call it a game - not a very &lt;em&gt;fun&lt;/em&gt; game just yet, but there&amp;rsquo;s still two weeks to go.&lt;/p&gt;
+
+&lt;p&gt;Here&amp;rsquo;s how it looks right now&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Rogueotron - Adventures in Procedural Generation</title>
+      <link>https://technicalhat.github.io/beercave-web/blog/2013/03/14/rogueotron-adventures-procedural-generation/</link>
+      <pubDate>Thu, 14 Mar 2013 20:46:35 +0000</pubDate>
+      
+      <guid>https://technicalhat.github.io/beercave-web/blog/2013/03/14/rogueotron-adventures-procedural-generation/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;m a couple of days into development on Rogueotron now and the basics are starting to come together a bit.  Thanks to the horrors of Regular Paid Employment I&amp;rsquo;ve only been able to put a couple of hours a night into it during the week but I&amp;rsquo;ve managed to get the basic movement/firing and transitions between rooms working with some stylishly blocky placeholder graphics.&lt;/p&gt;
+
+&lt;p&gt;&lt;a target=&#34;_new&#34; href=&#34;https://s3.amazonaws.com/beercave.co.uk/gameamonth2013/month3/pics/rogueotron1.png&#34;&gt;&lt;img width=&#34;280&#34; src=&#34;https://s3.amazonaws.com/beercave.co.uk/gameamonth2013/month3/pics/rogueotron1.png&#34;/&gt;&lt;/a&gt;
+&lt;a target=&#34;_new&#34; href=&#34;https://s3.amazonaws.com/beercave.co.uk/gameamonth2013/month3/pics/rogueotron2.png&#34;&gt;&lt;img width=&#34;280&#34; src=&#34;https://s3.amazonaws.com/beercave.co.uk/gameamonth2013/month3/pics/rogueotron2.png&#34;/&gt;&lt;/a&gt;
+&lt;strong style=&#34;width:600px; display:inline-block; text-align:center&#34;&gt;Not about to win any awards for visuals any time soon, I admit&amp;hellip;&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>March Game : Change of plan</title>
+      <link>https://technicalhat.github.io/beercave-web/blog/2013/03/11/march-game-change-plan/</link>
+      <pubDate>Mon, 11 Mar 2013 21:36:49 +0000</pubDate>
+      
+      <guid>https://technicalhat.github.io/beercave-web/blog/2013/03/11/march-game-change-plan/</guid>
+      <description>&lt;p&gt;So yeah, slight change of plan on the March game front. The theme for this month is &amp;ldquo;Rogue&amp;rdquo;, which I was planning on just ignoring and doing my own thing again, but it&amp;rsquo;s been nagging at me a little. Trouble is, roguelikes tend to be all turn-based and about planning and stuff, which isn&amp;rsquo;t really my style. Lasers and explosions, that&amp;rsquo;s me.&lt;/p&gt;
+
+&lt;p&gt;But then today I hit upon the ideal solution - I get to play with some roguelike tropes while still getting to shoot things and have them explode all over the place. Plus, I get to indulge my love of awful puns.&lt;/p&gt;
+
+&lt;p&gt;&lt;img style=&#34;display:block; margin-left:auto; margin-right:auto;&#34; src=&#34;https://s3.amazonaws.com/beercave.co.uk/gameamonth2013/month3/rogueotron.png&#34;/&gt;
+&lt;a href=&#34;http://www.youtube.com/watch?v=TxWN8AhNER0&#34;&gt;So what is it?&lt;/a&gt; Well, it&amp;rsquo;s Robotron again, but with levels and XP and stuff. I&amp;rsquo;ve got some procedural map generator code that I originally wrote for Gun Bastard lying around somewhere as well, should be able to dig that out and plug it in and then that&amp;rsquo;s most of a game right there.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>A wild Game Idea approaches</title>
+      <link>https://technicalhat.github.io/beercave-web/blog/2013/03/11/wild-game-idea-approaches/</link>
+      <pubDate>Mon, 11 Mar 2013 16:48:45 +0000</pubDate>
+      
+      <guid>https://technicalhat.github.io/beercave-web/blog/2013/03/11/wild-game-idea-approaches/</guid>
+      <description>&lt;p&gt;Slight change of direction pending for my March game - more details shortly&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Juno Hunter : Prologue post-mortem and March game announcement</title>
+      <link>https://technicalhat.github.io/beercave-web/blog/2013/03/04/juno-hunter-prologue-post-mortem-and-march-game-announcement/</link>
+      <pubDate>Mon, 04 Mar 2013 19:27:20 +0000</pubDate>
+      
+      <guid>https://technicalhat.github.io/beercave-web/blog/2013/03/04/juno-hunter-prologue-post-mortem-and-march-game-announcement/</guid>
+      <description>&lt;p&gt;Note to self : don&amp;rsquo;t pick the shortest month of the year - when you&amp;rsquo;re away for a week and a half - to get ambitious with your game design&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;So yeah, the original plan was to have something more or less based on Spy Hunter, with the driving and the shooting and the chasing enemy vehicles, only with a Juno First style take on 3D perspective. That didn&amp;rsquo;t quite happen but I&amp;rsquo;m pretty pleased with the eventual result anyway.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Two in a row</title>
+      <link>https://technicalhat.github.io/beercave-web/blog/2013/03/04/two-row/</link>
+      <pubDate>Mon, 04 Mar 2013 14:11:58 +0000</pubDate>
+      
+      <guid>https://technicalhat.github.io/beercave-web/blog/2013/03/04/two-row/</guid>
+      <description>&lt;p&gt;&lt;p style=&#34;float:right;&#34;&gt;&lt;a href=&#34;https://technicalhat.github.io/beercave-web/games/junohunter-prologue&#34; &gt;
+&lt;img src=&#34;https://s3.amazonaws.com/beercave.co.uk/gameamonth2013/month2/logo_cropped.png&#34; style=&#34;width:250px;&#34; /&gt;
+&lt;/a&gt;
+&lt;/p&gt;
+Damn, that was a close one. The trip to Texas ended up eating a bit more of my dev time than I&amp;rsquo;d expected since it took me a good few days to get back into gear once we returned.&lt;/p&gt;
+
+&lt;p&gt;Luckily, #1GAM comes with a 96 hour grace period for submissions, which worked out nicely to give me an extra weekend to play with before the deadline.&lt;/p&gt;
+
+&lt;p&gt;Proper post to follow with a bit of a post mortem and announcement of this month&amp;rsquo;s game, but for now here&amp;rsquo;s &lt;a href=&#34;https://technicalhat.github.io/beercave-web/games/junohunter-prologue&#34;&gt;Juno Hunter : Prologue&lt;/a&gt;&lt;/p&gt;
+
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//www.youtube.com/embed/UDQ5u21aLgQ&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;&lt;strong style=&#34;width:100%; display:inline-block; text-align:center&#34;&gt;Quite pretty, isn&amp;rsquo;t it?&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>February game : [insert title here]</title>
+      <link>https://technicalhat.github.io/beercave-web/blog/2013/02/04/february-game-insert-title-here/</link>
+      <pubDate>Mon, 04 Feb 2013 20:00:29 +0000</pubDate>
+      
+      <guid>https://technicalhat.github.io/beercave-web/blog/2013/02/04/february-game-insert-title-here/</guid>
+      <description>&lt;p&gt;Oh hey, look at that! It&amp;rsquo;s February already, time to properly announce my second #1GAM creation.&lt;/p&gt;
+
+&lt;p&gt;As previously mentioned, this one was conceived as a mash-up of Spy Hunter and Juno First. Currently there&amp;rsquo;s more Spy Hunter in there than anything, with just a hint of 3D projection taken from Juno First - I might come back to that later this year and do it properly.&lt;/p&gt;
+
+&lt;p&gt;This month will be one of the harder challenges since we&amp;rsquo;re visiting Mrs. Beerman&amp;rsquo;s family in Texas for a week, which cuts a chunk out of my dev time. Because I&amp;rsquo;m a smart chap I planned ahead for this by making sure my January game was simple enough to finish early, giving me an extra week to work on the next one. Because I&amp;rsquo;m not &lt;i&gt;always&lt;/i&gt; a smart chap, I thought I&amp;rsquo;d give my productivity and focus a &lt;i&gt;spectacular&lt;/i&gt; boost by buying Skyrim&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>One down, eleven to go!</title>
+      <link>https://technicalhat.github.io/beercave-web/blog/2013/01/20/one-down-eleven-go/</link>
+      <pubDate>Sun, 20 Jan 2013 18:47:17 +0000</pubDate>
+      
+      <guid>https://technicalhat.github.io/beercave-web/blog/2013/01/20/one-down-eleven-go/</guid>
+      <description>&lt;p&gt;And it&amp;rsquo;s done. My January &lt;a href=&#34;http://www.onegameamonth.com&#34;&gt;One game a month&lt;/a&gt; entry, ChaosBall is now available for download.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://technicalhat.github.io/beercave-web/games/chaosball&#34;&gt;Get it here&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div style=&#34;width:600px; margin-left:auto; margin-right:auto;&#34;&gt;
+&lt;a href=&#34;https://technicalhat.github.io/beercave-web/games/chaosball&#34;&gt;&lt;img width=&#34;600&#34; src=&#34;https://s3.amazonaws.com/beercave.co.uk/gameamonth2013/month1/screenshot.png&#34;/&gt;&lt;/a&gt;
+&lt;/div&gt;
+So that&amp;rsquo;s the first game of the year released but there&amp;rsquo;s no time to sit around congratulating myself. I&amp;rsquo;ve got 11 more still to go, and they&amp;rsquo;re only gonna get harder from here on out.&lt;/p&gt;
+
+&lt;p&gt;What&amp;rsquo;s up next then? I&amp;rsquo;ve got a big list of game ideas to play with, but the one that&amp;rsquo;s really grabbing my interest right now is a sort of hybrid of &lt;a href=&#34;http://en.wikipedia.org/wiki/Spy_Hunter&#34;&gt;Spy Hunter&lt;/a&gt; and &lt;a href=&#34;http://en.wikipedia.org/wiki/Juno_First&#34;&gt;Juno First&lt;/a&gt;(happy now, &lt;a href=&#34;http://error-success.piku.org.uk/&#34;&gt;Piku&lt;/a&gt;? ;)&lt;/p&gt;
+
+&lt;p&gt;Hopefully I should have something to show off by the end of the week - got a week in Texas with Mrs. Beerman coming up in mid Feb so there&amp;rsquo;s no time to waste on this one.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>ChaosBall : End of week 2 and a new preview build</title>
+      <link>https://technicalhat.github.io/beercave-web/blog/2013/01/13/chaosball-end-week-2-and-new-preview-build/</link>
+      <pubDate>Sun, 13 Jan 2013 22:18:02 +0000</pubDate>
+      
+      <guid>https://technicalhat.github.io/beercave-web/blog/2013/01/13/chaosball-end-week-2-and-new-preview-build/</guid>
+      <description>&lt;p&gt;It&amp;rsquo;s been a busy weekend here at the Beercave, with lots of new stuff added to ChaosBall. First up, new and exciting varieties of brick, in pretty colours and different sizes. I also turned down the brightness on the score digits as they were a bit too distracting.&lt;/p&gt;
+
+&lt;p&gt;&lt;p style=&#34;width:600px; margin-left:auto; margin-right:auto&#34;&gt;
+&lt;img width=&#34;600&#34; src=&#34;https://s3.amazonaws.com/beercave.co.uk/gameamonth2013/month1/chaosball7.png&#34;/&gt;
+&lt;strong style=&#34;width:600px; display:inline-block; text-align:center&#34;&gt;Many more chaos scenes will soon be available.&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>ChaosBall : Update and preview</title>
+      <link>https://technicalhat.github.io/beercave-web/blog/2013/01/10/chaosball-update-and-preview/</link>
+      <pubDate>Thu, 10 Jan 2013 23:07:01 +0000</pubDate>
+      
+      <guid>https://technicalhat.github.io/beercave-web/blog/2013/01/10/chaosball-update-and-preview/</guid>
+      <description>&lt;p&gt;So I&amp;rsquo;ve been working on ChaosBall on and off for the last week or so and I&amp;rsquo;ve just about beaten it into something playable, so I thought I&amp;rsquo;d throw up a preview build for testing.&lt;/p&gt;
+
+&lt;p&gt;Like it? Hate it? Managed to break it spectacularly? Let me know in the comments below, at &lt;a href=&#34;https://twitter.com/BeercaveGames&#34;&gt;@BeercaveGames&lt;/a&gt; or email me at &lt;a href=&#34;mailto:chaosball@beercave.co.uk?subject=ChaosBall%20feedback&#34;&gt;chaosball@beercave.co.uk&lt;/a&gt;&lt;/p&gt;
+
+&lt;div class=&#34;download&#34;&gt;
+&lt;a href=&#34;http://goo.gl/kmK0T&#34; title=&#34;Download Chaosball preview build&#34;&gt;Download&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;5.7MB - Requires &lt;a href=&#34;http://www.java.com/en/download/index.jsp&#34;&gt;Java&lt;/a&gt; 1.6 or later. Mouse control only right now, click to start.&lt;/p&gt;
+
+&lt;p&gt;Here&amp;rsquo;s a brief video to give you an idea what to expect:&lt;/p&gt;
+
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//www.youtube.com/embed/KNzTLMrhsLw&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;</description>
+    </item>
+    
+    <item>
+      <title>#onegameamonth month 1 : ChaosBall</title>
+      <link>https://technicalhat.github.io/beercave-web/blog/2012/12/31/onegameamonth-month-1-chaosball/</link>
+      <pubDate>Mon, 31 Dec 2012 19:01:34 +0000</pubDate>
+      
+      <guid>https://technicalhat.github.io/beercave-web/blog/2012/12/31/onegameamonth-month-1-chaosball/</guid>
+      <description>&lt;p&gt;So with 2012 drawing to a close, I&amp;rsquo;ve been making a start on my first &lt;a href=&#34;http://www.onegameamonth.com/&#34;&gt;#OneGameaMonth&lt;/a&gt; game.&lt;/p&gt;
+
+&lt;p&gt;I started by ripping the guts out of Lagertron and dropping them into a new &amp;ldquo;Engine&amp;rdquo; project which I&amp;rsquo;m planning on extending as the year progresses until I&amp;rsquo;ve got a fairly solid set of base code to play with&lt;/p&gt;
+
+&lt;p&gt;For the first project I wanted to keep things nice and simple - no Massively Multiplayer Open-World simulations just yet - so I&amp;rsquo;ve taken the engine as it currently exists and put together the basics of a Breakout clone, tentatively titled &amp;ldquo;ChaosBall&amp;rdquo; on top of it.&lt;/p&gt;
+
+&lt;p&gt;&lt;img width=&#34;600&#34; src=&#34;https://s3.amazonaws.com/beercave.co.uk/gameamonth2013/month1/chaosball1.png&#34;/&gt;
+&lt;strong style=&#34;width:600px; display:inline-block; text-align:center&#34;&gt;ChaosBall : not much in the way of chaos in evidence just yet.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Now that I&amp;rsquo;ve got something playable, that gives me the rest of the month to polish frantically and turn it into something that&amp;rsquo;s both visually interesting and fun to play. Mostly by making everything explode all over the place, but if I can come up with any interesting gameplay twists then so much the better.&lt;/p&gt;
+
+&lt;p&gt;Ideally I&amp;rsquo;d like to come up with a way to keep the pace up and avoid the classic &amp;ldquo;bounce the ball around for 10 minutes because there&amp;rsquo;s only one brick left and you can&amp;rsquo;t seem to hit it&amp;rdquo; scenario that always seems to happen. Or is that just because I&amp;rsquo;m crap at breakout?&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>12 isn&#39;t that many, right?</title>
+      <link>https://technicalhat.github.io/beercave-web/blog/2012/12/09/12-isnt-many-right/</link>
+      <pubDate>Sun, 09 Dec 2012 22:21:37 +0000</pubDate>
+      
+      <guid>https://technicalhat.github.io/beercave-web/blog/2012/12/09/12-isnt-many-right/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;m a sucker for a &lt;a href=&#34;https://technicalhat.github.io/beercave-web/category/tags/october-challenge&#34;&gt;challenge&lt;/a&gt;, I am. Put it down to my inner &lt;a href=&#34;http://www.girlgenius.com&#34;&gt;Spark&lt;/a&gt; needing to SHOW THEM ALL!!! THOSE FOOLS!!!, but dangle a goal in front of me and attach it to a catchy label and I am &lt;i&gt;in&lt;/i&gt;.&lt;/p&gt;
+
+&lt;p&gt;So when &lt;a href=&#34;http://twitter.com/McFunkypants&#34;&gt;@McFunkypants&lt;/a&gt; came up with the idea of &lt;a href=&#34;http://www.onegameamonth.com/&#34;&gt;onegameamonth.com&lt;/a&gt;, it was a bit like throwing cheeseburgers in a piranha tank. It&amp;rsquo;s got a &lt;a href=&#34;https://twitter.com/search?q=%23onegameamonth&amp;src=hash&#34;&gt;hashtag&lt;/a&gt; and everything - resistance was futile.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

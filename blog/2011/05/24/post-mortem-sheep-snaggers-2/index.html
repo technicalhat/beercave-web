@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="robots" content="noindex, nofollow">
+    <title>Post Mortem : Sheep Snaggers 2</title>
+
+    
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" >
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href='https://technicalhat.github.io/beercave-web/css/beercave.css' >
+    <link href="https://fonts.googleapis.com/css?family=Orbitron|Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css" integrity="sha256-PF6MatZtiJ8/c9O9HQ8uSUXr++R9KBYu4gbNG5511WE=" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+
+
+</head><body><nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark-bc">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/" aria-label="home">
+        <img src='https://technicalhat.github.io/beercave-web/img/logo.png'/>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href='https://technicalhat.github.io/beercave-web/games'>Games</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href='https://technicalhat.github.io/beercave-web/blog'>Blog</a>
+            </li>
+        </ul>
+    </div>
+    </div>
+</nav><div id="content">
+<div class="container mt-3">
+    <div class="row">
+        <div class="col-md-8 posts">
+            
+            <article>
+                <header class="post-header">
+                    <h1>
+                        <a href="https://technicalhat.github.io/beercave-web/blog/2011/05/24/post-mortem-sheep-snaggers-2/">Post Mortem : Sheep Snaggers 2</a>
+                    </h1>
+                    <time datetime='24005-05-05'>
+                        <span class="day">24</span>
+                        <span class="month">May 2011</span>
+                    </time>
+                </header>
+                <section class="post-content">
+                    <p>I released <a href="/content/sheep-snaggers-2">Sheep Snaggers 2</a> on Friday at <a href="http://www.retrovision.org.uk">Retrovision 2011</a>, to what was overall a pretty good reception. All being well, I&rsquo;m hoping for a fairly positive writeup in the <a href="http://www.retrogamer.net">Retrogamer</a> review of the event.</p>
+
+<p>The high score competition I had running over the weekend was popular, though made somewhat more difficult than anticipated by the fairly low-end laptops available to play it on - I didn&rsquo;t pay a great deal of attention to performance optimisation so when it landed on a machine with 32MB of shared video RAM there were&hellip; <em>issues.</em></p>
+
+<p>Luckily I managed to source an alternative machine which left the game playable with only occasional slowdown, but I&rsquo;m not entirely happy. At the end of the day it&rsquo;s only a bloody Defender clone; there&rsquo;s really no excuse for it to not run on damn near any hardware you can throw at it, so I&rsquo;m planning to spend a little time sharpening up the performance before I move on to my next project.</p>
+
+<p>Retrogamer&rsquo;s article on the event should be hitting the stands around the middle of next month, so that seems like a reasonable short term deadline to get a version 1.1 together and iron out some of the speed issues before that hopefully points some more attention this way</p>
+
+<h3>So, the plan.</h3>
+
+<p>I&rsquo;ll probably need to spend some time profiling to be certain, but I&rsquo;m pretty sure the biggest problem is that I&rsquo;m being incredibly lazy with my texture memory usage. I&rsquo;ve got limited spritesheet support in there for some of the animations, but for the most part it&rsquo;s one texture per sprite. Worse, for some of the font routines I&rsquo;m generating one texture per combination of character/font/size.</p>
+
+<p>Since my development system has 96 cores and a gig of video RAM, that&rsquo;s not really something that&rsquo;s been an issue for me, but I should probably look into addressing it. First on the list there should be packing all my graphics into as few textures as possible, which may mean finally venturing into writing my own development tools. Nothing fancy, just something that takes a folder of PNG files and turns them into packed images and a handy code file with all the texture coordinates in - something along the lines of:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">{
+  <span style="color:#75715e">#use the original filename as a key to the texture dictionary</span>
+  <span style="color:#75715e">#cuts down on the amount changes needed to the existing code</span>
+  <span style="color:#75715e">#and makes it easy to cross reference with the original unpacked sprites</span>
+  <span style="color:#e6db74">&#34;alien1.png&#34;</span> : {
+    <span style="color:#e6db74">&#34;texture&#34;</span> : <span style="color:#e6db74">&#34;texturemap1.png&#34;</span>,
+    <span style="color:#e6db74">&#34;tex_shape&#34;</span> : [<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">0</span>], 
+    <span style="color:#e6db74">&#34;shape&#34;</span> : [<span style="color:#f92672">-</span><span style="color:#ae81ff">50</span>,<span style="color:#ae81ff">50</span>,<span style="color:#ae81ff">50</span>,<span style="color:#f92672">-</span><span style="color:#ae81ff">50</span>] 
+  }
+}</code></pre></div>
+
+<p>With that done, it won&rsquo;t need a massive amount of work to update my drawing routines to load sprites from the packed textures rather than individual files.</p>
+
+<p>The next (and possibly much bigger) problem is the fonts. Right now I have a kind of hybrid system that sometimes generates textures for individual characters (e.g. in the high score counter) and sometimes for entire phrases (like the &ldquo;SHEEPIE SAVE&rdquo; message). It would probably help if I defined these up-front rather than building them on the fly as the game runs just because I&rsquo;m lazy. One texture per font and a couple of special cases for the floating messages shouldn&rsquo;t really be all that much work.</p>
+
+<p>Hopefully, by the time I&rsquo;ve got those out of the way I should have managed to come up with a few ideas to play with for my next project.</p> 
+                </section>
+                <section class="post-footer clearfix row justify-content-between">
+                    <div class="col sharing-links">
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2011%2f05%2f24%2fpost-mortem-sheep-snaggers-2%2f" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="facebook">
+                            <i class="fab fa-facebook" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                        
+                        <a href="https://twitter.com/intent/tweet?url=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2011%2f05%2f24%2fpost-mortem-sheep-snaggers-2%2f&text=post-mortem-sheep-snaggers-2" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="twitter">
+                            <i class="fab fa-twitter" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                        
+                        <a href="https://www.stumbleupon.com/badge/?url=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2011%2f05%2f24%2fpost-mortem-sheep-snaggers-2%2f" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="stumbleupon">
+                            <i class="fab fa-stumbleupon" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                        <a href="https://www.reddit.com/submit?url=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2011%2f05%2f24%2fpost-mortem-sheep-snaggers-2%2f" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="reddit">
+                            <i class="fab fa-reddit-alien" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                    </div>
+                   
+                </section>
+            </article>
+            
+            
+            <section class="prev-next">
+              
+            <a href="https://technicalhat.github.io/beercave-web/blog/2011/05/19/ss2-right-down-wire/" class="float-left">&lt; SS2 : Right down to the wire</a>
+            
+        
+              
+                <a href="https://technicalhat.github.io/beercave-web/blog/2011/06/01/found-problem/" class="float-right">Found the problem &gt;</a>
+            
+            </section>
+        </div>
+        
+        <div class="col-md-4">
+            <div class="sidebar">
+                <section class="sidebar-content">
+                    <article id="profile">
+                        <a href='https://technicalhat.github.io/img/beerman-cutout.png' data-toggle="lightbox">
+                            <img src='https://technicalhat.github.io/img/beerman-cutout-smol.png' title="Judge Beerman">
+                        </a>
+                        <h1>
+                            Beerman's blog
+                        </h1>
+                        <p>Real nerds. Real talk. Call now.</p>
+                        <div class="social-links">
+                            <a href="https://twitter.com/BeercaveGames">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+
+                            <a href="https://www.youtube.com/user/b33rman/videos">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                            
+                        </div>
+                    </article>
+                    <article id="post-list">
+                        <h1>Latest posts</h1>
+                        
+                        <ul>
+                            
+                            <li>
+                                <a href="https://technicalhat.github.io/beercave-web/blog/2015/07/06/egad-a-post/">Egad! A post!</a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://technicalhat.github.io/beercave-web/blog/2015/03/31/beermans-adventures-voxel-land-part-seven-need-for-speed/">Beerman&#39;s adventures in voxel-land, part 7 : Need for speed</a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://technicalhat.github.io/beercave-web/blog/2015/03/25/beermans-adventures-voxel-land-part-six-the-best-laid-plans/">Beerman&#39;s adventures in voxel-land, part 6 : The best laid plans</a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://technicalhat.github.io/beercave-web/blog/2015/03/25/beermans-adventures-voxel-land-part-five-the-hard-parts/">Beerman&#39;s adventures in voxel-land, part 5 : The hard parts</a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://technicalhat.github.io/beercave-web/blog/2015/01/25/beermans-adventures-voxel-land-part-four-now-featuring-actual-gameplay/">Beerman&#39;s adventures in voxel-land, part 4 : Now featuring actual gameplay</a>
+                            </li>
+                            
+                        </ul>
+                    </article>
+                    <article id="post-tags">
+                        <h1>Tags</h1>
+                        
+                        <ul>
+                        
+                        
+                        
+                        
+                        
+                        
+                        <li>
+                        <a href="/beercave-web/tags/1gam" class="btn btn-default" role="button">1gam <span class="badge badge-dark">32</span></a>
+                        </li>
+                        
+                        
+                        
+                        
+                        <li>
+                        <a href="/beercave-web/tags/releases" class="btn btn-default" role="button">releases <span class="badge badge-dark">8</span></a>
+                        </li>
+                        
+                        
+                        
+                        
+                        <li>
+                        <a href="/beercave-web/tags/lagertron" class="btn btn-default" role="button">lagertron <span class="badge badge-dark">5</span></a>
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        <li>
+                        <a href="/beercave-web/tags/beercave-racer" class="btn btn-default" role="button">beercave-racer <span class="badge badge-dark">4</span></a>
+                        </li>
+                        
+                        
+                        
+                        
+                        <li>
+                        <a href="/beercave-web/tags/chaosball" class="btn btn-default" role="button">chaosball <span class="badge badge-dark">4</span></a>
+                        </li>
+                        
+                        
+                        
+                        
+                        <li>
+                        <a href="/beercave-web/tags/rogueotron" class="btn btn-default" role="button">rogueotron <span class="badge badge-dark">4</span></a>
+                        </li>
+                        
+                        
+                        
+                        
+                        <li>
+                        <a href="/beercave-web/tags/april" class="btn btn-default" role="button">april <span class="badge badge-dark">3</span></a>
+                        </li>
+                        
+                        
+                        
+                        
+                        <li>
+                        <a href="/beercave-web/tags/march" class="btn btn-default" role="button">march <span class="badge badge-dark">3</span></a>
+                        </li>
+                        
+                        
+                        
+                        
+                        <li>
+                        <a href="/beercave-web/tags/voxel-engine" class="btn btn-default" role="button">voxel-engine <span class="badge badge-dark">3</span></a>
+                        </li>
+                        
+                        
+                        
+                        
+                        <li>
+                        <a href="/beercave-web/tags/web-runner" class="btn btn-default" role="button">web-runner <span class="badge badge-dark">3</span></a>
+                        </li>
+                        
+                        
+                        </ul>
+                    </article>
+                    </ul>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+        </div><footer>
+    <section class="container">
+       
+TODO : Add a nice looking footer here with links and stuff
+    </section>
+</footer></body>
+</html>

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="robots" content="noindex, nofollow">
+    <title>SS2 : Keeping control</title>
+
+    
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" >
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href='https://technicalhat.github.io/beercave-web/css/beercave.css' >
+    <link href="https://fonts.googleapis.com/css?family=Orbitron|Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css" integrity="sha256-PF6MatZtiJ8/c9O9HQ8uSUXr++R9KBYu4gbNG5511WE=" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+
+
+</head><body><nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark-bc">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/" aria-label="home">
+        <img src='https://technicalhat.github.io/beercave-web/img/logo.png'/>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href='https://technicalhat.github.io/beercave-web/games'>Games</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href='https://technicalhat.github.io/beercave-web/blog'>Blog</a>
+            </li>
+        </ul>
+    </div>
+    </div>
+</nav><div id="content">
+<div class="container mt-3">
+    <div class="row">
+        <div class="col-md-8 posts">
+            
+            <article>
+                <header class="post-header">
+                    <h1>
+                        <a href="https://technicalhat.github.io/beercave-web/blog/2011/01/04/ss2-keeping-control/">SS2 : Keeping control</a>
+                    </h1>
+                    <time datetime='4001-01-01'>
+                        <span class="day">4</span>
+                        <span class="month">Jan 2011</span>
+                    </time>
+                </header>
+                <section class="post-content">
+                    <p>I&rsquo;ve managed to get the Sheep Snaggers 2 redevelopment off to a good start so far.
+So far I&rsquo;ve got sprites, movement and a simple camera system up and running, which is enough to get me my ship up and flying over a pretty boring and empty landscape.</p>
+
+<p>It helps that Python massively lends itself to component-based architecture. When I started building DethTank in C# I had to build a whole bunch of functionality myself to be able to attach behaviours to components at runtime. With Python, I just define my behaviours as functions and attach them to the GameObject at runtime. Saves a lot of tedious messing about with interfaces&hellip;</p>
+
+<p>I also spent a bit of time this evening abstracting out my input system, which should save me some pain down the line. In the previous games, the input handling code was buried in the player classes and looked something like this:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">if</span> stick:
+    x <span style="color:#f92672">=</span> stick<span style="color:#f92672">.</span>get_axis(<span style="color:#ae81ff">0</span>)
+    y <span style="color:#f92672">=</span> stick<span style="color:#f92672">.</span>get_axis(<span style="color:#ae81ff">1</span>)
+<span style="color:#66d9ef">else</span>:
+    <span style="color:#66d9ef">if</span> keys[K_LEFT]:
+        x <span style="color:#f92672">=</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>
+    <span style="color:#66d9ef">elif</span> keys[K_RIGHT]:
+        x <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+    <span style="color:#66d9ef">if</span> keys[K_UP]:
+        y <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+    <span style="color:#66d9ef">elif</span> keys[K_DOWN]:
+        y <span style="color:#f92672">=</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span></code></pre></div>
+
+<p>Not only was this annoying to keep track of, it basically means there was no chance of adding in user configurable controls.
+The equivalent piece of code in the Sheep Snaggers 2 looks like:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">x <span style="color:#f92672">=</span> input<span style="color:#f92672">.</span>GetAxis(<span style="color:#e6db74">&#34;HORIZONTAL&#34;</span>)
+y <span style="color:#f92672">=</span> input<span style="color:#f92672">.</span>GetAxis(<span style="color:#e6db74">&#34;VERTICAL&#34;</span>)
+fire <span style="color:#f92672">=</span> input<span style="color:#f92672">.</span>GetState(<span style="color:#e6db74">&#34;FIRE&#34;</span>)</code></pre></div>
+
+<p>The input class (which I&rsquo;ll post once it&rsquo;s done) maps the various available controllers to named controls, with the internal mappings looking like:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e">#key/button states</span>
+self<span style="color:#f92672">.</span>stateMap <span style="color:#f92672">=</span> {
+    <span style="color:#e6db74">&#39;THRUST&#39;</span> : [[<span style="color:#e6db74">&#39;keyboard&#39;</span>, (K_SPACE,)]],
+    <span style="color:#e6db74">&#39;FIRE&#39;</span> : [[<span style="color:#e6db74">&#39;keyboard&#39;</span>, (K_LCTRL,)]]
+}
+<span style="color:#75715e">#axis states</span>
+self<span style="color:#f92672">.</span>axisMap <span style="color:#f92672">=</span> {
+    <span style="color:#e6db74">&#39;VERTICAL&#39;</span> : [
+        [<span style="color:#e6db74">&#39;keyaxis&#39;</span>, (K_UP, K_DOWN)],
+        [<span style="color:#e6db74">&#39;joyaxis&#39;</span>, (<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">1</span>)]
+    ],
+    <span style="color:#e6db74">&#39;HORIZONTAL&#39;</span> : [
+        [<span style="color:#e6db74">&#39;keyaxis&#39;</span>, (K_UP, K_DOWN)],
+        [<span style="color:#e6db74">&#39;joyaxis&#39;</span>, (<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>)]
+    ]
+}</code></pre></div>
+
+<p>Later on, it should be easy enough to build something into the GUI to make the controls configurable at runtime or support multiple pre-defined control systems without any of the game code knowing anything&rsquo;s changed.</p>
+
+<p>Next job : finish up the input wrapper and see about adding in the sheepies and aliens to make things a bit more interesting visually.</p> 
+                </section>
+                <section class="post-footer clearfix row justify-content-between">
+                    <div class="col sharing-links">
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2011%2f01%2f04%2fss2-keeping-control%2f" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="facebook">
+                            <i class="fab fa-facebook" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                        
+                        <a href="https://twitter.com/intent/tweet?url=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2011%2f01%2f04%2fss2-keeping-control%2f&text=ss2-keeping-control" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="twitter">
+                            <i class="fab fa-twitter" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                        
+                        <a href="https://www.stumbleupon.com/badge/?url=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2011%2f01%2f04%2fss2-keeping-control%2f" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="stumbleupon">
+                            <i class="fab fa-stumbleupon" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                        <a href="https://www.reddit.com/submit?url=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2011%2f01%2f04%2fss2-keeping-control%2f" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="reddit">
+                            <i class="fab fa-reddit-alien" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                    </div>
+                   
+                </section>
+            </article>
+            
+            
+            <section class="prev-next">
+              
+            <a href="https://technicalhat.github.io/beercave-web/blog/2011/01/03/ss2-picking-where-i-left/" class="float-left">&lt; SS2 : Picking up where I left off</a>
+            
+        
+              
+                <a href="https://technicalhat.github.io/beercave-web/blog/2011/01/09/ss2-all-systems-go/" class="float-right">SS2 : All systems go &gt;</a>
+            
+            </section>
+        </div>
+        
+        <div class="col-md-4">
+            <div class="sidebar">
+                <section class="sidebar-content">
+                    <article id="profile">
+                        <a href='https://technicalhat.github.io/img/beerman-cutout.png' data-toggle="lightbox">
+                            <img src='https://technicalhat.github.io/img/beerman-cutout-smol.png' title="Judge Beerman">
+                        </a>
+                        <h1>
+                            Beerman's blog
+                        </h1>
+                        <p>Real nerds. Real talk. Call now.</p>
+                        <div class="social-links">
+                            <a href="https://twitter.com/BeercaveGames">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+
+                            <a href="https://www.youtube.com/user/b33rman/videos">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                            
+                        </div>
+                    </article>
+                    <article id="post-list">
+                        <h1>Latest posts</h1>
+                        
+                        <ul>
+                            
+                            <li>
+                                <a href="https://technicalhat.github.io/beercave-web/blog/2015/07/06/egad-a-post/">Egad! A post!</a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://technicalhat.github.io/beercave-web/blog/2015/03/31/beermans-adventures-voxel-land-part-seven-need-for-speed/">Beerman&#39;s adventures in voxel-land, part 7 : Need for speed</a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://technicalhat.github.io/beercave-web/blog/2015/03/25/beermans-adventures-voxel-land-part-six-the-best-laid-plans/">Beerman&#39;s adventures in voxel-land, part 6 : The best laid plans</a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://technicalhat.github.io/beercave-web/blog/2015/03/25/beermans-adventures-voxel-land-part-five-the-hard-parts/">Beerman&#39;s adventures in voxel-land, part 5 : The hard parts</a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://technicalhat.github.io/beercave-web/blog/2015/01/25/beermans-adventures-voxel-land-part-four-now-featuring-actual-gameplay/">Beerman&#39;s adventures in voxel-land, part 4 : Now featuring actual gameplay</a>
+                            </li>
+                            
+                        </ul>
+                    </article>
+                    <article id="post-tags">
+                        <h1>Tags</h1>
+                        
+                        <ul>
+                        
+                        
+                        
+                        
+                        
+                        
+                        <li>
+                        <a href="/beercave-web/tags/1gam" class="btn btn-default" role="button">1gam <span class="badge badge-dark">32</span></a>
+                        </li>
+                        
+                        
+                        
+                        
+                        <li>
+                        <a href="/beercave-web/tags/releases" class="btn btn-default" role="button">releases <span class="badge badge-dark">8</span></a>
+                        </li>
+                        
+                        
+                        
+                        
+                        <li>
+                        <a href="/beercave-web/tags/lagertron" class="btn btn-default" role="button">lagertron <span class="badge badge-dark">5</span></a>
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        <li>
+                        <a href="/beercave-web/tags/beercave-racer" class="btn btn-default" role="button">beercave-racer <span class="badge badge-dark">4</span></a>
+                        </li>
+                        
+                        
+                        
+                        
+                        <li>
+                        <a href="/beercave-web/tags/chaosball" class="btn btn-default" role="button">chaosball <span class="badge badge-dark">4</span></a>
+                        </li>
+                        
+                        
+                        
+                        
+                        <li>
+                        <a href="/beercave-web/tags/rogueotron" class="btn btn-default" role="button">rogueotron <span class="badge badge-dark">4</span></a>
+                        </li>
+                        
+                        
+                        
+                        
+                        <li>
+                        <a href="/beercave-web/tags/april" class="btn btn-default" role="button">april <span class="badge badge-dark">3</span></a>
+                        </li>
+                        
+                        
+                        
+                        
+                        <li>
+                        <a href="/beercave-web/tags/march" class="btn btn-default" role="button">march <span class="badge badge-dark">3</span></a>
+                        </li>
+                        
+                        
+                        
+                        
+                        <li>
+                        <a href="/beercave-web/tags/voxel-engine" class="btn btn-default" role="button">voxel-engine <span class="badge badge-dark">3</span></a>
+                        </li>
+                        
+                        
+                        
+                        
+                        <li>
+                        <a href="/beercave-web/tags/web-runner" class="btn btn-default" role="button">web-runner <span class="badge badge-dark">3</span></a>
+                        </li>
+                        
+                        
+                        </ul>
+                    </article>
+                    </ul>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+        </div><footer>
+    <section class="container">
+       
+TODO : Add a nice looking footer here with links and stuff
+    </section>
+</footer></body>
+</html>

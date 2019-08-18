@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="robots" content="noindex, nofollow">
+    <title>New game project</title>
+
+    
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" >
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href='https://technicalhat.github.io/beercave-web/css/beercave.css' >
+    <link href="https://fonts.googleapis.com/css?family=Orbitron|Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css" integrity="sha256-PF6MatZtiJ8/c9O9HQ8uSUXr++R9KBYu4gbNG5511WE=" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+
+
+</head><body><nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark-bc">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/" aria-label="home">
+        <img src='https://technicalhat.github.io/beercave-web/img/logo.png'/>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href='https://technicalhat.github.io/beercave-web/games'>Games</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href='https://technicalhat.github.io/beercave-web/blog'>Blog</a>
+            </li>
+        </ul>
+    </div>
+    </div>
+</nav><div id="content">
+<div class="container mt-3">
+    <div class="row">
+        <div class="col-md-8 posts">
+            
+            <article>
+                <header class="post-header">
+                    <h1>
+                        <a href="https://technicalhat.github.io/beercave-web/blog/2008/11/25/new-game-project/">New game project</a>
+                    </h1>
+                    <time datetime='25011-11-11'>
+                        <span class="day">25</span>
+                        <span class="month">Nov 2008</span>
+                    </time>
+                </header>
+                <section class="post-content">
+                    <p><i>Originally posted at <a href="http://postcardstohell.livejournal.com/69528.html">http://postcardstohell.livejournal.com/69528.html</a></i></p>
+
+<p>It&rsquo;s my week off, so I thought I&rsquo;d get a bit of work done on a project I&rsquo;ve been ignoring for a while. I&rsquo;ve been widdling around in <a href="http://www.pygame.org/">pygame</a>/<a href="http://matthewmarshall.org/projects/rabbyt/">rabbyt</a> in the hopes of getting a little game hacked together in time for next year&rsquo;s <a href="http://www.retrovision.org.uk/rv2009/index.htm">Retrovision</a>.</p>
+
+<p>Every year the welcome pack includes a disk with a few games on, and waaay back in June the <a href="http://www.yakyak.org/viewtopic.php?f=20&amp;t=72342">shout</a> went out for entries. Being my usual organised self, I played around with a few things for a week or so and never really got anything much done, but with the deadline for inclusion coming up fast I thought I&rsquo;d better get my finger out.</p>
+
+<p>Originally, I was planning on doing a side scrolling shooter, but, y&rsquo;know, it&rsquo;s been done. By people way better at it than me. So, after flailing around for half of Monday wondering what I should do, I decided to revisit the Sinistar clone I&rsquo;d been playing with when I first got started with pygame.</p>
+
+<p>The first thing I found was that I could avoid a <em>lot</em> of headaches by using rabbyt (which is openGL based) and moving the viewport around to track my ship, rather than having to translate the positions of all my objects. Plus, by offloading all the heavy lifting to the video card, rabbyt&rsquo;s sprite library has performance to burn, so I could initially be lazy just render my whole universe, whether it was visible or not.</p>
+
+<p>That <em>did</em> leave me with the issue of how to make my universe wrap around at the edges, Asteroids style.  I solved it with a bit of creative thinking. Since this is a <a href="http://www.llamasoft.co.uk/frontpage.php">Llamasoft</a> themed game I decided to set it on a farm and replace the asteroids of the original with sheepies, with dastardly aliens abducting the sheepies to build their deathstar. That way, my play area is bordered with a fence and I don&rsquo;t have to bother wrapping it around at the edges. Cunning, no?</p>
+
+<p>So, as of the end of day 2 I&rsquo;ve got the following working:</p>
+
+<ul>
+<li>Fully scrollable play area.</li>
+<li>Ship with asteroids-style controls</li>
+<li>Wandering sheep with state-machine based AI. They wander around, graze, randomly panic, and occasionally poo :D</li>
+<li>Sheep run away from the ship</li>
+<li>Alien ships wander the play area, abduct sheepies, and take them back to build their deathstar. Right now they&rsquo;re maybe a <em>little</em> too efficient - in the last test run they managed to clear an 8000x8000 playfield of 100 sheep in about a minute&hellip;</li>
+<li>Alien deathstar builds itself up from abducted sheepies and then comes to life.</li>
+</ul>
+
+<p>Still to do:</p>
+
+<ul>
+<li>Add weapons to ship so I can defend the sheepies.</li>
+<li>Tweak the alien AI a little. Those little guys are <em>way</em> too efficient</li>
+<li>Collect sheep-poo to use as bombs against the deathstar</li>
+<li>Scoring</li>
+<li>Head-up display with score, lives, etc.</li>
+<li>Sound &amp; music</li>
+<li>Menus, high score table, possibly attract mode</li>
+<li>Various fancy graphical effects</li>
+<li>This thing is in dire need of a cool name. Answers on a postcard(tohell). guys.</li>
+</ul>
+
+<p>And just to raise the antici&hellip;</p>
+
+<p>&hellip;pation levels a bit, here&rsquo;s a couple of screenies.</p>
+
+<p><a href="http://s24.photobucket.com/albums/c12/b33rman/gamedev/RV%202009/?action=view&amp;current=screen1.jpg" target="_blank"><img src="http://i24.photobucket.com/albums/c12/b33rman/gamedev/RV%202009/screen1.jpg" border="0" alt="Screenshot 1" /></a></p>
+
+<p>My plucky ship (which badly needs a new graphic more in keeping with the theme) faces off against the mighty deathstar. If it looks weird, it&rsquo;s because the shadows were being rendered on top of their sources when I took this. D&rsquo;oh!</p>
+
+<p><a href="http://s24.photobucket.com/albums/c12/b33rman/gamedev/RV%202009/?action=view&amp;current=screen2.jpg" target="_blank"><img src="http://i24.photobucket.com/albums/c12/b33rman/gamedev/RV%202009/screen2.jpg" border="0" alt="Screenshot 2" /></a></p>
+
+<p>Here we see several dastardly aliens dragging poor, defenceless sheepies towards the deathstar with their tractor beams. Sadly, there&rsquo;s nothing I can do, because I haven&rsquo;t coded in weapons yet&hellip;</p> 
+                </section>
+                <section class="post-footer clearfix row justify-content-between">
+                    <div class="col sharing-links">
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2008%2f11%2f25%2fnew-game-project%2f" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="facebook">
+                            <i class="fab fa-facebook" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                        
+                        <a href="https://twitter.com/intent/tweet?url=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2008%2f11%2f25%2fnew-game-project%2f&text=new-game-project" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="twitter">
+                            <i class="fab fa-twitter" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                        
+                        <a href="https://www.stumbleupon.com/badge/?url=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2008%2f11%2f25%2fnew-game-project%2f" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="stumbleupon">
+                            <i class="fab fa-stumbleupon" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                        <a href="https://www.reddit.com/submit?url=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2008%2f11%2f25%2fnew-game-project%2f" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="reddit">
+                            <i class="fab fa-reddit-alien" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                    </div>
+                   
+                </section>
+            </article>
+            
+            
+            <section class="prev-next">
+            
+        
+              
+                <a href="https://technicalhat.github.io/beercave-web/blog/2008/11/27/day-3-status-update/" class="float-right">Day 3 status update &gt;</a>
+            
+            </section>
+        </div>
+        
+        <div class="col-md-4">
+            <div class="sidebar">
+                <section class="sidebar-content">
+                    <article id="profile">
+                        <a href='https://technicalhat.github.io/img/beerman-cutout.png' data-toggle="lightbox">
+                            <img src='https://technicalhat.github.io/img/beerman-cutout-smol.png' title="Judge Beerman">
+                        </a>
+                        <h1>
+                            Beerman's blog
+                        </h1>
+                        <p>Real nerds. Real talk. Call now.</p>
+                        <div class="social-links">
+                            <a href="https://twitter.com/BeercaveGames">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+
+                            <a href="https://www.youtube.com/user/b33rman/videos">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                            
+                        </div>
+                    </article>
+                    <article id="post-list">
+                        <h1>Latest posts</h1>
+                        
+                        <ul>
+                            
+                            <li>
+                                <a href="https://technicalhat.github.io/beercave-web/blog/2015/07/06/egad-a-post/">Egad! A post!</a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://technicalhat.github.io/beercave-web/blog/2015/03/31/beermans-adventures-voxel-land-part-seven-need-for-speed/">Beerman&#39;s adventures in voxel-land, part 7 : Need for speed</a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://technicalhat.github.io/beercave-web/blog/2015/03/25/beermans-adventures-voxel-land-part-six-the-best-laid-plans/">Beerman&#39;s adventures in voxel-land, part 6 : The best laid plans</a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://technicalhat.github.io/beercave-web/blog/2015/03/25/beermans-adventures-voxel-land-part-five-the-hard-parts/">Beerman&#39;s adventures in voxel-land, part 5 : The hard parts</a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://technicalhat.github.io/beercave-web/blog/2015/01/25/beermans-adventures-voxel-land-part-four-now-featuring-actual-gameplay/">Beerman&#39;s adventures in voxel-land, part 4 : Now featuring actual gameplay</a>
+                            </li>
+                            
+                        </ul>
+                    </article>
+                    <article id="post-tags">
+                        <h1>Tags</h1>
+                        
+                        <ul>
+                        
+                        
+                        
+                        
+                        
+                        
+                        <li>
+                        <a href="/beercave-web/tags/1gam" class="btn btn-default" role="button">1gam <span class="badge badge-dark">32</span></a>
+                        </li>
+                        
+                        
+                        
+                        
+                        <li>
+                        <a href="/beercave-web/tags/releases" class="btn btn-default" role="button">releases <span class="badge badge-dark">8</span></a>
+                        </li>
+                        
+                        
+                        
+                        
+                        <li>
+                        <a href="/beercave-web/tags/lagertron" class="btn btn-default" role="button">lagertron <span class="badge badge-dark">5</span></a>
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        <li>
+                        <a href="/beercave-web/tags/beercave-racer" class="btn btn-default" role="button">beercave-racer <span class="badge badge-dark">4</span></a>
+                        </li>
+                        
+                        
+                        
+                        
+                        <li>
+                        <a href="/beercave-web/tags/chaosball" class="btn btn-default" role="button">chaosball <span class="badge badge-dark">4</span></a>
+                        </li>
+                        
+                        
+                        
+                        
+                        <li>
+                        <a href="/beercave-web/tags/rogueotron" class="btn btn-default" role="button">rogueotron <span class="badge badge-dark">4</span></a>
+                        </li>
+                        
+                        
+                        
+                        
+                        <li>
+                        <a href="/beercave-web/tags/april" class="btn btn-default" role="button">april <span class="badge badge-dark">3</span></a>
+                        </li>
+                        
+                        
+                        
+                        
+                        <li>
+                        <a href="/beercave-web/tags/march" class="btn btn-default" role="button">march <span class="badge badge-dark">3</span></a>
+                        </li>
+                        
+                        
+                        
+                        
+                        <li>
+                        <a href="/beercave-web/tags/voxel-engine" class="btn btn-default" role="button">voxel-engine <span class="badge badge-dark">3</span></a>
+                        </li>
+                        
+                        
+                        
+                        
+                        <li>
+                        <a href="/beercave-web/tags/web-runner" class="btn btn-default" role="button">web-runner <span class="badge badge-dark">3</span></a>
+                        </li>
+                        
+                        
+                        </ul>
+                    </article>
+                    </ul>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+        </div><footer>
+    <section class="container">
+       
+TODO : Add a nice looking footer here with links and stuff
+    </section>
+</footer></body>
+</html>

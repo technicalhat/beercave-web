@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ROM on Beercave Games - putting the fun back into functional alcoholism!</title>
-    <link>http://example.org/tags/rom/</link>
+    <link>https://technicalhat.github.io/beercave-web/tags/rom/</link>
     <description>Recent content in ROM on Beercave Games - putting the fun back into functional alcoholism!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 09 Apr 2014 21:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://example.org/tags/rom/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://technicalhat.github.io/beercave-web/tags/rom/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Well, that was an eventful weekend</title>
-      <link>http://example.org/blog/2014/04/09/rom/</link>
+      <link>https://technicalhat.github.io/beercave-web/blog/2014/04/09/rom/</link>
       <pubDate>Wed, 09 Apr 2014 21:00:00 +0000</pubDate>
       
-      <guid>http://example.org/blog/2014/04/09/rom/</guid>
+      <guid>https://technicalhat.github.io/beercave-web/blog/2014/04/09/rom/</guid>
       <description>&lt;p&gt;It was when I careered into the pub car park in a vehicle with no brakes for the second time in one day that I knew it was going to be a good weekend. The Beermobile had thoughtfully held it together for the preceding 200 miles or so before finally deciding to dump hydraulic fluid all over the road about half a mile from my final destination. Not the most auspicious of starts to the ROM retro gaming festival, but it could only get better from there&amp;hellip;&lt;/p&gt;</description>
     </item>
     

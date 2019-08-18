@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="robots" content="noindex, nofollow">
+    <title>Bletherings and bollocks</title>
+
+    
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" >
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href='https://technicalhat.github.io/beercave-web/css/beercave.css' >
+    <link href="https://fonts.googleapis.com/css?family=Orbitron|Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css" integrity="sha256-PF6MatZtiJ8/c9O9HQ8uSUXr++R9KBYu4gbNG5511WE=" crossorigin="anonymous" />
+    <link rel="alternate" type="application/rss+xml" href="https://technicalhat.github.io/beercave-web/blog/index.xml" title="Beercave Games - putting the fun back into functional alcoholism!" />
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+
+
+</head><body><nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark-bc">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/" aria-label="home">
+        <img src='https://technicalhat.github.io/beercave-web/img/logo.png'/>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href='https://technicalhat.github.io/beercave-web/games'>Games</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href='https://technicalhat.github.io/beercave-web/blog'>Blog</a>
+            </li>
+        </ul>
+    </div>
+    </div>
+</nav><div id="content">
+<div class="container mt-3">
+    <div class="row">
+        <div class="col-md-8 posts">
+            
+            
+            <article>
+                <header class="post-header">
+                    <h1>
+                        <a href="https://technicalhat.github.io/beercave-web/blog/2011/11/23/bit-update/">Bit of an update</a>
+                    </h1>
+                    <time datetime='23011-11-11'>
+                        <span class="day">23</span>
+                        <span class="month">Nov 2011</span>
+                    </time>
+                </header>
+                <section class="post-content">
+                    <p>Been a while since I updated, so here&rsquo;s what&rsquo;s been going on at the Beercave lately.</p>
+
+<p>First off, the Beercave has moved. Still getting settled in and unpacked in the new place but I&rsquo;m back to a point where I can get some work done again.</p>
+
+<p>Playing Gods is coming along nicely. Had a minor hiccup in the early playtesting where it looked like the App Engine server I&rsquo;d built wasn&rsquo;t really up to the job. I was having some pretty major stability issues with the Channel API, and some concerns about getting it talking to Unity. Fortunately, while poking around the Unity forums, I ran across <a href="http://www.smartfoxserver.com">SmartFox Server</a>, a server platform designed for building multiplayer online games with a Unity API. Since SmartFox talks python it was a fairly minor job to port all the game logic from the App Enging server across, and I&rsquo;m now much happier with what I&rsquo;ve got.</p>
+
+<p>I&rsquo;m currently working on rebuilding the client in Unity. So far I&rsquo;ve got a simplified board, player movement and card collection working, and it looks a little bit like this:
+<a href="http://s24.photobucket.com/albums/c12/b33rman/beercave/?action=view&amp;current=Unity2.jpg" target="_blank"><img src="http://i24.photobucket.com/albums/c12/b33rman/beercave/Unity2.jpg" border="0" alt="Photobucket"></a></p>
+ 
+                    
+                </section>
+                <section class="post-footer clearfix row justify-content-between">
+                    <div class="col sharing-links">
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2011%2f11%2f23%2fbit-update%2f" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="facebook">
+                            <i class="fab fa-facebook" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                        
+                        <a href="https://twitter.com/intent/tweet?url=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2011%2f11%2f23%2fbit-update%2f&text=bit-of-an-update" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="twitter">
+                            <i class="fab fa-twitter" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                        
+                        <a href="https://www.stumbleupon.com/badge/?url=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2011%2f11%2f23%2fbit-update%2f" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="stumbleupon">
+                            <i class="fab fa-stumbleupon" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                        <a href="https://www.reddit.com/submit?url=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2011%2f11%2f23%2fbit-update%2f" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="reddit">
+                            <i class="fab fa-reddit-alien" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                    </div>
+                    <div class="col text-right">
+                           
+                            <a href='https://technicalhat.github.io/beercave-web/blog/2011/11/23/bit-update/'>
+                                    Continue reading <i class="fa fa-angle-right"></i></a>
+                            
+                    </div>
+                </section>
+            </article>
+            
+            <article>
+                <header class="post-header">
+                    <h1>
+                        <a href="https://technicalhat.github.io/beercave-web/blog/2011/10/24/pg-bit-milestone/">PG : Bit of a milestone</a>
+                    </h1>
+                    <time datetime='24010-10-10'>
+                        <span class="day">24</span>
+                        <span class="month">Oct 2011</span>
+                    </time>
+                </header>
+                <section class="post-content">
+                    <p>Took a little longer than I&rsquo;d originally planned - between moving house and finishing my job I&rsquo;ve had somewhat less free time than I anticipated - but as of this evening, the Playing Gods server code is feature complete.</p>
+
+<p>Still needs a decent chunk of playtesting to get all the bugs out, but right now it&rsquo;s possible for up to 5 players to play a full game in my not-particularly-attractive HTML UI with only occasional recourse to the &ldquo;something&rsquo;s gone wrong, resync with the server&rdquo; button.</p>
+
+<p>Next job once I&rsquo;m happy that everything&rsquo;s pretty much working is to basically rebuild the client in Unity and swap in some nice impressive looking animations where I&rsquo;ve currently got a popup box saying &ldquo;god X is in ur base, killing ur dudes&rdquo;.</p>
+
+<p>In other news, as of this Friday lunchtime I&rsquo;m officially an unemployed bum. I&rsquo;m planning on taking a few weeks of downtime before I start looking for contract jobs, so I&rsquo;m hoping to start making some serious progress on PG. Depending on how things go, I might just dust off Gun Bastard and see if I can squeeze a little gameplay in there - got a whole bunch of ideas I&rsquo;m looking forward to playing with there.</p>
+ 
+                    
+                </section>
+                <section class="post-footer clearfix row justify-content-between">
+                    <div class="col sharing-links">
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2011%2f10%2f24%2fpg-bit-milestone%2f" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="facebook">
+                            <i class="fab fa-facebook" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                        
+                        <a href="https://twitter.com/intent/tweet?url=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2011%2f10%2f24%2fpg-bit-milestone%2f&text=pg-bit-of-a-milestone" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="twitter">
+                            <i class="fab fa-twitter" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                        
+                        <a href="https://www.stumbleupon.com/badge/?url=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2011%2f10%2f24%2fpg-bit-milestone%2f" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="stumbleupon">
+                            <i class="fab fa-stumbleupon" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                        <a href="https://www.reddit.com/submit?url=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2011%2f10%2f24%2fpg-bit-milestone%2f" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="reddit">
+                            <i class="fab fa-reddit-alien" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                    </div>
+                    <div class="col text-right">
+                           
+                    </div>
+                </section>
+            </article>
+            
+            <article>
+                <header class="post-header">
+                    <h1>
+                        <a href="https://technicalhat.github.io/beercave-web/blog/2011/10/08/pg-not-quite-weekly-update-2/">PG not-quite-weekly update 2</a>
+                    </h1>
+                    <time datetime='8010-10-10'>
+                        <span class="day">8</span>
+                        <span class="month">Oct 2011</span>
+                    </time>
+                </header>
+                <section class="post-content">
+                    <p>I aten&rsquo;t dead.</p>
+
+<p>So the weekly blog/daily update thing never quite took off. I&rsquo;ve managed to at least maintain some development momentum though. I&rsquo;ve added the world map and territories to the board and got the add chip mechanic in place, and the board currently looks a bit like this:</p>
+
+<p><a href="http://s24.photobucket.com/albums/c12/b33rman/beercave/?action=view&amp;current=20111008smaller.png" target="_blank"><img src="http://i24.photobucket.com/albums/c12/b33rman/beercave/20111008.png" border="0" alt="Photobucket"></a></p>
+
+<p>Not exactly pretty I know, but I&rsquo;ve got pretty much all the UI elements in place now so I can make sure the server code is behaving. Right now I&rsquo;m in the middle of implementing the Wrath card mechanic, so that the various gods can lay down some almighty smitings!</p>
+
+<p><a href="http://s24.photobucket.com/albums/c12/b33rman/beercave/?action=view&amp;current=20111008-smitingsmaller.png" target="_blank"><img src="http://i24.photobucket.com/albums/c12/b33rman/beercave/20111008-smiting.png" border="0" alt="Photobucket"></a>
+Hopefully I can get the rest of it in place fairly early tomorrow, then there&rsquo;s just the conversion mechanic and victory conditions left to do before I start work on the shiny 3D front-end stuff.</p>
+ 
+                    
+                </section>
+                <section class="post-footer clearfix row justify-content-between">
+                    <div class="col sharing-links">
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2011%2f10%2f08%2fpg-not-quite-weekly-update-2%2f" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="facebook">
+                            <i class="fab fa-facebook" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                        
+                        <a href="https://twitter.com/intent/tweet?url=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2011%2f10%2f08%2fpg-not-quite-weekly-update-2%2f&text=pg-not-quite-weekly-update-2" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="twitter">
+                            <i class="fab fa-twitter" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                        
+                        <a href="https://www.stumbleupon.com/badge/?url=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2011%2f10%2f08%2fpg-not-quite-weekly-update-2%2f" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="stumbleupon">
+                            <i class="fab fa-stumbleupon" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                        <a href="https://www.reddit.com/submit?url=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2011%2f10%2f08%2fpg-not-quite-weekly-update-2%2f" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="reddit">
+                            <i class="fab fa-reddit-alien" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                    </div>
+                    <div class="col text-right">
+                           
+                    </div>
+                </section>
+            </article>
+            
+            <article>
+                <header class="post-header">
+                    <h1>
+                        <a href="https://technicalhat.github.io/beercave-web/blog/2011/09/18/pg-weekly-update-15/">PG Weekly update 1.5</a>
+                    </h1>
+                    <time datetime='18009-09-09'>
+                        <span class="day">18</span>
+                        <span class="month">Sep 2011</span>
+                    </time>
+                </header>
+                <section class="post-content">
+                    <p>Thought I&rsquo;d sneak another update in before the weekend&rsquo;s over with. For once I&rsquo;ve managed to get some actual coding time in, despite a spot of drama yesterday where my router decided it was time to die. Wouldn&rsquo;t have been as much of a problem, but for some stupid reason the frontend code was using an online copy of jQuery so I couldn&rsquo;t do a damn thing until I could get hold of Karoo tech support to check the account password I haven&rsquo;t had to remember since sometime in 2005.</p>
+
+<p>Still, that out of the way I&rsquo;ve managed to get a good few hours in over the weekend, which I mostly spent on refactoring - the existing code was a bit thrown together while I was still getting to grips with the App Engine framework and trying to keep track of how things worked was starting to slow me down.</p>
+
+<p>Enough wittering on though - the main point of todays update was that I wanted to finally get a screenshot out there of what I&rsquo;m working on. It&rsquo;s not hugely exciting visually but at least it&rsquo;s something to look at.</p>
+
+<p><a href="http://s24.photobucket.com/albums/c12/b33rman/beercave/?action=view&amp;current=20110918.png"><img src="http://i24.photobucket.com/albums/c12/b33rman/beercave/20110918smaller.png"/></a></p>
+
+<p>That&rsquo;s how it looks right now - currently you can connect multiple players and they get to take turns rolling the die and moving around the board. Now that I&rsquo;ve got a bit neater codebase to work with I be able to should start adding features a bit more rapidly.</p>
+ 
+                    
+                </section>
+                <section class="post-footer clearfix row justify-content-between">
+                    <div class="col sharing-links">
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2011%2f09%2f18%2fpg-weekly-update-15%2f" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="facebook">
+                            <i class="fab fa-facebook" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                        
+                        <a href="https://twitter.com/intent/tweet?url=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2011%2f09%2f18%2fpg-weekly-update-15%2f&text=pg-weekly-update-1.5" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="twitter">
+                            <i class="fab fa-twitter" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                        
+                        <a href="https://www.stumbleupon.com/badge/?url=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2011%2f09%2f18%2fpg-weekly-update-15%2f" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="stumbleupon">
+                            <i class="fab fa-stumbleupon" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                        <a href="https://www.reddit.com/submit?url=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2011%2f09%2f18%2fpg-weekly-update-15%2f" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="reddit">
+                            <i class="fab fa-reddit-alien" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                    </div>
+                    <div class="col text-right">
+                           
+                    </div>
+                </section>
+            </article>
+            
+            <article>
+                <header class="post-header">
+                    <h1>
+                        <a href="https://technicalhat.github.io/beercave-web/blog/2011/09/14/pg-weekly-update-1/">PG Weekly update 1</a>
+                    </h1>
+                    <time datetime='14009-09-09'>
+                        <span class="day">14</span>
+                        <span class="month">Sep 2011</span>
+                    </time>
+                </header>
+                <section class="post-content">
+                    <p>Well, look at me! One week to the day since I decided to start doing weekly updates and I&rsquo;m actually following through. Hoping to get another post in before the week&rsquo;s out as well.</p>
+
+<p>PG Dev&rsquo;s been a little stalled for the last week or so - LD48 used up a lot more mojo than I&rsquo;d anticipated - but I&rsquo;m getting back on track. Right now I&rsquo;ve got game state tracking set up with App Engine with a fairly simple HTML/JS front end for testing. Currently, players can join the game and then take turns in rolling the dice and moving around the board.</p>
+
+<p>Next step is to add in card collecting and then look at building in the territory capture mechanics. If I can just find some bloody free time I should have a decent chunk of that in place by the weekend. I really need to get this beastie in a state where it can be playtested pretty damn quick so I can make a start on the Unity stuff.</p>
+
+<p>With any luck though, free time should be something that becomes a bit more abundant as I wind down the day job. Turns out I had enough unused holiday time left to book my remaining Mondays off, which should give me a fair bit more time to get things working. Also, long weekends for the win :)</p>
+ 
+                    
+                </section>
+                <section class="post-footer clearfix row justify-content-between">
+                    <div class="col sharing-links">
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2011%2f09%2f14%2fpg-weekly-update-1%2f" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="facebook">
+                            <i class="fab fa-facebook" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                        
+                        <a href="https://twitter.com/intent/tweet?url=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2011%2f09%2f14%2fpg-weekly-update-1%2f&text=pg-weekly-update-1" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="twitter">
+                            <i class="fab fa-twitter" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                        
+                        <a href="https://www.stumbleupon.com/badge/?url=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2011%2f09%2f14%2fpg-weekly-update-1%2f" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="stumbleupon">
+                            <i class="fab fa-stumbleupon" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                        <a href="https://www.reddit.com/submit?url=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2011%2f09%2f14%2fpg-weekly-update-1%2f" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="reddit">
+                            <i class="fab fa-reddit-alien" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                    </div>
+                    <div class="col text-right">
+                           
+                    </div>
+                </section>
+            </article>
+            
+            <article>
+                <header class="post-header">
+                    <h1>
+                        <a href="https://technicalhat.github.io/beercave-web/blog/2011/09/07/ludum-dare-postmortem/">Ludum Dare postmortem</a>
+                    </h1>
+                    <time datetime='7009-09-09'>
+                        <span class="day">7</span>
+                        <span class="month">Sep 2011</span>
+                    </time>
+                </header>
+                <section class="post-content">
+                    Ah yeah, so it&rsquo;s been a while since LD48. I should probably wrap things up.</p>
+
+<h2 id="what-went-right">What went right</h2>
+
+<ul>
+<li>Well, I made a &ldquo;finished&rdquo; game in 48 hours. Had a title screen, gameplay and a way to win. It just wasn&rsquo;t very good.</li>
+<li>My secondary goal was to familiarise myself with Unity3D. While I&rsquo;d hardly call myself an expert I feel like the pressure of having to complete something in the two days really helped me make the effort to learn some stuff. Without that I&rsquo;d have most likely just dicked around reading a few tutorials and not actually making anything.</li>
+<li>I&rsquo;m really happy with how the lighting and camera effects turned out. If the actual game had lived up to the promise of that initial flythrough of the level I&rsquo;d have had something pretty good on my hands, I think.</li>
+</ul>
+
+<h2 id="what-went-not-so-right">What went not-so-right</h2>
+
+<ul>
+<li>I didn't know the toolset at all. Not having a clue how anything in Unity worked was a pretty major handicap - I spent most of Saturday just getting the camera to behave, which wasn't exactly optimal use of my time.</li>
+<li>Losing all the level data when my PC crashed on the Sunday night wasn't exactly fun. I really, really wanted to quit right there. Note to self : check out what source control systems play nice with Unity and bloody well use one next time!</li>
+<li>I realised about halfway through Sunday that I really don't know a damn thing about game AI, so not having the time to do anything about it I opted for just making the enemies do the classic dumb charge at the player. Think I need to do a wee bit of reading up on the subject, then when the next LD rolls around make sure my project is pretty AI heavy just to force myself to put some of it into practice.
+</li>
+</ul> 
+                    
+                </section>
+                <section class="post-footer clearfix row justify-content-between">
+                    <div class="col sharing-links">
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2011%2f09%2f07%2fludum-dare-postmortem%2f" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="facebook">
+                            <i class="fab fa-facebook" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                        
+                        <a href="https://twitter.com/intent/tweet?url=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2011%2f09%2f07%2fludum-dare-postmortem%2f&text=ludum-dare-postmortem" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="twitter">
+                            <i class="fab fa-twitter" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                        
+                        <a href="https://www.stumbleupon.com/badge/?url=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2011%2f09%2f07%2fludum-dare-postmortem%2f" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="stumbleupon">
+                            <i class="fab fa-stumbleupon" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                        <a href="https://www.reddit.com/submit?url=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2011%2f09%2f07%2fludum-dare-postmortem%2f" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="reddit">
+                            <i class="fab fa-reddit-alien" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                    </div>
+                    <div class="col text-right">
+                           
+                            <a href='https://technicalhat.github.io/beercave-web/blog/2011/09/07/ludum-dare-postmortem/'>
+                                    Continue reading <i class="fa fa-angle-right"></i></a>
+                            
+                    </div>
+                </section>
+            </article>
+            
+            <article>
+                <header class="post-header">
+                    <h1>
+                        <a href="https://technicalhat.github.io/beercave-web/blog/2011/08/22/where-ludums-dare-5-end/">Where Ludums Dare 5 : The End</a>
+                    </h1>
+                    <time datetime='22008-08-08'>
+                        <span class="day">22</span>
+                        <span class="month">Aug 2011</span>
+                    </time>
+                </header>
+                <section class="post-content">
+                    <p><em>Previously, on Where Ludums Dare&hellip;</em>
+<a href="/2011/08/19/where-ludums-dare">Part 1</a>
+<a href="/2011/08/20/where-ludums-dare-part-deux">Part 2</a>
+<a href="/2011/08/21/where-ludums-dare-3-luduming">Part 3</a>
+<a href="/2011/08/21/where-ludums-dare-4-fuck">Part 4</a></p>
+
+<p>I did it! Fuck yeah! Alright, so it&rsquo;s not the greatest game in the world - it&rsquo;s not even a tribute - but I finished a game in 48 hours, which ain&rsquo;t bad going considering I&rsquo;d never even <em>touched</em> Unity before yesterday morning.</p>
+
+<p>I&rsquo;m just waiting for the source to upload now and then I can submit my entry and get some well-deserved rest because I&rsquo;m really quite knackered&hellip;</p>
+
+<p>Oh yeah - I should probably include a link to the finished game. Here you go : <a href="/content/get-choppah">GET TO THE CHOPPAH!!!</a></p>
+ 
+                    
+                </section>
+                <section class="post-footer clearfix row justify-content-between">
+                    <div class="col sharing-links">
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2011%2f08%2f22%2fwhere-ludums-dare-5-end%2f" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="facebook">
+                            <i class="fab fa-facebook" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                        
+                        <a href="https://twitter.com/intent/tweet?url=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2011%2f08%2f22%2fwhere-ludums-dare-5-end%2f&text=where-ludums-dare-5-the-end" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="twitter">
+                            <i class="fab fa-twitter" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                        
+                        <a href="https://www.stumbleupon.com/badge/?url=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2011%2f08%2f22%2fwhere-ludums-dare-5-end%2f" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="stumbleupon">
+                            <i class="fab fa-stumbleupon" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                        <a href="https://www.reddit.com/submit?url=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2011%2f08%2f22%2fwhere-ludums-dare-5-end%2f" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="reddit">
+                            <i class="fab fa-reddit-alien" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                    </div>
+                    <div class="col text-right">
+                           
+                    </div>
+                </section>
+            </article>
+            
+            <article>
+                <header class="post-header">
+                    <h1>
+                        <a href="https://technicalhat.github.io/beercave-web/blog/2011/08/21/where-ludums-dare-4-fuck/">Where Ludums Dare 4 : Fuck</a>
+                    </h1>
+                    <time datetime='21008-08-08'>
+                        <span class="day">21</span>
+                        <span class="month">Aug 2011</span>
+                    </time>
+                </header>
+                <section class="post-content">
+                    <p><em>Previously, on Where Ludums Dare&hellip;</em>
+<a href="/2011/08/19/where-ludums-dare">Part 1</a>
+<a href="/2011/08/20/where-ludums-dare-part-deux">Part 2</a>
+<a href="/2011/08/21/where-ludums-dare-3-luduming">Part 3</a></p>
+
+<p>Un-be-FUCKING-lievable.</p>
+
+<p>So there I was thinking I was just about in place to sneak in something before the end of the competition when Windows decided it was a really good time to lock the fuck up and force a restart. Not the end of the world, right? Unfortunately, when it came back up the level file that I&rsquo;ve spent the last 2 days building had been replaced with 140k of NULLs. Not good.</p>
+
+<p>Looks like all the logic and models are still in one piece at least, so if I can somehow reconstruct everything from <a href="http://yfrog.com/z/h0fnjnqp">this screenshot</a> in the next couple of hours I might just get something in after all. What the fuck, it&rsquo;s worth a shot&hellip;</p>
+ 
+                    
+                </section>
+                <section class="post-footer clearfix row justify-content-between">
+                    <div class="col sharing-links">
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2011%2f08%2f21%2fwhere-ludums-dare-4-fuck%2f" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="facebook">
+                            <i class="fab fa-facebook" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                        
+                        <a href="https://twitter.com/intent/tweet?url=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2011%2f08%2f21%2fwhere-ludums-dare-4-fuck%2f&text=where-ludums-dare-4-fuck" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="twitter">
+                            <i class="fab fa-twitter" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                        
+                        <a href="https://www.stumbleupon.com/badge/?url=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2011%2f08%2f21%2fwhere-ludums-dare-4-fuck%2f" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="stumbleupon">
+                            <i class="fab fa-stumbleupon" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                        <a href="https://www.reddit.com/submit?url=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2011%2f08%2f21%2fwhere-ludums-dare-4-fuck%2f" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="reddit">
+                            <i class="fab fa-reddit-alien" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                    </div>
+                    <div class="col text-right">
+                           
+                    </div>
+                </section>
+            </article>
+            
+            <article>
+                <header class="post-header">
+                    <h1>
+                        <a href="https://technicalhat.github.io/beercave-web/blog/2011/08/21/where-ludums-dare-3-luduming/">Where Ludums Dare 3 : The Luduming</a>
+                    </h1>
+                    <time datetime='21008-08-08'>
+                        <span class="day">21</span>
+                        <span class="month">Aug 2011</span>
+                    </time>
+                </header>
+                <section class="post-content">
+                    <p><em>Previously, on Where Ludums Dare&hellip;</em>
+<a href="/2011/08/19/where-ludums-dare">Part 1</a>
+<a href="/2011/08/20/where-ludums-dare-part-deux">Part 2</a></p>
+
+<p>Breakfast&rsquo;s cooking, coffee&rsquo;s brewing, so time to look back over yesterday&rsquo;s progress and see what&rsquo;s left to do if I&rsquo;m gonna release a game this weekend.</p>
+
+<p>Currently I&rsquo;ve got a basic base layout, with buildings spawning an endless wave of enemies whenever the player is in range. You can also shoot at them, but the bullets currently just bounce off. Should probably make that work as job 1, then at  least there&rsquo;s something to do.</p>
+
+<p>Missing right now from the basic stuff are enemies that shoot back, the titular choppah, and some kind of halfway decent AI for the enemy soldiers. A title screen and scoring mechanism are also pretty damn essential if I&rsquo;m to call this a game.</p>
+
+<p>Just under 19 hours to go before the deadline (15 if I&rsquo;m realistic about getting some sleep tonight), so it&rsquo;s gonna be tight but right now it&rsquo;s still doable. I think&hellip;</p>
+ 
+                    
+                </section>
+                <section class="post-footer clearfix row justify-content-between">
+                    <div class="col sharing-links">
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2011%2f08%2f21%2fwhere-ludums-dare-3-luduming%2f" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="facebook">
+                            <i class="fab fa-facebook" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                        
+                        <a href="https://twitter.com/intent/tweet?url=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2011%2f08%2f21%2fwhere-ludums-dare-3-luduming%2f&text=where-ludums-dare-3-the-luduming" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="twitter">
+                            <i class="fab fa-twitter" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                        
+                        <a href="https://www.stumbleupon.com/badge/?url=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2011%2f08%2f21%2fwhere-ludums-dare-3-luduming%2f" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="stumbleupon">
+                            <i class="fab fa-stumbleupon" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                        <a href="https://www.reddit.com/submit?url=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2011%2f08%2f21%2fwhere-ludums-dare-3-luduming%2f" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="reddit">
+                            <i class="fab fa-reddit-alien" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                    </div>
+                    <div class="col text-right">
+                           
+                    </div>
+                </section>
+            </article>
+            
+            <article>
+                <header class="post-header">
+                    <h1>
+                        <a href="https://technicalhat.github.io/beercave-web/blog/2011/08/20/where-ludums-dare-part-deux/">Where Ludums Dare : Part Deux</a>
+                    </h1>
+                    <time datetime='20008-08-08'>
+                        <span class="day">20</span>
+                        <span class="month">Aug 2011</span>
+                    </time>
+                </header>
+                <section class="post-content">
+                    <p><a href="/2011/08/19/where-ludums-dare">Previously, on Where Ludums Dare&hellip;</a></p>
+
+<p>Ok, so after a good night&rsquo;s kip I checked in on the LD website to find that the theme this time around is <strong>Escape</strong>. I lost no time in <em>immediately</em> relocating myself to the coffee shop for bacon butties and pondering. <em>And I have a plan!</em></p>
+
+<p>My entry will now be titled <a href="http://www.youtube.com/watch?v=tPIO86jTrQQ">&ldquo;Get to the Choppah!!!&rdquo;</a>. You are a spy who has been parachuted into an enemy military base to steal secret documents or something, and you have to escape and meet up with a stealth helicopter waiting outside the base.</p>
+
+<p>Now to knock up some basic models to get me started. Guess the first things I need are a spy, an enemy soldier, a couple of buildings and a helicopter.</p>
+ 
+                    
+                </section>
+                <section class="post-footer clearfix row justify-content-between">
+                    <div class="col sharing-links">
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2011%2f08%2f20%2fwhere-ludums-dare-part-deux%2f" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="facebook">
+                            <i class="fab fa-facebook" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                        
+                        <a href="https://twitter.com/intent/tweet?url=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2011%2f08%2f20%2fwhere-ludums-dare-part-deux%2f&text=where-ludums-dare-part-deux" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="twitter">
+                            <i class="fab fa-twitter" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                        
+                        <a href="https://www.stumbleupon.com/badge/?url=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2011%2f08%2f20%2fwhere-ludums-dare-part-deux%2f" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="stumbleupon">
+                            <i class="fab fa-stumbleupon" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                        <a href="https://www.reddit.com/submit?url=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2011%2f08%2f20%2fwhere-ludums-dare-part-deux%2f" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="reddit">
+                            <i class="fab fa-reddit-alien" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                    </div>
+                    <div class="col text-right">
+                           
+                    </div>
+                </section>
+            </article>
+            
+            
+            
+
+<ul class="pagination">
+    
+    <li class="page-item">
+        <a href="/beercave-web/blog/" class="page-link" aria-label="First"><span aria-hidden="true">&laquo;&laquo;</span></a>
+    </li>
+    
+    <li class="page-item">
+    <a href="/beercave-web/blog/page/6/" class="page-link" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
+    </li>
+    
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item"><a class="page-link" href="/beercave-web/blog/">1</a></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item"><a class="page-link" href="/beercave-web/blog/page/2/">2</a></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item"><a class="page-link" href="/beercave-web/blog/page/3/">3</a></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item disabled"><span aria-hidden="true">&nbsp;&hellip;&nbsp;</span></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item"><a class="page-link" href="/beercave-web/blog/page/6/">6</a></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item active"><a class="page-link" href="/beercave-web/blog/page/7/">7</a></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item"><a class="page-link" href="/beercave-web/blog/page/8/">8</a></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item disabled"><span aria-hidden="true">&nbsp;&hellip;&nbsp;</span></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item"><a class="page-link" href="/beercave-web/blog/page/15/">15</a></li>
+    
+    
+    <li class="page-item">
+    <a href="/beercave-web/blog/page/8/" class="page-link" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
+    </li>
+    
+    <li class="page-item">
+        <a href="/beercave-web/blog/page/15/" class="page-link" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
+    </li>
+    
+</ul>
+
+           
+        </div>
+        
+        <div class="col-md-4">
+            <div class="sidebar">
+                <section class="sidebar-content">
+                    <article id="profile">
+                        <a href='https://technicalhat.github.io/img/beerman-cutout.png' data-toggle="lightbox">
+                            <img src='https://technicalhat.github.io/img/beerman-cutout-smol.png' title="Judge Beerman">
+                        </a>
+                        <h1>
+                            Beerman's blog
+                        </h1>
+                        <p>Real nerds. Real talk. Call now.</p>
+                        <div class="social-links">
+                            <a href="https://twitter.com/BeercaveGames">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+
+                            <a href="https://www.youtube.com/user/b33rman/videos">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                            <a href="https://technicalhat.github.io/beercave-web/blog/index.xml">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                            
+                        </div>
+                    </article>
+                    <article id="post-list">
+                        <h1>Latest posts</h1>
+                        
+                        <ul>
+                            
+                            <li>
+                                <a href="https://technicalhat.github.io/beercave-web/blog/2015/07/06/egad-a-post/">Egad! A post!</a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://technicalhat.github.io/beercave-web/blog/2015/03/31/beermans-adventures-voxel-land-part-seven-need-for-speed/">Beerman&#39;s adventures in voxel-land, part 7 : Need for speed</a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://technicalhat.github.io/beercave-web/blog/2015/03/25/beermans-adventures-voxel-land-part-six-the-best-laid-plans/">Beerman&#39;s adventures in voxel-land, part 6 : The best laid plans</a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://technicalhat.github.io/beercave-web/blog/2015/03/25/beermans-adventures-voxel-land-part-five-the-hard-parts/">Beerman&#39;s adventures in voxel-land, part 5 : The hard parts</a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://technicalhat.github.io/beercave-web/blog/2015/01/25/beermans-adventures-voxel-land-part-four-now-featuring-actual-gameplay/">Beerman&#39;s adventures in voxel-land, part 4 : Now featuring actual gameplay</a>
+                            </li>
+                            
+                        </ul>
+                    </article>
+                    <article id="post-tags">
+                        <h1>Tags</h1>
+                        
+                        <ul>
+                        
+                        
+                        
+                        
+                        
+                        
+                        <li>
+                        <a href="/beercave-web/tags/1gam" class="btn btn-default" role="button">1gam <span class="badge badge-dark">32</span></a>
+                        </li>
+                        
+                        
+                        
+                        
+                        <li>
+                        <a href="/beercave-web/tags/releases" class="btn btn-default" role="button">releases <span class="badge badge-dark">8</span></a>
+                        </li>
+                        
+                        
+                        
+                        
+                        <li>
+                        <a href="/beercave-web/tags/lagertron" class="btn btn-default" role="button">lagertron <span class="badge badge-dark">5</span></a>
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        <li>
+                        <a href="/beercave-web/tags/beercave-racer" class="btn btn-default" role="button">beercave-racer <span class="badge badge-dark">4</span></a>
+                        </li>
+                        
+                        
+                        
+                        
+                        <li>
+                        <a href="/beercave-web/tags/chaosball" class="btn btn-default" role="button">chaosball <span class="badge badge-dark">4</span></a>
+                        </li>
+                        
+                        
+                        
+                        
+                        <li>
+                        <a href="/beercave-web/tags/rogueotron" class="btn btn-default" role="button">rogueotron <span class="badge badge-dark">4</span></a>
+                        </li>
+                        
+                        
+                        
+                        
+                        <li>
+                        <a href="/beercave-web/tags/april" class="btn btn-default" role="button">april <span class="badge badge-dark">3</span></a>
+                        </li>
+                        
+                        
+                        
+                        
+                        <li>
+                        <a href="/beercave-web/tags/march" class="btn btn-default" role="button">march <span class="badge badge-dark">3</span></a>
+                        </li>
+                        
+                        
+                        
+                        
+                        <li>
+                        <a href="/beercave-web/tags/voxel-engine" class="btn btn-default" role="button">voxel-engine <span class="badge badge-dark">3</span></a>
+                        </li>
+                        
+                        
+                        
+                        
+                        <li>
+                        <a href="/beercave-web/tags/web-runner" class="btn btn-default" role="button">web-runner <span class="badge badge-dark">3</span></a>
+                        </li>
+                        
+                        
+                        </ul>
+                    </article>
+                    </ul>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+        </div><footer>
+    <section class="container">
+       
+TODO : Add a nice looking footer here with links and stuff
+    </section>
+</footer></body>
+</html>

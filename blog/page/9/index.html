@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta name="robots" content="noindex, nofollow">
+    <title>Bletherings and bollocks</title>
+
+    
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" >
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href='https://technicalhat.github.io/beercave-web/css/beercave.css' >
+    <link href="https://fonts.googleapis.com/css?family=Orbitron|Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css" integrity="sha256-PF6MatZtiJ8/c9O9HQ8uSUXr++R9KBYu4gbNG5511WE=" crossorigin="anonymous" />
+    <link rel="alternate" type="application/rss+xml" href="https://technicalhat.github.io/beercave-web/blog/index.xml" title="Beercave Games - putting the fun back into functional alcoholism!" />
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+
+
+</head><body><nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark-bc">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/" aria-label="home">
+        <img src='https://technicalhat.github.io/beercave-web/img/logo.png'/>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href='https://technicalhat.github.io/beercave-web/games'>Games</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href='https://technicalhat.github.io/beercave-web/blog'>Blog</a>
+            </li>
+        </ul>
+    </div>
+    </div>
+</nav><div id="content">
+<div class="container mt-3">
+    <div class="row">
+        <div class="col-md-8 posts">
+            
+            
+            <article>
+                <header class="post-header">
+                    <h1>
+                        <a href="https://technicalhat.github.io/beercave-web/blog/2011/06/01/found-problem/">Found the problem</a>
+                    </h1>
+                    <time datetime='1006-06-06'>
+                        <span class="day">1</span>
+                        <span class="month">Jun 2011</span>
+                    </time>
+                </header>
+                <section class="post-content">
+                    <p>I finally got around to sitting down and taking a look at the performance problems with Sheep Snaggers 2 tonight. A 5 minute run with profiling switched on pointed me right to the middle of my font handling routine where I found this:</p>
+
+<p><img src="http://i24.photobucket.com/albums/c12/b33rman/gamedev/SS2/oops.png"/></p>
+
+<p>So while I was probably right about how inefficient I&rsquo;m being with my texture usage, it looks like the bigger problem is that I was <i>looking in the wrong bloody cache</i>, with the end result that every time I was rendering a character I was generating a brand new texture - oops!</p>
+
+<p>To make things worse, since the score counter was using that font routine, it was rendering at least half a dozen new character textures <i>every single frame</i> - hardly surprising that I was chewing up VRAM at a rate of knots.</p>
+
+<p>I still need to find out how it runs on one of the RV homebrew laptops, but based on the profiler results for the fixed version I reckon it should be ok, in which case I can delay optimising things for a future project and get back to the important business of making it possible to shoot Mecha Markie up the arse!</p>
+ 
+                    
+                </section>
+                <section class="post-footer clearfix row justify-content-between">
+                    <div class="col sharing-links">
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2011%2f06%2f01%2ffound-problem%2f" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="facebook">
+                            <i class="fab fa-facebook" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                        
+                        <a href="https://twitter.com/intent/tweet?url=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2011%2f06%2f01%2ffound-problem%2f&text=found-the-problem" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="twitter">
+                            <i class="fab fa-twitter" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                        
+                        <a href="https://www.stumbleupon.com/badge/?url=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2011%2f06%2f01%2ffound-problem%2f" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="stumbleupon">
+                            <i class="fab fa-stumbleupon" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                        <a href="https://www.reddit.com/submit?url=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2011%2f06%2f01%2ffound-problem%2f" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="reddit">
+                            <i class="fab fa-reddit-alien" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                    </div>
+                    <div class="col text-right">
+                           
+                    </div>
+                </section>
+            </article>
+            
+            <article>
+                <header class="post-header">
+                    <h1>
+                        <a href="https://technicalhat.github.io/beercave-web/blog/2011/05/24/post-mortem-sheep-snaggers-2/">Post Mortem : Sheep Snaggers 2</a>
+                    </h1>
+                    <time datetime='24005-05-05'>
+                        <span class="day">24</span>
+                        <span class="month">May 2011</span>
+                    </time>
+                </header>
+                <section class="post-content">
+                    <p>I released <a href="/content/sheep-snaggers-2">Sheep Snaggers 2</a> on Friday at <a href="http://www.retrovision.org.uk">Retrovision 2011</a>, to what was overall a pretty good reception. All being well, I&rsquo;m hoping for a fairly positive writeup in the <a href="http://www.retrogamer.net">Retrogamer</a> review of the event.</p>
+
+<p>The high score competition I had running over the weekend was popular, though made somewhat more difficult than anticipated by the fairly low-end laptops available to play it on - I didn&rsquo;t pay a great deal of attention to performance optimisation so when it landed on a machine with 32MB of shared video RAM there were&hellip; <em>issues.</em></p>
+
+<p>Luckily I managed to source an alternative machine which left the game playable with only occasional slowdown, but I&rsquo;m not entirely happy. At the end of the day it&rsquo;s only a bloody Defender clone; there&rsquo;s really no excuse for it to not run on damn near any hardware you can throw at it, so I&rsquo;m planning to spend a little time sharpening up the performance before I move on to my next project.</p>
+
+<p>Retrogamer&rsquo;s article on the event should be hitting the stands around the middle of next month, so that seems like a reasonable short term deadline to get a version 1.1 together and iron out some of the speed issues before that hopefully points some more attention this way</p>
+ 
+                    
+                </section>
+                <section class="post-footer clearfix row justify-content-between">
+                    <div class="col sharing-links">
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2011%2f05%2f24%2fpost-mortem-sheep-snaggers-2%2f" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="facebook">
+                            <i class="fab fa-facebook" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                        
+                        <a href="https://twitter.com/intent/tweet?url=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2011%2f05%2f24%2fpost-mortem-sheep-snaggers-2%2f&text=post-mortem-sheep-snaggers-2" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="twitter">
+                            <i class="fab fa-twitter" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                        
+                        <a href="https://www.stumbleupon.com/badge/?url=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2011%2f05%2f24%2fpost-mortem-sheep-snaggers-2%2f" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="stumbleupon">
+                            <i class="fab fa-stumbleupon" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                        <a href="https://www.reddit.com/submit?url=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2011%2f05%2f24%2fpost-mortem-sheep-snaggers-2%2f" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="reddit">
+                            <i class="fab fa-reddit-alien" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                    </div>
+                    <div class="col text-right">
+                           
+                            <a href='https://technicalhat.github.io/beercave-web/blog/2011/05/24/post-mortem-sheep-snaggers-2/'>
+                                    Continue reading <i class="fa fa-angle-right"></i></a>
+                            
+                    </div>
+                </section>
+            </article>
+            
+            <article>
+                <header class="post-header">
+                    <h1>
+                        <a href="https://technicalhat.github.io/beercave-web/blog/2011/05/19/ss2-right-down-wire/">SS2 : Right down to the wire</a>
+                    </h1>
+                    <time datetime='19005-05-05'>
+                        <span class="day">19</span>
+                        <span class="month">May 2011</span>
+                    </time>
+                </header>
+                <section class="post-content">
+                    <p><em>Finally</em> finished coding on <a href="/content/sheep-snaggers-2">Sheep Snaggers 2</a>. Been a bit of a hectic week, not helped by me being struck down by the dreaded Man Flu.</p>
+
+<p>I spent most of today alternately between dozing on the couch (that damn man Flu again), deciding I was all done, and thinking &ldquo;crap, I missed a bit&rdquo; and coding frantically to implement piddly unimportant features like having more than one life&hellip; All done now though, and I&rsquo;m pretty pleased with the end result.</p>
+
+<p>The final build is uploading now. I&rsquo;ll be putting the download link live sometime tomorrow after the official launch at Retrovision 2011. Watch this space!</p>
+ 
+                    
+                </section>
+                <section class="post-footer clearfix row justify-content-between">
+                    <div class="col sharing-links">
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2011%2f05%2f19%2fss2-right-down-wire%2f" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="facebook">
+                            <i class="fab fa-facebook" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                        
+                        <a href="https://twitter.com/intent/tweet?url=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2011%2f05%2f19%2fss2-right-down-wire%2f&text=ss2-right-down-to-the-wire" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="twitter">
+                            <i class="fab fa-twitter" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                        
+                        <a href="https://www.stumbleupon.com/badge/?url=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2011%2f05%2f19%2fss2-right-down-wire%2f" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="stumbleupon">
+                            <i class="fab fa-stumbleupon" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                        <a href="https://www.reddit.com/submit?url=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2011%2f05%2f19%2fss2-right-down-wire%2f" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="reddit">
+                            <i class="fab fa-reddit-alien" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                    </div>
+                    <div class="col text-right">
+                           
+                    </div>
+                </section>
+            </article>
+            
+            <article>
+                <header class="post-header">
+                    <h1>
+                        <a href="https://technicalhat.github.io/beercave-web/blog/2011/05/16/ss2-4-days-remaining/">SS2 : 4 days remaining</a>
+                    </h1>
+                    <time datetime='16005-05-05'>
+                        <span class="day">16</span>
+                        <span class="month">May 2011</span>
+                    </time>
+                </header>
+                <section class="post-content">
+                    <p>Not long left now. The official Sheep Snaggers 2 release is at <a href="http://www.retrovision.org.uk">Retrovision</a> on Friday - I&rsquo;ll be putting it up for download for those of you that can&rsquo;t make it - and it looks like I&rsquo;m gonna be coding right up to the wire.</p>
+
+<p>Gameplay-wise, everything&rsquo;s in there and working (as seen in the <a href="/2011/03/13/ss2-feature-complete">last update</a>). I&rsquo;ve just got the usual last-minute tweaks and &ldquo;boring bits&rdquo; to finish off - fixing up the menus, redefinable controls (maybe), but mainly a bit of playing with the difficulty curve.</p>
+
+<p>Right now it doesn&rsquo;t have one, every level plays exactly the same. I should really fix that, otherwise there&rsquo;s no real incentive for progression. I&rsquo;m thinking the ideal situation is to slowly raise the threat level by making the enemies faster and more aggressive the longer you spend on the same level. Clearing the level dials the aggression and speed back for a while, but also raises the total number of enemies on screen at any one time. Should add a reasonable risk/reward trade-off without needing too much work.</p>
+ 
+                    
+                </section>
+                <section class="post-footer clearfix row justify-content-between">
+                    <div class="col sharing-links">
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2011%2f05%2f16%2fss2-4-days-remaining%2f" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="facebook">
+                            <i class="fab fa-facebook" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                        
+                        <a href="https://twitter.com/intent/tweet?url=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2011%2f05%2f16%2fss2-4-days-remaining%2f&text=ss2-4-days-remaining" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="twitter">
+                            <i class="fab fa-twitter" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                        
+                        <a href="https://www.stumbleupon.com/badge/?url=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2011%2f05%2f16%2fss2-4-days-remaining%2f" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="stumbleupon">
+                            <i class="fab fa-stumbleupon" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                        <a href="https://www.reddit.com/submit?url=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2011%2f05%2f16%2fss2-4-days-remaining%2f" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="reddit">
+                            <i class="fab fa-reddit-alien" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                    </div>
+                    <div class="col text-right">
+                           
+                    </div>
+                </section>
+            </article>
+            
+            <article>
+                <header class="post-header">
+                    <h1>
+                        <a href="https://technicalhat.github.io/beercave-web/blog/2011/03/13/ss2-feature-complete/">SS2 : Feature complete</a>
+                    </h1>
+                    <time datetime='13003-03-03'>
+                        <span class="day">13</span>
+                        <span class="month">Mar 2011</span>
+                    </time>
+                </header>
+                <section class="post-content">
+                    I&rsquo;ve had a fairly busy week here at the beercave. Pretty much all the vital gameplay elements for Sheep Snaggers 2 are now in place. Check out the video below of me playing through a full game.</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube.com/embed/PDe6S0Y8_Qw" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div> 
+                    
+                </section>
+                <section class="post-footer clearfix row justify-content-between">
+                    <div class="col sharing-links">
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2011%2f03%2f13%2fss2-feature-complete%2f" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="facebook">
+                            <i class="fab fa-facebook" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                        
+                        <a href="https://twitter.com/intent/tweet?url=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2011%2f03%2f13%2fss2-feature-complete%2f&text=ss2-feature-complete" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="twitter">
+                            <i class="fab fa-twitter" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                        
+                        <a href="https://www.stumbleupon.com/badge/?url=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2011%2f03%2f13%2fss2-feature-complete%2f" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="stumbleupon">
+                            <i class="fab fa-stumbleupon" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                        <a href="https://www.reddit.com/submit?url=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2011%2f03%2f13%2fss2-feature-complete%2f" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="reddit">
+                            <i class="fab fa-reddit-alien" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                    </div>
+                    <div class="col text-right">
+                           
+                            <a href='https://technicalhat.github.io/beercave-web/blog/2011/03/13/ss2-feature-complete/'>
+                                    Continue reading <i class="fa fa-angle-right"></i></a>
+                            
+                    </div>
+                </section>
+            </article>
+            
+            <article>
+                <header class="post-header">
+                    <h1>
+                        <a href="https://technicalhat.github.io/beercave-web/blog/2011/03/06/things-ive-been-doing-recently/">Things I&#39;ve been doing recently</a>
+                    </h1>
+                    <time datetime='6003-03-03'>
+                        <span class="day">6</span>
+                        <span class="month">Mar 2011</span>
+                    </time>
+                </header>
+                <section class="post-content">
+                    <p>Avid readers might have noticed I&rsquo;ve been a bit on the quiet side lately. A pretty major software release at the day job has been sucking up all my available brainpower for the last few weeks, which hasn&rsquo;t left me with anything much in the tank for Beercave-related projects.</p>
+
+<p>That all seems to be calming down a little now, so with any luck I should be able to get things back up to speed, so with 10 more weeks till RV there&rsquo;s still plenty of time to get things polished up and finished off.</p>
+
+<p>Anyway, on to the progress update. I&rsquo;m pretty much feature-complete at this point and from now on it&rsquo;s all about balancing the gameplay and making everything look shiny. The aliens now transport captured sheepies to their sinister factory, shown below.</p>
+
+<p><a href="http://twitpic.com/3wu0au" title="#screenshotsaturday alien sheep abduction in Sheep Snaggers 2... on Twitpic"><img src="http://twitpic.com/show/thumb/3wu0au.jpg" width="150" height="150" alt="#screenshotsaturday alien sheep abduction in Sheep Snaggers 2... on Twitpic"></a></p>
+
+<p>Once enough sheepies have been captured, the harvested energy is used to summon the deadly Sheep-Snagger war machine, Mecha Markie!
+<a href="http://twitpic.com/41jp88" title="Mecha-Rayson v1.0 Needs work, but good enough for a placehold... on Twitpic"><img src="http://twitpic.com/show/thumb/41jp88.png" width="150" height="150" alt="Mecha-Rayson v1.0 Needs work, but good enough for a placehold... on Twitpic"></a></p>
+
+<p>Here he is in action:</p>
+
+<p><a href="http://twitpic.com/41kfzs" title="Mecha-Rayson lives! #screenshotsaturday on Twitpic"><img src="http://twitpic.com/show/thumb/41kfzs.jpg" width="150" height="150" alt="Mecha-Rayson lives! #screenshotsaturday on Twitpic"></a></p>
+
+<p>Think he needs to be a bit bigger, actually. I&rsquo;m going for something of an Attack of the Mutant Camels vibe.
+There&rsquo;s also the kamikaze attack-sheep.</p>
+ 
+                    
+                </section>
+                <section class="post-footer clearfix row justify-content-between">
+                    <div class="col sharing-links">
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2011%2f03%2f06%2fthings-ive-been-doing-recently%2f" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="facebook">
+                            <i class="fab fa-facebook" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                        
+                        <a href="https://twitter.com/intent/tweet?url=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2011%2f03%2f06%2fthings-ive-been-doing-recently%2f&text=things-ive-been-doing-recently" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="twitter">
+                            <i class="fab fa-twitter" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                        
+                        <a href="https://www.stumbleupon.com/badge/?url=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2011%2f03%2f06%2fthings-ive-been-doing-recently%2f" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="stumbleupon">
+                            <i class="fab fa-stumbleupon" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                        <a href="https://www.reddit.com/submit?url=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2011%2f03%2f06%2fthings-ive-been-doing-recently%2f" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="reddit">
+                            <i class="fab fa-reddit-alien" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                    </div>
+                    <div class="col text-right">
+                           
+                            <a href='https://technicalhat.github.io/beercave-web/blog/2011/03/06/things-ive-been-doing-recently/'>
+                                    Continue reading <i class="fa fa-angle-right"></i></a>
+                            
+                    </div>
+                </section>
+            </article>
+            
+            <article>
+                <header class="post-header">
+                    <h1>
+                        <a href="https://technicalhat.github.io/beercave-web/blog/2011/01/30/end-month-1-update/">End of month 1 update.</a>
+                    </h1>
+                    <time datetime='30001-01-01'>
+                        <span class="day">30</span>
+                        <span class="month">Jan 2011</span>
+                    </time>
+                </header>
+                <section class="post-content">
+                    <p>It&rsquo;s been a couple of weeks since I posted last so I figured it was time for an update on the current state of Sheep Snaggers 2.</p>
+
+<p>Right now, the game is fully playable, if not anywhere near complete. The engine work is all pretty much done now so from here on in I should be able to focus on nothing but gameplay. Which is nice.</p>
+
+<p>Here&rsquo;s where I was at the end of last week.</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube.com/embed/0RJrG-PwlPI" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<p>Since then I&rsquo;ve fully enabled player collisions (you actually need to avoid the aliens now), added a pause function, scoring and a title screen. I also tweaked the enemy &lsquo;hunter&rsquo; AI to make them go for the nearest sheep rather than pick one at random, which seems to have improved the pace of the game a little.</p>
+
+<p>Currently, it&rsquo;s looking like this:</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube.com/embed/5JM2nH51rNs" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<p>You might notice the video looks a little juddery in places. I&rsquo;m not entirely sure what&rsquo;s going on there but since it doesn&rsquo;t happen in normal play I think it&rsquo;s related to <a href="http://www.fraps.com/">Fraps</a> slowing everything down to 30FPS to record the video.</p>
+
+<p>The next things I want to add are the enemy fighters (the little red bastards from the original game) and some sort of enemy base where the hunters take the abducted sheepies to in order to carry out their dastardly schemes.
+Currently they just head for an invisible point on the map where the sheep disappear and respawn, which isn&rsquo;t very satisfying. I&rsquo;m thinking some kind of sheep processing factory with a big funnel on the top that the sheep get dropped into (maybe one last chance for a sheepie save there?).</p>
+
+<p>There&rsquo;s plenty more to come, but that lot should keep me more than busy for the next week or so.  Hopefully I&rsquo;ll manage to keep the updates a bit more regular from here on in.</p>
+ 
+                    
+                </section>
+                <section class="post-footer clearfix row justify-content-between">
+                    <div class="col sharing-links">
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2011%2f01%2f30%2fend-month-1-update%2f" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="facebook">
+                            <i class="fab fa-facebook" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                        
+                        <a href="https://twitter.com/intent/tweet?url=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2011%2f01%2f30%2fend-month-1-update%2f&text=end-of-month-1-update." class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="twitter">
+                            <i class="fab fa-twitter" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                        
+                        <a href="https://www.stumbleupon.com/badge/?url=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2011%2f01%2f30%2fend-month-1-update%2f" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="stumbleupon">
+                            <i class="fab fa-stumbleupon" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                        <a href="https://www.reddit.com/submit?url=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2011%2f01%2f30%2fend-month-1-update%2f" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="reddit">
+                            <i class="fab fa-reddit-alien" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                    </div>
+                    <div class="col text-right">
+                           
+                    </div>
+                </section>
+            </article>
+            
+            <article>
+                <header class="post-header">
+                    <h1>
+                        <a href="https://technicalhat.github.io/beercave-web/blog/2011/01/09/ss2-all-systems-go/">SS2 : All systems go</a>
+                    </h1>
+                    <time datetime='9001-01-01'>
+                        <span class="day">9</span>
+                        <span class="month">Jan 2011</span>
+                    </time>
+                </header>
+                <section class="post-content">
+                    <p>It&rsquo;s coming to the end of the first week of the newly restarted Sheep Snaggers 2, and so far things are going pretty well.</p>
+
+<p>Once I decided to ditch the old codebase and start from scratch, I managed to make some pretty decent progress on the new stuff.</p>
+
+<p>Here&rsquo;s the first test of the sprite system:
+<a href="http://i24.photobucket.com/albums/c12/b33rman/gamedev/SS2/screen104.jpg">
+<img width="600" src="http://i24.photobucket.com/albums/c12/b33rman/gamedev/SS2/screen104.jpg" />
+</a></p>
+
+<p>Which pretty quickly turned into this
+<a href="http://i24.photobucket.com/albums/c12/b33rman/gamedev/SS2/screen095.jpg">
+<img width="600" src="http://i24.photobucket.com/albums/c12/b33rman/gamedev/SS2/screen095.jpg" />
+</a>
+as I got the movement and radar code online.</p>
+
+<p>After a brief graphical overhaul, and bringing the <a href="/2011/01/04/ss2-keeping-control">new input system</a> online it was starting to look a bit better.
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube.com/embed/L7AL4M6bnzg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+</p>
+
+<p>Only trouble was, with the new visual look that player sprite isn&rsquo;t very visible.
+A brief attempt at drawing a new Starsheep sprite convinced me that a new approach was needed:</p>
+
+<p><a href="http://i24.photobucket.com/albums/c12/b33rman/gamedev/SS2/screen106.jpg">
+<img width="600" src="http://i24.photobucket.com/albums/c12/b33rman/gamedev/SS2/screen106.jpg" />
+</a></p>
+
+<p>So I whipped out my trusty copy of <a href="http://www.blender.org">blender</a> and spent several hours swearing at the screen until I managed to produce this rather nifty 3D chappie, along with a sweet Immelman turn to change direction.</p>
+ 
+                    
+                </section>
+                <section class="post-footer clearfix row justify-content-between">
+                    <div class="col sharing-links">
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2011%2f01%2f09%2fss2-all-systems-go%2f" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="facebook">
+                            <i class="fab fa-facebook" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                        
+                        <a href="https://twitter.com/intent/tweet?url=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2011%2f01%2f09%2fss2-all-systems-go%2f&text=ss2-all-systems-go" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="twitter">
+                            <i class="fab fa-twitter" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                        
+                        <a href="https://www.stumbleupon.com/badge/?url=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2011%2f01%2f09%2fss2-all-systems-go%2f" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="stumbleupon">
+                            <i class="fab fa-stumbleupon" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                        <a href="https://www.reddit.com/submit?url=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2011%2f01%2f09%2fss2-all-systems-go%2f" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="reddit">
+                            <i class="fab fa-reddit-alien" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                    </div>
+                    <div class="col text-right">
+                           
+                            <a href='https://technicalhat.github.io/beercave-web/blog/2011/01/09/ss2-all-systems-go/'>
+                                    Continue reading <i class="fa fa-angle-right"></i></a>
+                            
+                    </div>
+                </section>
+            </article>
+            
+            <article>
+                <header class="post-header">
+                    <h1>
+                        <a href="https://technicalhat.github.io/beercave-web/blog/2011/01/04/ss2-keeping-control/">SS2 : Keeping control</a>
+                    </h1>
+                    <time datetime='4001-01-01'>
+                        <span class="day">4</span>
+                        <span class="month">Jan 2011</span>
+                    </time>
+                </header>
+                <section class="post-content">
+                    <p>I&rsquo;ve managed to get the Sheep Snaggers 2 redevelopment off to a good start so far.
+So far I&rsquo;ve got sprites, movement and a simple camera system up and running, which is enough to get me my ship up and flying over a pretty boring and empty landscape.</p>
+
+<p>It helps that Python massively lends itself to component-based architecture. When I started building DethTank in C# I had to build a whole bunch of functionality myself to be able to attach behaviours to components at runtime. With Python, I just define my behaviours as functions and attach them to the GameObject at runtime. Saves a lot of tedious messing about with interfaces&hellip;</p>
+
+<p>I also spent a bit of time this evening abstracting out my input system, which should save me some pain down the line. In the previous games, the input handling code was buried in the player classes and looked something like this:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">if</span> stick:
+    x <span style="color:#f92672">=</span> stick<span style="color:#f92672">.</span>get_axis(<span style="color:#ae81ff">0</span>)
+    y <span style="color:#f92672">=</span> stick<span style="color:#f92672">.</span>get_axis(<span style="color:#ae81ff">1</span>)
+<span style="color:#66d9ef">else</span>:
+    <span style="color:#66d9ef">if</span> keys[K_LEFT]:
+        x <span style="color:#f92672">=</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>
+    <span style="color:#66d9ef">elif</span> keys[K_RIGHT]:
+        x <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+    <span style="color:#66d9ef">if</span> keys[K_UP]:
+        y <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+    <span style="color:#66d9ef">elif</span> keys[K_DOWN]:
+        y <span style="color:#f92672">=</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span></code></pre></div>
+
+<p>Not only was this annoying to keep track of, it basically means there was no chance of adding in user configurable controls.
+The equivalent piece of code in the Sheep Snaggers 2 looks like:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">x <span style="color:#f92672">=</span> input<span style="color:#f92672">.</span>GetAxis(<span style="color:#e6db74">&#34;HORIZONTAL&#34;</span>)
+y <span style="color:#f92672">=</span> input<span style="color:#f92672">.</span>GetAxis(<span style="color:#e6db74">&#34;VERTICAL&#34;</span>)
+fire <span style="color:#f92672">=</span> input<span style="color:#f92672">.</span>GetState(<span style="color:#e6db74">&#34;FIRE&#34;</span>)</code></pre></div>
+
+<p>The input class (which I&rsquo;ll post once it&rsquo;s done) maps the various available controllers to named controls, with the internal mappings looking like:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e">#key/button states
+</span>
+self<span style="color:#f92672">.</span>stateMap <span style="color:#f92672">=</span> {
+    <span style="color:#e6db74">&#39;THRUST&#39;</span> : [[<span style="color:#e6db74">&#39;keyboard&#39;</span>, (K_SPACE,)]],
+    <span style="color:#e6db74">&#39;FIRE&#39;</span> : [[<span style="color:#e6db74">&#39;keyboard&#39;</span>, (K_LCTRL,)]]
+}
+<span style="color:#75715e">#axis states
+</span>
+self<span style="color:#f92672">.</span>axisMap <span style="color:#f92672">=</span> {
+    <span style="color:#e6db74">&#39;VERTICAL&#39;</span> : [
+        [<span style="color:#e6db74">&#39;keyaxis&#39;</span>, (K_UP, K_DOWN)],
+        [<span style="color:#e6db74">&#39;joyaxis&#39;</span>, (<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">1</span>)]
+    ],
+    <span style="color:#e6db74">&#39;HORIZONTAL&#39;</span> : [
+        [<span style="color:#e6db74">&#39;keyaxis&#39;</span>, (K_UP, K_DOWN)],
+        [<span style="color:#e6db74">&#39;joyaxis&#39;</span>, (<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>)]
+    ]
+}</code></pre></div>
+ 
+                    
+                </section>
+                <section class="post-footer clearfix row justify-content-between">
+                    <div class="col sharing-links">
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2011%2f01%2f04%2fss2-keeping-control%2f" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="facebook">
+                            <i class="fab fa-facebook" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                        
+                        <a href="https://twitter.com/intent/tweet?url=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2011%2f01%2f04%2fss2-keeping-control%2f&text=ss2-keeping-control" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="twitter">
+                            <i class="fab fa-twitter" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                        
+                        <a href="https://www.stumbleupon.com/badge/?url=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2011%2f01%2f04%2fss2-keeping-control%2f" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="stumbleupon">
+                            <i class="fab fa-stumbleupon" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                        <a href="https://www.reddit.com/submit?url=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2011%2f01%2f04%2fss2-keeping-control%2f" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="reddit">
+                            <i class="fab fa-reddit-alien" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                    </div>
+                    <div class="col text-right">
+                           
+                            <a href='https://technicalhat.github.io/beercave-web/blog/2011/01/04/ss2-keeping-control/'>
+                                    Continue reading <i class="fa fa-angle-right"></i></a>
+                            
+                    </div>
+                </section>
+            </article>
+            
+            <article>
+                <header class="post-header">
+                    <h1>
+                        <a href="https://technicalhat.github.io/beercave-web/blog/2011/01/03/ss2-picking-where-i-left/">SS2 : Picking up where I left off</a>
+                    </h1>
+                    <time datetime='3001-01-01'>
+                        <span class="day">3</span>
+                        <span class="month">Jan 2011</span>
+                    </time>
+                </header>
+                <section class="post-content">
+                    <p>Hmm, seems I&rsquo;ve been here <a href="http://www.beercave.co.uk/2009/09/08/buggeration">before</a>.</p>
+
+<p>I&rsquo;m taking a look around at Sheep Snaggers 2 before I get back on with it, and while it&rsquo;s not actually <em>crap</em>, there&rsquo;s an awful lot of &ldquo;ooh, I wouldn&rsquo;t do it like <em>that</em>&rdquo; in there.</p>
+
+<p>Worst offender has got to be the way I&rsquo;m running 3 separate rendering loops to cope with the world wraparound effect, then running them <em>again</em> to render the radar. That&rsquo;s basically down to broken thinking - I got stuck on the idea of the gameworld as fixed, which leads to having to pile up a variety of hacks in order to deal with the world wrapping around at the ends.</p>
+
+<p>Since everything in the game is getting updated every frame anyway, it&rsquo;d be a wee bit more efficient to just have the ship/camera x position fixed at zero and move everything else around it. That way my render loop is just &ldquo;draw everything within the screen boundaries&rdquo; and the radar loop is just &ldquo;draw everything&rdquo;</p>
+
+<p>While I&rsquo;m doing that, it&rsquo;s probably not a bad idea to resurrect some of the component architecture stuff I was playing with for <a href="/category/tags/dethtank">DethTank</a>, which should help tidy up the hierarchy a bit.</p>
+
+<p>Gamewise, there&rsquo;s one or two things that need throwing out. I&rsquo;m planning to lose the title screen and just run the main game scene continuously as an attract mode with some title text as a HUD overlay when not in play. I can just swap out the player controller for a simple AI routine easily enough.</p>
+
+<p>The fireball/ramming power up needs to go too. It&rsquo;s a fun mechanic, and one I plan on exploring in a later project, but it just doesn&rsquo;t fit in well with the Sheep Snaggers theme. The whole point of the game is about rescuing sheep from aliens before they can build their death star so I need to stick closer to the original Defender template.</p>
+ 
+                    
+                </section>
+                <section class="post-footer clearfix row justify-content-between">
+                    <div class="col sharing-links">
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2011%2f01%2f03%2fss2-picking-where-i-left%2f" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="facebook">
+                            <i class="fab fa-facebook" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                        
+                        <a href="https://twitter.com/intent/tweet?url=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2011%2f01%2f03%2fss2-picking-where-i-left%2f&text=ss2-picking-up-where-i-left-off" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="twitter">
+                            <i class="fab fa-twitter" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                        
+                        <a href="https://www.stumbleupon.com/badge/?url=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2011%2f01%2f03%2fss2-picking-where-i-left%2f" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="stumbleupon">
+                            <i class="fab fa-stumbleupon" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                        <a href="https://www.reddit.com/submit?url=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2011%2f01%2f03%2fss2-picking-where-i-left%2f" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="reddit">
+                            <i class="fab fa-reddit-alien" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                    </div>
+                    <div class="col text-right">
+                           
+                            <a href='https://technicalhat.github.io/beercave-web/blog/2011/01/03/ss2-picking-where-i-left/'>
+                                    Continue reading <i class="fa fa-angle-right"></i></a>
+                            
+                    </div>
+                </section>
+            </article>
+            
+            
+            
+
+<ul class="pagination">
+    
+    <li class="page-item">
+        <a href="/beercave-web/blog/" class="page-link" aria-label="First"><span aria-hidden="true">&laquo;&laquo;</span></a>
+    </li>
+    
+    <li class="page-item">
+    <a href="/beercave-web/blog/page/8/" class="page-link" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
+    </li>
+    
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item"><a class="page-link" href="/beercave-web/blog/">1</a></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item"><a class="page-link" href="/beercave-web/blog/page/2/">2</a></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item"><a class="page-link" href="/beercave-web/blog/page/3/">3</a></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item disabled"><span aria-hidden="true">&nbsp;&hellip;&nbsp;</span></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item"><a class="page-link" href="/beercave-web/blog/page/8/">8</a></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item active"><a class="page-link" href="/beercave-web/blog/page/9/">9</a></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item"><a class="page-link" href="/beercave-web/blog/page/10/">10</a></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item disabled"><span aria-hidden="true">&nbsp;&hellip;&nbsp;</span></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item"><a class="page-link" href="/beercave-web/blog/page/15/">15</a></li>
+    
+    
+    <li class="page-item">
+    <a href="/beercave-web/blog/page/10/" class="page-link" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
+    </li>
+    
+    <li class="page-item">
+        <a href="/beercave-web/blog/page/15/" class="page-link" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
+    </li>
+    
+</ul>
+
+           
+        </div>
+        
+        <div class="col-md-4">
+            <div class="sidebar">
+                <section class="sidebar-content">
+                    <article id="profile">
+                        <a href='https://technicalhat.github.io/img/beerman-cutout.png' data-toggle="lightbox">
+                            <img src='https://technicalhat.github.io/img/beerman-cutout-smol.png' title="Judge Beerman">
+                        </a>
+                        <h1>
+                            Beerman's blog
+                        </h1>
+                        <p>Real nerds. Real talk. Call now.</p>
+                        <div class="social-links">
+                            <a href="https://twitter.com/BeercaveGames">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+
+                            <a href="https://www.youtube.com/user/b33rman/videos">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                            <a href="https://technicalhat.github.io/beercave-web/blog/index.xml">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                            
+                        </div>
+                    </article>
+                    <article id="post-list">
+                        <h1>Latest posts</h1>
+                        
+                        <ul>
+                            
+                            <li>
+                                <a href="https://technicalhat.github.io/beercave-web/blog/2015/07/06/egad-a-post/">Egad! A post!</a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://technicalhat.github.io/beercave-web/blog/2015/03/31/beermans-adventures-voxel-land-part-seven-need-for-speed/">Beerman&#39;s adventures in voxel-land, part 7 : Need for speed</a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://technicalhat.github.io/beercave-web/blog/2015/03/25/beermans-adventures-voxel-land-part-six-the-best-laid-plans/">Beerman&#39;s adventures in voxel-land, part 6 : The best laid plans</a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://technicalhat.github.io/beercave-web/blog/2015/03/25/beermans-adventures-voxel-land-part-five-the-hard-parts/">Beerman&#39;s adventures in voxel-land, part 5 : The hard parts</a>
+                            </li>
+                            
+                            <li>
+                                <a href="https://technicalhat.github.io/beercave-web/blog/2015/01/25/beermans-adventures-voxel-land-part-four-now-featuring-actual-gameplay/">Beerman&#39;s adventures in voxel-land, part 4 : Now featuring actual gameplay</a>
+                            </li>
+                            
+                        </ul>
+                    </article>
+                    <article id="post-tags">
+                        <h1>Tags</h1>
+                        
+                        <ul>
+                        
+                        
+                        
+                        
+                        
+                        
+                        <li>
+                        <a href="/beercave-web/tags/1gam" class="btn btn-default" role="button">1gam <span class="badge badge-dark">32</span></a>
+                        </li>
+                        
+                        
+                        
+                        
+                        <li>
+                        <a href="/beercave-web/tags/releases" class="btn btn-default" role="button">releases <span class="badge badge-dark">8</span></a>
+                        </li>
+                        
+                        
+                        
+                        
+                        <li>
+                        <a href="/beercave-web/tags/lagertron" class="btn btn-default" role="button">lagertron <span class="badge badge-dark">5</span></a>
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        <li>
+                        <a href="/beercave-web/tags/beercave-racer" class="btn btn-default" role="button">beercave-racer <span class="badge badge-dark">4</span></a>
+                        </li>
+                        
+                        
+                        
+                        
+                        <li>
+                        <a href="/beercave-web/tags/chaosball" class="btn btn-default" role="button">chaosball <span class="badge badge-dark">4</span></a>
+                        </li>
+                        
+                        
+                        
+                        
+                        <li>
+                        <a href="/beercave-web/tags/rogueotron" class="btn btn-default" role="button">rogueotron <span class="badge badge-dark">4</span></a>
+                        </li>
+                        
+                        
+                        
+                        
+                        <li>
+                        <a href="/beercave-web/tags/april" class="btn btn-default" role="button">april <span class="badge badge-dark">3</span></a>
+                        </li>
+                        
+                        
+                        
+                        
+                        <li>
+                        <a href="/beercave-web/tags/march" class="btn btn-default" role="button">march <span class="badge badge-dark">3</span></a>
+                        </li>
+                        
+                        
+                        
+                        
+                        <li>
+                        <a href="/beercave-web/tags/voxel-engine" class="btn btn-default" role="button">voxel-engine <span class="badge badge-dark">3</span></a>
+                        </li>
+                        
+                        
+                        
+                        
+                        <li>
+                        <a href="/beercave-web/tags/web-runner" class="btn btn-default" role="button">web-runner <span class="badge badge-dark">3</span></a>
+                        </li>
+                        
+                        
+                        </ul>
+                    </article>
+                    </ul>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+        </div><footer>
+    <section class="container">
+       
+TODO : Add a nice looking footer here with links and stuff
+    </section>
+</footer></body>
+</html>

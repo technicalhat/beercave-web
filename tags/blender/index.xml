@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>blender on Beercave Games - putting the fun back into functional alcoholism!</title>
+    <link>https://technicalhat.github.io/beercave-web/tags/blender/</link>
+    <description>Recent content in blender on Beercave Games - putting the fun back into functional alcoholism!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 14 May 2013 20:43:57 +0000</lastBuildDate>
+    
+	<atom:link href="https://technicalhat.github.io/beercave-web/tags/blender/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Checking in</title>
+      <link>https://technicalhat.github.io/beercave-web/blog/2013/05/14/checking/</link>
+      <pubDate>Tue, 14 May 2013 20:43:57 +0000</pubDate>
+      
+      <guid>https://technicalhat.github.io/beercave-web/blog/2013/05/14/checking/</guid>
+      <description>&lt;p&gt;Well, this game&amp;rsquo;s certainly turning out to be a learning experience. And the main lesson is &amp;ldquo;don&amp;rsquo;t pick your projects just because you think it&amp;rsquo;d be cool to play with the tech.&amp;rdquo; The main factor in deciding to try this one was that I thought the retro-3D rendering looked fun and like something I could reasonably implement in a weekend. What I didn&amp;rsquo;t take into account is that once that was done I&amp;rsquo;d be in need of a big old stack of graphical content to make it interesting.&lt;/p&gt;
+
+&lt;p&gt;It didn&amp;rsquo;t take me long to figure out that there wasn&amp;rsquo;t a hope in hell of me generating the vehicle sprites by hand unless I was planning on releasing &amp;ldquo;poorly drawn blob racer 2013&amp;rdquo;. Letting computers do the hard parts is pretty much my job description though, so I figured I could offload all that tricky perspective business to software by using renders of a bunch of 3D models as sprites.  With that in mind I popped on my trusty learnin&amp;rsquo;-hat, fired up &lt;a href=&#34;http://www.blender.org&#34;&gt;Blender&lt;/a&gt; and prepared to dive into the exciting world of &lt;a href=&#34;http://theorangeduck.com/page/subdivision-modelling&#34;&gt;subdivision modelling&lt;/a&gt;.&lt;/p&gt;
+
+&lt;div style=&#34;width:300px; margin-left:auto; margin-right:auto;&#34;&gt;
+&lt;img style=&#34;display:inline-block; width:300px;&#34; src=&#34;https://s3.amazonaws.com/beercave.co.uk/blogpics/hat_300.jpg&#34;/&gt;
+&lt;strong style=&#34;width:300px; display:inline-block; text-align:center&#34;&gt;My trusty learnin&#39; hat.&lt;/strong&gt;
+&lt;/div&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

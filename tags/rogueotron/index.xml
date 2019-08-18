@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>rogueotron on Beercave Games - putting the fun back into functional alcoholism!</title>
+    <link>https://technicalhat.github.io/beercave-web/tags/rogueotron/</link>
+    <description>Recent content in rogueotron on Beercave Games - putting the fun back into functional alcoholism!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 03 Apr 2013 22:55:21 +0000</lastBuildDate>
+    
+	<atom:link href="https://technicalhat.github.io/beercave-web/tags/rogueotron/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Three is apparently the Magic Number...</title>
+      <link>https://technicalhat.github.io/beercave-web/blog/2013/04/03/three-apparently-magic-number/</link>
+      <pubDate>Wed, 03 Apr 2013 22:55:21 +0000</pubDate>
+      
+      <guid>https://technicalhat.github.io/beercave-web/blog/2013/04/03/three-apparently-magic-number/</guid>
+      <description>&lt;p&gt;So with three games released so far this year, when do I get my Hogwarts letter?&lt;/p&gt;
+
+&lt;p&gt;Yep, my third &lt;a href=&#34;http://www.onegameamonth.com/&#34;&gt;#1GAM&lt;/a&gt; entry is now complete and available for download on the platform of your choice. (as long as you choose Windows/Mac/Linux/Android)&lt;/p&gt;
+
+&lt;div style=&#34;width:600px; margin-left:auto; margin-right:auto;&#34;&gt;
+&lt;a href=&#34;https://technicalhat.github.io/beercave-web/games/rogueotron-1gam-edition&#34;&gt;&lt;img width=&#34;600&#34; src=&#34;https://s3.amazonaws.com/beercave.co.uk/gameamonth2013/month3/pics/featured.png&#34;/&gt;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//www.youtube.com/embed/sbjB_ckKRe4&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;strong style=&#34;width:600px; display:inline-block; text-align:center&#34;&gt;Explode ALL THE THINGS!&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>One Game a Month : Week 3 Blues</title>
+      <link>https://technicalhat.github.io/beercave-web/blog/2013/03/25/one-game-month-week-3-blues/</link>
+      <pubDate>Mon, 25 Mar 2013 20:56:00 +0000</pubDate>
+      
+      <guid>https://technicalhat.github.io/beercave-web/blog/2013/03/25/one-game-month-week-3-blues/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;m beginning to notice a bit of a pattern developing with my #1GAM projects. I make a great start the first couple of weeks, then right around week 3 I hit a wall. It tends to go a little like this:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;*Week 1. I have an AWESOME IDEA and quickly hack together a prototype.&lt;/li&gt;
+&lt;li&gt;*Week 2. I flesh out the prototype and end up with a basic implementation of my game idea. With two more weeks to polish this I&amp;rsquo;m gonna have something AMAZING to show by the end of the month.&lt;/li&gt;
+&lt;li&gt;*Week 3. Ah, fuck this. I&amp;rsquo;m tired and nobody cares about my bullshit games anyway. This was a stupid idea, I&amp;rsquo;m gonna drink some beers and play a real game instead.&lt;/li&gt;
+&lt;li&gt;*Week 4. OSHITDEADLINEAAAARGHHACKHACKHACKCUTCUTCUTRELEASE&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;So like clockwork, phase 3 kicked in at the weekend and I didn&amp;rsquo;t get a damn thing done, so once again I&amp;rsquo;m faced with a frenzied sprint to get something finished before the deadline.&lt;/p&gt;
+
+&lt;p&gt;There&amp;rsquo;s no way I can keep repeating the same mini-burnout cycle for the whole of 2013 without losing what&amp;rsquo;s left of my marbles so I&amp;rsquo;m gonna need to step the schedule back and not try and work on this every day - as a wise man once said, &amp;ldquo;Life moves pretty fast. If you don&amp;rsquo;t stop and look around once in a while, you might miss it.&amp;rdquo;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Rogueotron - first look</title>
+      <link>https://technicalhat.github.io/beercave-web/blog/2013/03/16/rogueotron-first-look/</link>
+      <pubDate>Sat, 16 Mar 2013 22:47:09 +0000</pubDate>
+      
+      <guid>https://technicalhat.github.io/beercave-web/blog/2013/03/16/rogueotron-first-look/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve been a busy little Beerman today. The map generator is now ported across to Java and fully plugged into the game, which means I&amp;rsquo;ve got an actual consistent world to wander around rather than just spawning a random room every time you go through a door.&lt;/p&gt;
+
+&lt;p&gt;With that in place, I&amp;rsquo;ve got a very basic enemy generator (it only spawns grunts right now) in place and a Director class that locks you in the rooms until they&amp;rsquo;re cleared, which is pretty much just about enough to call it a game - not a very &lt;em&gt;fun&lt;/em&gt; game just yet, but there&amp;rsquo;s still two weeks to go.&lt;/p&gt;
+
+&lt;p&gt;Here&amp;rsquo;s how it looks right now&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Rogueotron - Adventures in Procedural Generation</title>
+      <link>https://technicalhat.github.io/beercave-web/blog/2013/03/14/rogueotron-adventures-procedural-generation/</link>
+      <pubDate>Thu, 14 Mar 2013 20:46:35 +0000</pubDate>
+      
+      <guid>https://technicalhat.github.io/beercave-web/blog/2013/03/14/rogueotron-adventures-procedural-generation/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;m a couple of days into development on Rogueotron now and the basics are starting to come together a bit.  Thanks to the horrors of Regular Paid Employment I&amp;rsquo;ve only been able to put a couple of hours a night into it during the week but I&amp;rsquo;ve managed to get the basic movement/firing and transitions between rooms working with some stylishly blocky placeholder graphics.&lt;/p&gt;
+
+&lt;p&gt;&lt;a target=&#34;_new&#34; href=&#34;https://s3.amazonaws.com/beercave.co.uk/gameamonth2013/month3/pics/rogueotron1.png&#34;&gt;&lt;img width=&#34;280&#34; src=&#34;https://s3.amazonaws.com/beercave.co.uk/gameamonth2013/month3/pics/rogueotron1.png&#34;/&gt;&lt;/a&gt;
+&lt;a target=&#34;_new&#34; href=&#34;https://s3.amazonaws.com/beercave.co.uk/gameamonth2013/month3/pics/rogueotron2.png&#34;&gt;&lt;img width=&#34;280&#34; src=&#34;https://s3.amazonaws.com/beercave.co.uk/gameamonth2013/month3/pics/rogueotron2.png&#34;/&gt;&lt;/a&gt;
+&lt;strong style=&#34;width:600px; display:inline-block; text-align:center&#34;&gt;Not about to win any awards for visuals any time soon, I admit&amp;hellip;&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

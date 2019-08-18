@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>lagertron on Beercave Games - putting the fun back into functional alcoholism!</title>
+    <link>https://technicalhat.github.io/beercave-web/tags/lagertron/</link>
+    <description>Recent content in lagertron on Beercave Games - putting the fun back into functional alcoholism!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 28 Nov 2012 22:49:19 +0000</lastBuildDate>
+    
+	<atom:link href="https://technicalhat.github.io/beercave-web/tags/lagertron/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>In which I contemplate my appalling incapacity for self-promotion</title>
+      <link>https://technicalhat.github.io/beercave-web/blog/2012/11/28/which-i-contemplate-my-appalling-incapacity-self-promotion/</link>
+      <pubDate>Wed, 28 Nov 2012 22:49:19 +0000</pubDate>
+      
+      <guid>https://technicalhat.github.io/beercave-web/blog/2012/11/28/which-i-contemplate-my-appalling-incapacity-self-promotion/</guid>
+      <description>&lt;p&gt;It&amp;rsquo;s beginning to dawn on me that I may be a bit crap at the whole mercenary capitalist bastard thing.&lt;/p&gt;
+
+&lt;p&gt;I released &lt;a href=&#34;https://technicalhat.github.io/beercave-web/content/lagertron-1664&#34;&gt;Lagertron&lt;/a&gt; on Play almost a month ago now - if I had even the slightest shred of commercial instinct in my body then I would have spent the last 28 days frenziedly pimping it out at every opportunity. As it is, aside from a couple of tweets and a Facebook post around launch time, I haven&amp;rsquo;t even gotten around to a proper launch announcement.
+So - hey, everyone! &lt;a href=&#34;https://play.google.com/store/apps/details?id=uk.cobeercave.lagertron&#34;&gt;Lagertron is now available for Android&lt;/a&gt;. As far as I can tell from a cursory search of the Play store, it&amp;rsquo;s the nearest thing to Robotron for Android that there is right now.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://play.google.com/store/apps/details?id=uk.cobeercave.lagertron&#34;&gt;
+  &lt;img alt=&#34;Android app on Google Play&#34;
+       src=&#34;http://developer.android.com/images/brand/en_generic_rgb_wo_60.png&#34; /&gt;
+&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//www.youtube.com/embed/lPKZTmaTJzg&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;strong style=&#34;width:600px; display:inline-block; text-align:center&#34;&gt;Buy it, damn you! ;)&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>What&#39;s next?</title>
+      <link>https://technicalhat.github.io/beercave-web/blog/2012/10/01/whats-next/</link>
+      <pubDate>Mon, 01 Oct 2012 18:58:39 +0000</pubDate>
+      
+      <guid>https://technicalhat.github.io/beercave-web/blog/2012/10/01/whats-next/</guid>
+      <description>&lt;p&gt;So Lagertron is pretty much complete as a game now. Few minor fixes and a little bit of polish and I should have something fit for release.&lt;/p&gt;
+
+&lt;p&gt;And as luck would have it, it&amp;rsquo;s once again time for the &lt;a href=&#34;http://www.ludumdare.com/compo/2012/09/27/announcing-october-challenge-2012/&#34;&gt;Ludum Dare October Challenge.&lt;/a&gt; You &lt;a href=&#34;https://technicalhat.github.io/beercave-web/category/tags/october-challenge&#34;&gt;may remember&lt;/a&gt; I made an attempt at it a couple of years ago, only to be brought down by an overly-ambitious game attempt that never got finished.&lt;/p&gt;
+
+&lt;p&gt;This time around though, I&amp;rsquo;ve already got most of a working game ready to go, and based on the reactions I got demoing it at Retrovision this past weekend I should have at least a few sales in the bag too :)&lt;/p&gt;
+
+&lt;p&gt;So, the tentative plan is to focus on the mobile version for now, maybe add some online high scores and some kind of tutorial/practice mode (one thing I did notice is that the controls were confusing the hell out of a lot of people) and bung it up on the Play store. I&amp;rsquo;m thinking one paid version and one ad-supported would be ideal.&lt;/p&gt;
+
+&lt;p&gt;If there&amp;rsquo;s time, I&amp;rsquo;d also like to finish up the desktop version and release that somewhere too. Will need some serious testing on machines that aren&amp;rsquo;t mine before release though, for all the crying I hear about Android &amp;ldquo;fragmentation&amp;rdquo;, it&amp;rsquo;s got nothing on the state of the PC market.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>New lagertron video</title>
+      <link>https://technicalhat.github.io/beercave-web/blog/2012/09/23/new-lagertron-video/</link>
+      <pubDate>Sun, 23 Sep 2012 19:17:13 +0000</pubDate>
+      
+      <guid>https://technicalhat.github.io/beercave-web/blog/2012/09/23/new-lagertron-video/</guid>
+      <description>&lt;p&gt;Got most of the game in place and working now. Pretty much all that&amp;rsquo;s left is to add a whole bunch of level definitions and I should have a full playable game ready for RV next weekend.&lt;/p&gt;
+
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//www.youtube.com/embed/BjlBcRnScFE&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;New stuff in this build:
+&lt;ul&gt;
+&lt;li&gt;Animated the various characters. Nothing fancy, just enough to add a little personality.&lt;/li&gt;
+&lt;li&gt;All enemies now have distinct behaviours&lt;/li&gt;
+&lt;li&gt;Autofire option targets nearest enemy&lt;/li&gt;
+&lt;li&gt;Scores and high score table&lt;/li&gt;
+&lt;li&gt;Fixed up all the collision boxes - some of them were way off&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m really pleased with how this has turned out. After the ongoing clusterfuck that was DST it&amp;rsquo;s nice to have a well-defined template to riff on, got me actually enjoying the whole game-making process again. :)&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Lagertron update</title>
+      <link>https://technicalhat.github.io/beercave-web/blog/2012/09/12/lagertron-update/</link>
+      <pubDate>Wed, 12 Sep 2012 22:20:30 +0000</pubDate>
+      
+      <guid>https://technicalhat.github.io/beercave-web/blog/2012/09/12/lagertron-update/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve managed to get a fair bit of work done on Lagertron (now Lagertron : 1664) since the last post. First off, I hacked together some simple touch controls and got it up and running on the Android tablet. The controls are far from perfect at this point but I wanted to make sure I had a decent performance benchmark that I could check in with so I don&amp;rsquo;t get carried away working on the desktop version.&lt;/p&gt;
+
+&lt;p&gt;Once that was working, the next thing to do was to improve the enemy AI - so of course I was bitten by the shiny bug and started tarting up the title screen instead.&lt;/p&gt;
+
+&lt;p&gt;&lt;p style=&#34;width:600px; margin-left:auto; margin-right:auto&#34;&gt;
+&lt;img width=&#34;600&#34; src=&#34;https://s3.amazonaws.com/beercave.co.uk/Lagertron/lagertron2.png&#34;/&gt;
+&lt;strong style=&#34;width:600px; display:inline-block; text-align:center&#34;&gt;Ah, glow. The indie-dev&amp;rsquo;s best friend.&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Introducing : Lagertron</title>
+      <link>https://technicalhat.github.io/beercave-web/blog/2012/08/19/introducing-lagertron/</link>
+      <pubDate>Sun, 19 Aug 2012 23:16:42 +0000</pubDate>
+      
+      <guid>https://technicalhat.github.io/beercave-web/blog/2012/08/19/introducing-lagertron/</guid>
+      <description>&lt;p&gt;Wow, been a while. So, what&amp;rsquo;s been going down in the Beercave since my last post?&lt;/p&gt;
+
+&lt;p&gt;Well, I rejoined the ranks of the gainfully employed back in June. The contracting thing just wasn&amp;rsquo;t working out - think I&amp;rsquo;m just not mentally wired for chasing work to the extent that&amp;rsquo;s needed. Anyway, the new gig&amp;rsquo;s pretty good, much less corporate and soul-crushing than the last one.&lt;/p&gt;
+
+&lt;p&gt;Droidy Shooty Thing&amp;rsquo;s temporarily shelved - I&amp;rsquo;ve never been entirely happy with the gameplay, figured I should quit beating that horse while there&amp;rsquo;s at least a little life left in it and come back when I&amp;rsquo;m a bit less burned out on the damn thing.&lt;/p&gt;
+
+&lt;p&gt;In the meantime, I needed a project to keep myself moving. Something simple and fun where I could take classic gameplay and stamp a bit of me on it. And thus was born Lagertron.&lt;/p&gt;
+
+&lt;p&gt;&lt;p style=&#34;width:600px; margin-left:auto; margin-right:auto&#34;&gt;
+&lt;img width=&#34;600&#34; src=&#34;https://s3.amazonaws.com/beercave.co.uk/Lagertron/lagertron.png&#34;/&gt;
+&lt;strong style=&#34;width:600px; display:inline-block; text-align:center&#34;&gt;Don&amp;rsquo;t know why I didn&amp;rsquo;t make this already.&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

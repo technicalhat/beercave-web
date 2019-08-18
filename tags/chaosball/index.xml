@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>chaosball on Beercave Games - putting the fun back into functional alcoholism!</title>
+    <link>https://technicalhat.github.io/beercave-web/tags/chaosball/</link>
+    <description>Recent content in chaosball on Beercave Games - putting the fun back into functional alcoholism!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 20 Jan 2013 18:47:17 +0000</lastBuildDate>
+    
+	<atom:link href="https://technicalhat.github.io/beercave-web/tags/chaosball/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>One down, eleven to go!</title>
+      <link>https://technicalhat.github.io/beercave-web/blog/2013/01/20/one-down-eleven-go/</link>
+      <pubDate>Sun, 20 Jan 2013 18:47:17 +0000</pubDate>
+      
+      <guid>https://technicalhat.github.io/beercave-web/blog/2013/01/20/one-down-eleven-go/</guid>
+      <description>&lt;p&gt;And it&amp;rsquo;s done. My January &lt;a href=&#34;http://www.onegameamonth.com&#34;&gt;One game a month&lt;/a&gt; entry, ChaosBall is now available for download.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://technicalhat.github.io/beercave-web/games/chaosball&#34;&gt;Get it here&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;div style=&#34;width:600px; margin-left:auto; margin-right:auto;&#34;&gt;
+&lt;a href=&#34;https://technicalhat.github.io/beercave-web/games/chaosball&#34;&gt;&lt;img width=&#34;600&#34; src=&#34;https://s3.amazonaws.com/beercave.co.uk/gameamonth2013/month1/screenshot.png&#34;/&gt;&lt;/a&gt;
+&lt;/div&gt;
+So that&amp;rsquo;s the first game of the year released but there&amp;rsquo;s no time to sit around congratulating myself. I&amp;rsquo;ve got 11 more still to go, and they&amp;rsquo;re only gonna get harder from here on out.&lt;/p&gt;
+
+&lt;p&gt;What&amp;rsquo;s up next then? I&amp;rsquo;ve got a big list of game ideas to play with, but the one that&amp;rsquo;s really grabbing my interest right now is a sort of hybrid of &lt;a href=&#34;http://en.wikipedia.org/wiki/Spy_Hunter&#34;&gt;Spy Hunter&lt;/a&gt; and &lt;a href=&#34;http://en.wikipedia.org/wiki/Juno_First&#34;&gt;Juno First&lt;/a&gt;(happy now, &lt;a href=&#34;http://error-success.piku.org.uk/&#34;&gt;Piku&lt;/a&gt;? ;)&lt;/p&gt;
+
+&lt;p&gt;Hopefully I should have something to show off by the end of the week - got a week in Texas with Mrs. Beerman coming up in mid Feb so there&amp;rsquo;s no time to waste on this one.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>ChaosBall : End of week 2 and a new preview build</title>
+      <link>https://technicalhat.github.io/beercave-web/blog/2013/01/13/chaosball-end-week-2-and-new-preview-build/</link>
+      <pubDate>Sun, 13 Jan 2013 22:18:02 +0000</pubDate>
+      
+      <guid>https://technicalhat.github.io/beercave-web/blog/2013/01/13/chaosball-end-week-2-and-new-preview-build/</guid>
+      <description>&lt;p&gt;It&amp;rsquo;s been a busy weekend here at the Beercave, with lots of new stuff added to ChaosBall. First up, new and exciting varieties of brick, in pretty colours and different sizes. I also turned down the brightness on the score digits as they were a bit too distracting.&lt;/p&gt;
+
+&lt;p&gt;&lt;p style=&#34;width:600px; margin-left:auto; margin-right:auto&#34;&gt;
+&lt;img width=&#34;600&#34; src=&#34;https://s3.amazonaws.com/beercave.co.uk/gameamonth2013/month1/chaosball7.png&#34;/&gt;
+&lt;strong style=&#34;width:600px; display:inline-block; text-align:center&#34;&gt;Many more chaos scenes will soon be available.&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>ChaosBall : Update and preview</title>
+      <link>https://technicalhat.github.io/beercave-web/blog/2013/01/10/chaosball-update-and-preview/</link>
+      <pubDate>Thu, 10 Jan 2013 23:07:01 +0000</pubDate>
+      
+      <guid>https://technicalhat.github.io/beercave-web/blog/2013/01/10/chaosball-update-and-preview/</guid>
+      <description>&lt;p&gt;So I&amp;rsquo;ve been working on ChaosBall on and off for the last week or so and I&amp;rsquo;ve just about beaten it into something playable, so I thought I&amp;rsquo;d throw up a preview build for testing.&lt;/p&gt;
+
+&lt;p&gt;Like it? Hate it? Managed to break it spectacularly? Let me know in the comments below, at &lt;a href=&#34;https://twitter.com/BeercaveGames&#34;&gt;@BeercaveGames&lt;/a&gt; or email me at &lt;a href=&#34;mailto:chaosball@beercave.co.uk?subject=ChaosBall%20feedback&#34;&gt;chaosball@beercave.co.uk&lt;/a&gt;&lt;/p&gt;
+
+&lt;div class=&#34;download&#34;&gt;
+&lt;a href=&#34;http://goo.gl/kmK0T&#34; title=&#34;Download Chaosball preview build&#34;&gt;Download&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p&gt;5.7MB - Requires &lt;a href=&#34;http://www.java.com/en/download/index.jsp&#34;&gt;Java&lt;/a&gt; 1.6 or later. Mouse control only right now, click to start.&lt;/p&gt;
+
+&lt;p&gt;Here&amp;rsquo;s a brief video to give you an idea what to expect:&lt;/p&gt;
+
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//www.youtube.com/embed/KNzTLMrhsLw&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;</description>
+    </item>
+    
+    <item>
+      <title>#onegameamonth month 1 : ChaosBall</title>
+      <link>https://technicalhat.github.io/beercave-web/blog/2012/12/31/onegameamonth-month-1-chaosball/</link>
+      <pubDate>Mon, 31 Dec 2012 19:01:34 +0000</pubDate>
+      
+      <guid>https://technicalhat.github.io/beercave-web/blog/2012/12/31/onegameamonth-month-1-chaosball/</guid>
+      <description>&lt;p&gt;So with 2012 drawing to a close, I&amp;rsquo;ve been making a start on my first &lt;a href=&#34;http://www.onegameamonth.com/&#34;&gt;#OneGameaMonth&lt;/a&gt; game.&lt;/p&gt;
+
+&lt;p&gt;I started by ripping the guts out of Lagertron and dropping them into a new &amp;ldquo;Engine&amp;rdquo; project which I&amp;rsquo;m planning on extending as the year progresses until I&amp;rsquo;ve got a fairly solid set of base code to play with&lt;/p&gt;
+
+&lt;p&gt;For the first project I wanted to keep things nice and simple - no Massively Multiplayer Open-World simulations just yet - so I&amp;rsquo;ve taken the engine as it currently exists and put together the basics of a Breakout clone, tentatively titled &amp;ldquo;ChaosBall&amp;rdquo; on top of it.&lt;/p&gt;
+
+&lt;p&gt;&lt;img width=&#34;600&#34; src=&#34;https://s3.amazonaws.com/beercave.co.uk/gameamonth2013/month1/chaosball1.png&#34;/&gt;
+&lt;strong style=&#34;width:600px; display:inline-block; text-align:center&#34;&gt;ChaosBall : not much in the way of chaos in evidence just yet.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Now that I&amp;rsquo;ve got something playable, that gives me the rest of the month to polish frantically and turn it into something that&amp;rsquo;s both visually interesting and fun to play. Mostly by making everything explode all over the place, but if I can come up with any interesting gameplay twists then so much the better.&lt;/p&gt;
+
+&lt;p&gt;Ideally I&amp;rsquo;d like to come up with a way to keep the pace up and avoid the classic &amp;ldquo;bounce the ball around for 10 minutes because there&amp;rsquo;s only one brick left and you can&amp;rsquo;t seem to hit it&amp;rdquo; scenario that always seems to happen. Or is that just because I&amp;rsquo;m crap at breakout?&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

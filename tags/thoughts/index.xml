@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>thoughts on Beercave Games - putting the fun back into functional alcoholism!</title>
-    <link>http://example.org/tags/thoughts/</link>
+    <link>https://technicalhat.github.io/beercave-web/tags/thoughts/</link>
     <description>Recent content in thoughts on Beercave Games - putting the fun back into functional alcoholism!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 31 Dec 2010 10:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://example.org/tags/thoughts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://technicalhat.github.io/beercave-web/tags/thoughts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Dump and Jump</title>
-      <link>http://example.org/games/dump-and-jump/</link>
+      <link>https://technicalhat.github.io/beercave-web/games/dump-and-jump/</link>
       <pubDate>Fri, 31 Dec 2010 10:00:00 +0000</pubDate>
       
-      <guid>http://example.org/games/dump-and-jump/</guid>
+      <guid>https://technicalhat.github.io/beercave-web/games/dump-and-jump/</guid>
       <description>Holy Crab! It&amp;rsquo;s curry night, and Beerman&amp;rsquo;s favourite curry house has been overrun by an an army of gentleman crabs!
 But no top-hatted upper-class crustacean can come between Beerman and a vindaloo&amp;hellip;
 Guide our hero around the restaurant, collecting the curries and &amp;lsquo;delivering&amp;rsquo; them to the bathroom, but watch out for those swanky shellfish. If the heat gets too much, you can slow them down by leaving them a little &amp;lsquo;present&amp;rsquo;.</description>

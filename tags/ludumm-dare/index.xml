@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ludumm dare on Beercave Games - putting the fun back into functional alcoholism!</title>
+    <link>https://technicalhat.github.io/beercave-web/tags/ludumm-dare/</link>
+    <description>Recent content in ludumm dare on Beercave Games - putting the fun back into functional alcoholism!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 04 Jan 2012 22:32:05 +0000</lastBuildDate>
+    
+	<atom:link href="https://technicalhat.github.io/beercave-web/tags/ludumm-dare/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Ludum Dare 22 post mortem : Alone</title>
+      <link>https://technicalhat.github.io/beercave-web/blog/2012/01/04/ludum-dare-22-post-mortem-alone/</link>
+      <pubDate>Wed, 04 Jan 2012 22:32:05 +0000</pubDate>
+      
+      <guid>https://technicalhat.github.io/beercave-web/blog/2012/01/04/ludum-dare-22-post-mortem-alone/</guid>
+      <description>&lt;p&gt;In my &lt;a href=&#34;https://technicalhat.github.io/beercave-web/2012/01/01/post-mortem-2011&#34;&gt;last update&lt;/a&gt;, I mentioned that I should probably get around to writing up how I got on with &lt;a href=&#34;http://www.ludumdare.com/compo/ludum-dare-22&#34;&gt;Ludum Dare 22&lt;/a&gt;. After &lt;em&gt;just about&lt;/em&gt; completing something that could be called a game for LD21 back in August (&lt;a href=&#34;https://technicalhat.github.io/beercave-web/category/tags/ludum-dare-21&#34;&gt;full story here&lt;/a&gt;), I thought it&amp;rsquo;d be fun to have another go now that I&amp;rsquo;ve been playing with Unity for a while.&lt;/p&gt;
+
+&lt;p&gt;If you just want to play the game, go &lt;a href=&#34;https://technicalhat.github.io/beercave-web/content/lonely-robots-kitten-quest&#34;&gt;here&lt;/a&gt;, otherwise read on&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
