@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Beerman&#39;s adventures in voxel-land, part 1 : Triangles and cubes and blocks, oh my!</title>
+
+    
+
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href='http://example.org/css/beercave.css' >
+    <link href="https://fonts.googleapis.com/css?family=Orbitron|Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css" integrity="sha256-PF6MatZtiJ8/c9O9HQ8uSUXr++R9KBYu4gbNG5511WE=" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+
+
+</head><body><nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark-bc">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/" aria-label="home">
+        <img src='http://example.org/img/logo.png'/>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href='http://example.org/games'>Games</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href='http://example.org/blog'>Blog</a>
+            </li>
+        </ul>
+    </div>
+    </div>
+</nav><div id="content">
+<div class="container mt-3">
+    <div class="row">
+        <div class="col-md-8 posts">
+            
+            <article>
+                <header class="post-header">
+                    <h1>
+                        <a href="http://example.org/blog/2015/01/15/beermans-adventures-voxel-land-part-one-triangles-cubes-blocks-oh-my/">Beerman&#39;s adventures in voxel-land, part 1 : Triangles and cubes and blocks, oh my!</a>
+                    </h1>
+                    <time datetime='15001-01-01'>
+                        <span class="day">15</span>
+                        <span class="month">Jan 2015</span>
+                    </time>
+                </header>
+                <section class="post-content">
+                    <p>As <a href="/blog/2015/01/14/beermans-adventures-voxel-land">previously mentioned</a>, I&rsquo;m having a crack at building my own voxel engine, because that&rsquo;s the sort of thing we do for entertainment around these parts. Here&rsquo;s how it&rsquo;s looking after a couple of evenings of development.</p>
+
+<h2 id="day-1-pain-then-triangle">Day 1 : Pain, then triangle!</h2>
+
+<p>Ah, new projects, starting from scratch - always such <em>fun</em>&hellip;</p>
+
+<p>So yeah, most of the first day&rsquo;s development time was spent swearing at my computer in a vain attempt to get it to do <em>anything.</em> About typical for starting a fresh project with new tools, really.</p>
+
+<p>I&rsquo;ve pretty much had it with java development, but that&rsquo;s a rant for another day. As a .Net web-monkey by day, I&rsquo;m switching to a platform I actually like working with and giving <a href="http://www.sfml-dev.org/index.php">SFML.Net</a> a try. So, most of day 1 was spent in standard open source project user fashion - figuring out the inconsistencies between the documentation, the samples, and the current release. Joy!</p>
+
+<p>Eventually, after much annoyance I managed to get this <em>amazing</em> triangle to appear on my screen. Well worth 3 hours of effort, I&rsquo;m sure you&rsquo;ll agree.</p>
+
+<div>
+<figure>
+    <img src="triangle_color.png"
+         alt="A triangle"/> <figcaption>
+            <p>Yep, that&rsquo;s a triangle. It sure is&hellip; triangular.</p>
+        </figcaption>
+</figure>
+</div>
+
+<h2 id="day-2-a-wild-block-appears">Day 2 : A wild Block appears!</h2>
+
+<p>With my new triangle rendering skills, day 2 went a lot smoother. It didn&rsquo;t take a huge amount of modification to turn my single triangle into a perfectly rendered cube.</p>
+
+<div>
+<figure>
+    <img src="cube.png"
+         alt="A cube, yesterday"/> <figcaption>
+            <p>A cube, yesterday</p>
+        </figcaption>
+</figure>
+</div>
+
+<p>And with cubes working, it wasn&rsquo;t a huge step to a 16x16x16 array of cubes, or Blocks.</p>
+
+<div>
+<figure>
+    <img src="box.png"
+         alt="A voxel box - a boxel?"/> <figcaption>
+            <p>A voxel box - a boxel?</p>
+        </figcaption>
+</figure>
+</div>
+
+<div>
+<figure>
+    <img src="overlap.png"
+         alt="Coloured Voxels"/> <figcaption>
+            <p>Yeah, we&rsquo;re really pushing the envelope now</p>
+        </figcaption>
+</figure>
+</div>
+
+<p>The eagle eyed might notice that there&rsquo;s a bit of a problem with the rendering order - the blocks on the top right are overlapping blocks they&rsquo;re supposed to be behind. I&rsquo;d fix it, but I&rsquo;ll be rewriting the block rendering to work as a single mesh anyway rather than a bunch of individual cube meshes so there&rsquo;s not much point.</p> 
+                </section>
+                <section class="post-footer clearfix row justify-content-between">
+                    <div class="col sharing-links">
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=http%2f%2fexample.org%2fblog%2f2015%2f01%2f15%2fbeermans-adventures-voxel-land-part-one-triangles-cubes-blocks-oh-my%2f" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="facebook">
+                            <i class="fab fa-facebook" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                        
+                        <a href="https://twitter.com/intent/tweet?url=http%2f%2fexample.org%2fblog%2f2015%2f01%2f15%2fbeermans-adventures-voxel-land-part-one-triangles-cubes-blocks-oh-my%2f&text=beermans-adventures-in-voxel-land-part-1-triangles-and-cubes-and-blocks-oh-my" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="twitter">
+                            <i class="fab fa-twitter" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                        
+                        <a href="https://www.stumbleupon.com/badge/?url=http%2f%2fexample.org%2fblog%2f2015%2f01%2f15%2fbeermans-adventures-voxel-land-part-one-triangles-cubes-blocks-oh-my%2f" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="stumbleupon">
+                            <i class="fab fa-stumbleupon" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                        <a href="https://www.reddit.com/submit?url=http%2f%2fexample.org%2fblog%2f2015%2f01%2f15%2fbeermans-adventures-voxel-land-part-one-triangles-cubes-blocks-oh-my%2f" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="reddit">
+                            <i class="fab fa-reddit-alien" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                    </div>
+                   
+                </section>
+            </article>
+            
+            
+            <section class="prev-next">
+              
+            <a href="http://example.org/blog/2015/01/14/beermans-adventures-voxel-land/" class="float-left">&lt; Beerman&#39;s adventures in voxel-land</a>
+            
+        
+              
+                <a href="http://example.org/blog/2015/01/20/beermans-adventures-voxel-land-part-two-blowing-chunks/" class="float-right">Beerman&#39;s adventures in voxel-land, part 2 : Blowing Chunks &gt;</a>
+            
+            </section>
+        </div>
+        
+        <div class="col-md-4">
+            <div class="sidebar">
+                <section class="sidebar-content">
+                    <article id="profile">
+                        <a href='http://example.org/img/beerman-cutout.png' data-toggle="lightbox">
+                            <img src='http://example.org/img/beerman-cutout-smol.png' title="Judge Beerman">
+                        </a>
+                        <h1>
+                            Beerman's blog
+                        </h1>
+                        <p>Real nerds. Real talk. Call now.</p>
+                        <div class="social-links">
+                            <a href="https://twitter.com/BeercaveGames">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+
+                            <a href="https://www.youtube.com/user/b33rman/videos">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                            
+                        </div>
+                    </article>
+                    <article id="post-list">
+                        <h1>Latest posts</h1>
+                        
+                        <ul>
+                            
+                            <li>
+                                <a href="http://example.org/blog/2015/07/06/egad-a-post/">Egad! A post!</a>
+                            </li>
+                            
+                            <li>
+                                <a href="http://example.org/blog/2015/03/31/beermans-adventures-voxel-land-part-seven-need-for-speed/">Beerman&#39;s adventures in voxel-land, part 7 : Need for speed</a>
+                            </li>
+                            
+                            <li>
+                                <a href="http://example.org/blog/2015/03/25/beermans-adventures-voxel-land-part-six-the-best-laid-plans/">Beerman&#39;s adventures in voxel-land, part 6 : The best laid plans</a>
+                            </li>
+                            
+                            <li>
+                                <a href="http://example.org/blog/2015/03/25/beermans-adventures-voxel-land-part-five-the-hard-parts/">Beerman&#39;s adventures in voxel-land, part 5 : The hard parts</a>
+                            </li>
+                            
+                            <li>
+                                <a href="http://example.org/blog/2015/01/25/beermans-adventures-voxel-land-part-four-now-featuring-actual-gameplay/">Beerman&#39;s adventures in voxel-land, part 4 : Now featuring actual gameplay</a>
+                            </li>
+                            
+                        </ul>
+                    </article>
+                    <article id="post-tags">
+                        <h1>Tags</h1>
+                        
+                        <ul>
+                        
+                        
+                        
+                        
+                        
+                        
+                        <li>
+                        <a href="/tags/voxel-engine" class="btn btn-default" role="button">voxel-engine <span class="badge badge-dark">3</span></a>
+                        </li>
+                        
+                        
+                        </ul>
+                    </article>
+                    </ul>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+        </div><footer>
+    <section class="container">
+       
+TODO : Add a nice looking footer here with links and stuff
+    </section>
+</footer></body>
+</html>

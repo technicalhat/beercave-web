@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bletherings and bollocks on Beercave Games - putting the fun back into functional alcoholism!</title>
+    <link>http://example.org/blog/</link>
+    <description>Recent content in Bletherings and bollocks on Beercave Games - putting the fun back into functional alcoholism!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 06 Jul 2015 22:45:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://example.org/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Egad! A post!</title>
+      <link>http://example.org/blog/2015/07/06/egad-a-post/</link>
+      <pubDate>Mon, 06 Jul 2015 22:45:00 +0000</pubDate>
+      
+      <guid>http://example.org/blog/2015/07/06/egad-a-post/</guid>
+      <description>&lt;p&gt;In which Beerman remembers once again that he has a blog&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;Previously on Beerman&amp;rsquo;s adventures in voxel-land : &lt;a href=&#34;http://example.org/blog/2015/01/14/beermans-adventures-voxel-land&#34;&gt;Intro&lt;/a&gt;
+&lt;a href=&#34;http://example.org/blog/2015/01/15/beermans-adventures-voxel-land-part-one-triangles-cubes-blocks-oh-my&#34;&gt;Part 1&lt;/a&gt;
+&lt;a href=&#34;http://example.org/blog/2015/01/20/beermans-adventures-voxel-land-part-two-blowing-chunks&#34;&gt;Part 2&lt;/a&gt;
+&lt;a href=&#34;http://example.org/blog/2015/01/22/beermans-adventures-voxel-land-part-three-it-moves&#34;&gt;Part 3&lt;/a&gt;
+&lt;a href=&#34;http://example.org/blog/2015/01/25/beermans-adventures-voxel-land-part-four-now-featuring-actual-gameplay&#34;&gt;Part 4&lt;/a&gt;
+&lt;a href=&#34;http://example.org/blog/2015/03/25/beermans-adventures-voxel-land-part-five-the-hard-parts&#34;&gt;Part 5&lt;/a&gt;
+&lt;a href=&#34;http://example.org/blog/2015/03/25/beermans-adventures-voxel-land-part-six-the-best-laid-plans&#34;&gt;Part 6&lt;/a&gt;
+&lt;a href=&#34;http://example.org/blog/2015/03/31/beermans-adventures-voxel-land-part-seven-need-for-speed&#34;&gt;Part 7&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;So yeah, I finished those games just in time for ROM, had a great time at the event, and then in the sudden absence of deadlines I promptly went dark for several months. I&amp;rsquo;m a wee bit rubbish at the whole &amp;ldquo;maintaining focus&amp;rdquo; thing, y&amp;rsquo;know.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Beerman&#39;s adventures in voxel-land, part 7 : Need for speed</title>
+      <link>http://example.org/blog/2015/03/31/beermans-adventures-voxel-land-part-seven-need-for-speed/</link>
+      <pubDate>Tue, 31 Mar 2015 22:45:00 +0000</pubDate>
+      
+      <guid>http://example.org/blog/2015/03/31/beermans-adventures-voxel-land-part-seven-need-for-speed/</guid>
+      <description>&lt;p&gt;Previous Entries : &lt;a href=&#34;http://example.org/blog/2015/01/14/beermans-adventures-voxel-land&#34;&gt;Intro&lt;/a&gt;
+&lt;a href=&#34;http://example.org/blog/2015/01/15/beermans-adventures-voxel-land-part-one-triangles-cubes-blocks-oh-my&#34;&gt;Part 1&lt;/a&gt;
+&lt;a href=&#34;http://example.org/blog/2015/01/20/beermans-adventures-voxel-land-part-two-blowing-chunks&#34;&gt;Part 2&lt;/a&gt;
+&lt;a href=&#34;http://example.org/blog/2015/01/22/beermans-adventures-voxel-land-part-three-it-moves&#34;&gt;Part 3&lt;/a&gt;
+&lt;a href=&#34;http://example.org/blog/2015/01/25/beermans-adventures-voxel-land-part-four-now-featuring-actual-gameplay&#34;&gt;Part 4&lt;/a&gt;
+&lt;a href=&#34;http://example.org/blog/2015/03/25/beermans-adventures-voxel-land-part-five-the-hard-parts&#34;&gt;Part 5&lt;/a&gt;
+&lt;a href=&#34;http://example.org/blog/2015/03/25/beermans-adventures-voxel-land-part-six-the-best-laid-plans&#34;&gt;Part 6&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;With the basics of the trench runner working, I wanted to take a look at a performance issue that&amp;rsquo;d been giving me trouble - the initial version of the engine was pretty much limited to only seeing about 10 chunks ahead if I wanted to keep it at 60fps, which was giving me some pretty visible popup on the far end of the trench.&lt;/p&gt;
+
+&lt;p&gt;The problem was in the mesh generation for my chunks. I had the basic optimisation in place of not adding faces to the mesh that were in between adjacent filled blocks, but that meant that for a completely solid chunk I was still rendering hundreds of little cubes where one would be enough.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Beerman&#39;s adventures in voxel-land, part 6 : The best laid plans</title>
+      <link>http://example.org/blog/2015/03/25/beermans-adventures-voxel-land-part-six-the-best-laid-plans/</link>
+      <pubDate>Wed, 25 Mar 2015 20:45:00 +0000</pubDate>
+      
+      <guid>http://example.org/blog/2015/03/25/beermans-adventures-voxel-land-part-six-the-best-laid-plans/</guid>
+      <description>&lt;p&gt;Previous Entries : &lt;a href=&#34;http://example.org/blog/2015/01/14/beermans-adventures-voxel-land&#34;&gt;Intro&lt;/a&gt;
+&lt;a href=&#34;http://example.org/blog/2015/01/15/beermans-adventures-voxel-land-part-one-triangles-cubes-blocks-oh-my&#34;&gt;Part 1&lt;/a&gt;
+&lt;a href=&#34;http://example.org/blog/2015/01/20/beermans-adventures-voxel-land-part-two-blowing-chunks&#34;&gt;Part 2&lt;/a&gt;
+&lt;a href=&#34;http://example.org/blog/2015/01/22/beermans-adventures-voxel-land-part-three-it-moves&#34;&gt;Part 3&lt;/a&gt;
+&lt;a href=&#34;http://example.org/blog/2015/01/25/beermans-adventures-voxel-land-part-four-now-featuring-actual-gameplay&#34;&gt;Part 4&lt;/a&gt;
+&lt;a href=&#34;http://example.org/blog/2015/03/25/beermans-adventures-voxel-land-part-five-the-hard-parts&#34;&gt;Part 5&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;As mentioned in the last installment, I&amp;rsquo;ve got about a week and a half left to finish up the voxel game before ROM. Clearly then, this is the perfect time to start working on another game!&lt;/p&gt;
+
+&lt;div&gt;
+&lt;figure&gt;
+    &lt;img src=&#34;trenchrun.png&#34;
+         alt=&#34;A basic spaceship sprite&#34;/&gt; &lt;figcaption&gt;
+            &lt;p&gt;A basic spaceship sprite&lt;/p&gt;
+        &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;/div&gt;</description>
+    </item>
+    
+    <item>
+      <title>Beerman&#39;s adventures in voxel-land, part 5 : The hard parts</title>
+      <link>http://example.org/blog/2015/03/25/beermans-adventures-voxel-land-part-five-the-hard-parts/</link>
+      <pubDate>Wed, 25 Mar 2015 20:30:00 +0000</pubDate>
+      
+      <guid>http://example.org/blog/2015/03/25/beermans-adventures-voxel-land-part-five-the-hard-parts/</guid>
+      <description>&lt;p&gt;Previous Entries : &lt;a href=&#34;http://example.org/blog/2015/01/14/beermans-adventures-voxel-land&#34;&gt;Intro&lt;/a&gt;
+&lt;a href=&#34;http://example.org/blog/2015/01/15/beermans-adventures-voxel-land-part-one-triangles-cubes-blocks-oh-my&#34;&gt;Part 1&lt;/a&gt;
+&lt;a href=&#34;http://example.org/blog/2015/01/20/beermans-adventures-voxel-land-part-two-blowing-chunks&#34;&gt;Part 2&lt;/a&gt;
+&lt;a href=&#34;http://example.org/blog/2015/01/22/beermans-adventures-voxel-land-part-three-it-moves&#34;&gt;Part 3&lt;/a&gt;
+&lt;a href=&#34;http://example.org/blog/2015/01/25/beermans-adventures-voxel-land-part-four-now-featuring-actual-gameplay&#34;&gt;Part 4&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Oops, went a bit quiet there for a while again. So yeah, in the last installment of this thrilling series, I&amp;rsquo;d got the basics of the engine in place and I was starting to make some videogame, which is pretty much what I&amp;rsquo;ve been doing for the last couple of months. Right now it&amp;rsquo;s looking a bit like this:&lt;/p&gt;
+
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//www.youtube.com/embed/6dtnfZTdw1U&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;</description>
+    </item>
+    
+    <item>
+      <title>Beerman&#39;s adventures in voxel-land, part 4 : Now featuring actual gameplay</title>
+      <link>http://example.org/blog/2015/01/25/beermans-adventures-voxel-land-part-four-now-featuring-actual-gameplay/</link>
+      <pubDate>Sun, 25 Jan 2015 22:58:00 +0000</pubDate>
+      
+      <guid>http://example.org/blog/2015/01/25/beermans-adventures-voxel-land-part-four-now-featuring-actual-gameplay/</guid>
+      <description>&lt;p&gt;Ah, weekends. When I get to unwind from sitting at a desk writing code all week by&amp;hellip; oh&amp;hellip; right.&lt;/p&gt;
+
+&lt;p&gt;Anyway, I managed to make a fair bit of progress this weekend. It&amp;rsquo;s looking a bit less like a tech demo and a bit more like a game&lt;/p&gt;
+
+&lt;p&gt;Previous Entries : &lt;a href=&#34;http://example.org/blog/2015/01/14/beermans-adventures-voxel-land&#34;&gt;Intro&lt;/a&gt; &lt;a href=&#34;http://example.org/blog/2015/01/15/beermans-adventures-voxel-land-part-one-triangles-cubes-blocks-oh-my&#34;&gt;Part 1&lt;/a&gt; &lt;a href=&#34;http://example.org/blog/2015/01/20/beermans-adventures-voxel-land-part-two-blowing-chunks&#34;&gt;Part 2&lt;/a&gt; &lt;a href=&#34;http://example.org/blog/2015/01/22/beermans-adventures-voxel-land-part-three-it-moves&#34;&gt;Part 3&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Beerman&#39;s adventures in voxel-land, part 3 : It moves!</title>
+      <link>http://example.org/blog/2015/01/22/beermans-adventures-voxel-land-part-three-it-moves/</link>
+      <pubDate>Thu, 22 Jan 2015 21:47:00 +0000</pubDate>
+      
+      <guid>http://example.org/blog/2015/01/22/beermans-adventures-voxel-land-part-three-it-moves/</guid>
+      <description>&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//www.youtube.com/embed/9L8ty8SaMcY&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;Busy evening!!&lt;/p&gt;
+
+&lt;p&gt;Previous Entries : &lt;a href=&#34;http://example.org/blog/2015/01/14/beermans-adventures-voxel-land&#34;&gt;Intro&lt;/a&gt; &lt;a href=&#34;http://example.org/blog/2015/01/15/beermans-adventures-voxel-land-part-one-triangles-cubes-blocks-oh-my&#34;&gt;Part 1&lt;/a&gt; &lt;a href=&#34;http://example.org/blog/2015/01/20/beermans-adventures-voxel-land-part-two-blowing-chunks&#34;&gt;Part 2&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Beerman&#39;s adventures in voxel-land, part 2 : Blowing Chunks</title>
+      <link>http://example.org/blog/2015/01/20/beermans-adventures-voxel-land-part-two-blowing-chunks/</link>
+      <pubDate>Tue, 20 Jan 2015 21:47:00 +0000</pubDate>
+      
+      <guid>http://example.org/blog/2015/01/20/beermans-adventures-voxel-land-part-two-blowing-chunks/</guid>
+      <description>&lt;p&gt;Been a manic weekend - between getting stranded in a pub all afternoon while out buying a new Beermobile (I know. My life, it is filled with troubles&amp;hellip;) and general weekend activities, I managed to squeeze in a couple more evenings of coding time on the voxel project. It&amp;rsquo;s starting to come together quite nicely now.&lt;/p&gt;
+
+&lt;p&gt;Previous Entries : &lt;a href=&#34;http://example.org/blog/2015/01/14/beermans-adventures-voxel-land&#34;&gt;Intro&lt;/a&gt; &lt;a href=&#34;http://example.org/blog/2015/01/15/beermans-adventures-voxel-land-part-one-triangles-cubes-blocks-oh-my&#34;&gt;Part 1&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Beerman&#39;s adventures in voxel-land, part 1 : Triangles and cubes and blocks, oh my!</title>
+      <link>http://example.org/blog/2015/01/15/beermans-adventures-voxel-land-part-one-triangles-cubes-blocks-oh-my/</link>
+      <pubDate>Thu, 15 Jan 2015 22:42:00 +0000</pubDate>
+      
+      <guid>http://example.org/blog/2015/01/15/beermans-adventures-voxel-land-part-one-triangles-cubes-blocks-oh-my/</guid>
+      <description>&lt;p&gt;As &lt;a href=&#34;http://example.org/blog/2015/01/14/beermans-adventures-voxel-land&#34;&gt;previously mentioned&lt;/a&gt;, I&amp;rsquo;m having a crack at building my own voxel engine, because that&amp;rsquo;s the sort of thing we do for entertainment around these parts. Here&amp;rsquo;s how it&amp;rsquo;s looking after a couple of evenings of development.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Beerman&#39;s adventures in voxel-land</title>
+      <link>http://example.org/blog/2015/01/14/beermans-adventures-voxel-land/</link>
+      <pubDate>Wed, 14 Jan 2015 23:24:00 +0000</pubDate>
+      
+      <guid>http://example.org/blog/2015/01/14/beermans-adventures-voxel-land/</guid>
+      <description>&lt;p&gt;I ran across &lt;a href=&#34;http://www.voxelvoid.com/&#34;&gt;something rather pretty&lt;/a&gt; the other day on &lt;a href=&#34;http://news.ycombinator.com&#34;&gt;Hacker
+News&lt;/a&gt; :&lt;/p&gt;
+
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//www.youtube.com/embed/MdgN6yszziE&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;&lt;span style=&#34;text-align:center;display:block&#34;&gt;&lt;b&gt;Ooh, shiny.&lt;/b&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;Which reminded me of a a couple of things.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Voxels look bloody lovely.&lt;/li&gt;
+&lt;li&gt;Particularly for the sort of simple, gameplay-heavy retro stuff that I like making.&lt;/li&gt;
+&lt;li&gt;I should make something with voxels, shouldn&amp;rsquo;t I?&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>Things you should be playing : We Are Doomed</title>
+      <link>http://example.org/blog/2014/04/10/things-you-should-be-playing-we-are-doomed/</link>
+      <pubDate>Thu, 10 Apr 2014 21:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/blog/2014/04/10/things-you-should-be-playing-we-are-doomed/</guid>
+      <description>&lt;p&gt;It&amp;rsquo;s no great secret that I like me some &lt;a href=&#34;http://example.org/games/rogueotron-1gam-edition&#34;&gt;Arena&lt;/a&gt; &lt;a href=&#34;http://example.org/games/lagertron&#34;&gt;Shooter&lt;/a&gt;, so when &lt;a href=&#34;http://www.merseyremakes.co.uk/gibber/&#34;&gt;Rob&lt;/a&gt; started tweeting incessantly about something called &lt;a href=&#34;http://www.caffeinemonstersoftware.com/wearedoomed/&#34;&gt;We Are Doomed&lt;/a&gt; I figured I should give it a look. It&amp;rsquo;s rather tasty&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Well, that was an eventful weekend</title>
+      <link>http://example.org/blog/2014/04/09/rom/</link>
+      <pubDate>Wed, 09 Apr 2014 21:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/blog/2014/04/09/rom/</guid>
+      <description>&lt;p&gt;It was when I careered into the pub car park in a vehicle with no brakes for the second time in one day that I knew it was going to be a good weekend. The Beermobile had thoughtfully held it together for the preceding 200 miles or so before finally deciding to dump hydraulic fluid all over the road about half a mile from my final destination. Not the most auspicious of starts to the ROM retro gaming festival, but it could only get better from there&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

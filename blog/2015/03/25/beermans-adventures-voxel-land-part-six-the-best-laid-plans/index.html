@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Beerman&#39;s adventures in voxel-land, part 6 : The best laid plans</title>
+
+    
+
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href='http://example.org/css/beercave.css' >
+    <link href="https://fonts.googleapis.com/css?family=Orbitron|Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css" integrity="sha256-PF6MatZtiJ8/c9O9HQ8uSUXr++R9KBYu4gbNG5511WE=" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+
+
+</head><body><nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark-bc">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/" aria-label="home">
+        <img src='http://example.org/img/logo.png'/>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href='http://example.org/games'>Games</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href='http://example.org/blog'>Blog</a>
+            </li>
+        </ul>
+    </div>
+    </div>
+</nav><div id="content">
+<div class="container mt-3">
+    <div class="row">
+        <div class="col-md-8 posts">
+            
+            <article>
+                <header class="post-header">
+                    <h1>
+                        <a href="http://example.org/blog/2015/03/25/beermans-adventures-voxel-land-part-six-the-best-laid-plans/">Beerman&#39;s adventures in voxel-land, part 6 : The best laid plans</a>
+                    </h1>
+                    <time datetime='25003-03-03'>
+                        <span class="day">25</span>
+                        <span class="month">Mar 2015</span>
+                    </time>
+                </header>
+                <section class="post-content">
+                    <p>Previous Entries : <a href="/blog/2015/01/14/beermans-adventures-voxel-land">Intro</a>
+<a href="/blog/2015/01/15/beermans-adventures-voxel-land-part-one-triangles-cubes-blocks-oh-my">Part 1</a>
+<a href="/blog/2015/01/20/beermans-adventures-voxel-land-part-two-blowing-chunks">Part 2</a>
+<a href="/blog/2015/01/22/beermans-adventures-voxel-land-part-three-it-moves">Part 3</a>
+<a href="/blog/2015/01/25/beermans-adventures-voxel-land-part-four-now-featuring-actual-gameplay">Part 4</a>
+<a href="/blog/2015/03/25/beermans-adventures-voxel-land-part-five-the-hard-parts">Part 5</a></p>
+
+<p>As mentioned in the last installment, I&rsquo;ve got about a week and a half left to finish up the voxel game before ROM. Clearly then, this is the perfect time to start working on another game!</p>
+
+<div>
+<figure>
+    <img src="trenchrun.png"
+         alt="A basic spaceship sprite"/> <figcaption>
+            <p>A basic spaceship sprite</p>
+        </figcaption>
+</figure>
+</div>
+
+<p>The homebrew tournament&rsquo;s been a feature for a couple of years now - basically it&rsquo;s a high score contest played on games coded by attendees and friends. This year though, the field was looking a bit on the thin side - a few of my regulars didn&rsquo;t have anything available for one reason or another, and it was down to just myself and Piku of <a href="http://ncot.uk/">NCOT software</a>.</p>
+
+<p>Not wanting to leave it with just the two games in there, I had a think about what I could build on the voxel code that wouldn&rsquo;t take much development time, and settled on a sort of hybrid of Flappy Bird and the Star Wars trench run. Pilot your <em>[totallynotanxwinghonest]</em> fighter down an endless, randomly generated trench, with points awarded for distance.</p>
+
+<p>So having got a fair bit done on the shooter on Saturday, I sat down around 6pm Sunday evening to have a play. By 11 it was looking something like this:</p>
+
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube.com/embed/VpFNBiGS-5c" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+
+<p>Not much of a game there yet, but it does fly really nicely.</p>
+
+<p>Monday night was mostly spent tweaking performance and tidying up a few rendering issues, then Tuesday&rsquo;s job was making a start on the collision detection.</p>
+
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube.com/embed/F3wYhdVxWMg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+
+<p>So far, it just flags a collision if your ship&rsquo;s centre point is inside of a non-empty chunk - if I don&rsquo;t want the game to be either stupidly easy or horrifically unfair I probably need to make that a bit more accurate, which means I need to check if any of the ship&rsquo;s blocks intersect with any blocks in the surrounding chunks. This may involve maths!</p> 
+                </section>
+                <section class="post-footer clearfix row justify-content-between">
+                    <div class="col sharing-links">
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=http%2f%2fexample.org%2fblog%2f2015%2f03%2f25%2fbeermans-adventures-voxel-land-part-six-the-best-laid-plans%2f" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="facebook">
+                            <i class="fab fa-facebook" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                        
+                        <a href="https://twitter.com/intent/tweet?url=http%2f%2fexample.org%2fblog%2f2015%2f03%2f25%2fbeermans-adventures-voxel-land-part-six-the-best-laid-plans%2f&text=beermans-adventures-in-voxel-land-part-6-the-best-laid-plans" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="twitter">
+                            <i class="fab fa-twitter" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                        
+                        <a href="https://www.stumbleupon.com/badge/?url=http%2f%2fexample.org%2fblog%2f2015%2f03%2f25%2fbeermans-adventures-voxel-land-part-six-the-best-laid-plans%2f" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="stumbleupon">
+                            <i class="fab fa-stumbleupon" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                        <a href="https://www.reddit.com/submit?url=http%2f%2fexample.org%2fblog%2f2015%2f03%2f25%2fbeermans-adventures-voxel-land-part-six-the-best-laid-plans%2f" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="reddit">
+                            <i class="fab fa-reddit-alien" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                    </div>
+                   
+                </section>
+            </article>
+            
+            
+            <section class="prev-next">
+              
+            <a href="http://example.org/blog/2015/03/25/beermans-adventures-voxel-land-part-five-the-hard-parts/" class="float-left">&lt; Beerman&#39;s adventures in voxel-land, part 5 : The hard parts</a>
+            
+        
+              
+                <a href="http://example.org/blog/2015/03/31/beermans-adventures-voxel-land-part-seven-need-for-speed/" class="float-right">Beerman&#39;s adventures in voxel-land, part 7 : Need for speed &gt;</a>
+            
+            </section>
+        </div>
+        
+        <div class="col-md-4">
+            <div class="sidebar">
+                <section class="sidebar-content">
+                    <article id="profile">
+                        <a href='http://example.org/img/beerman-cutout.png' data-toggle="lightbox">
+                            <img src='http://example.org/img/beerman-cutout-smol.png' title="Judge Beerman">
+                        </a>
+                        <h1>
+                            Beerman's blog
+                        </h1>
+                        <p>Real nerds. Real talk. Call now.</p>
+                        <div class="social-links">
+                            <a href="https://twitter.com/BeercaveGames">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+
+                            <a href="https://www.youtube.com/user/b33rman/videos">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                            
+                        </div>
+                    </article>
+                    <article id="post-list">
+                        <h1>Latest posts</h1>
+                        
+                        <ul>
+                            
+                            <li>
+                                <a href="http://example.org/blog/2015/07/06/egad-a-post/">Egad! A post!</a>
+                            </li>
+                            
+                            <li>
+                                <a href="http://example.org/blog/2015/03/31/beermans-adventures-voxel-land-part-seven-need-for-speed/">Beerman&#39;s adventures in voxel-land, part 7 : Need for speed</a>
+                            </li>
+                            
+                            <li>
+                                <a href="http://example.org/blog/2015/03/25/beermans-adventures-voxel-land-part-six-the-best-laid-plans/">Beerman&#39;s adventures in voxel-land, part 6 : The best laid plans</a>
+                            </li>
+                            
+                            <li>
+                                <a href="http://example.org/blog/2015/03/25/beermans-adventures-voxel-land-part-five-the-hard-parts/">Beerman&#39;s adventures in voxel-land, part 5 : The hard parts</a>
+                            </li>
+                            
+                            <li>
+                                <a href="http://example.org/blog/2015/01/25/beermans-adventures-voxel-land-part-four-now-featuring-actual-gameplay/">Beerman&#39;s adventures in voxel-land, part 4 : Now featuring actual gameplay</a>
+                            </li>
+                            
+                        </ul>
+                    </article>
+                    <article id="post-tags">
+                        <h1>Tags</h1>
+                        
+                        <ul>
+                        
+                        
+                        
+                        
+                        
+                        
+                        <li>
+                        <a href="/tags/voxel-engine" class="btn btn-default" role="button">voxel-engine <span class="badge badge-dark">3</span></a>
+                        </li>
+                        
+                        
+                        </ul>
+                    </article>
+                    </ul>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+        </div><footer>
+    <section class="container">
+       
+TODO : Add a nice looking footer here with links and stuff
+    </section>
+</footer></body>
+</html>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Beercave Games - putting the fun back into functional alcoholism!</title>
+    <link>http://example.org/tags/</link>
+    <description>Recent content in Tags on Beercave Games - putting the fun back into functional alcoholism!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 25 Mar 2015 20:30:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://example.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>voxel engine</title>
+      <link>http://example.org/tags/voxel-engine/</link>
+      <pubDate>Wed, 25 Mar 2015 20:30:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/voxel-engine/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>reviews</title>
+      <link>http://example.org/tags/reviews/</link>
+      <pubDate>Thu, 10 Apr 2014 21:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/reviews/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>things you should be playing</title>
+      <link>http://example.org/tags/things-you-should-be-playing/</link>
+      <pubDate>Thu, 10 Apr 2014 21:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/things-you-should-be-playing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ROM</title>
+      <link>http://example.org/tags/rom/</link>
+      <pubDate>Wed, 09 Apr 2014 21:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/rom/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Retrovision</title>
+      <link>http://example.org/tags/retrovision/</link>
+      <pubDate>Wed, 09 Apr 2014 21:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/retrovision/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>events</title>
+      <link>http://example.org/tags/events/</link>
+      <pubDate>Wed, 09 Apr 2014 21:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/events/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>angry</title>
+      <link>http://example.org/tags/angry/</link>
+      <pubDate>Fri, 31 Dec 2010 10:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/angry/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>thoughts</title>
+      <link>http://example.org/tags/thoughts/</link>
+      <pubDate>Fri, 31 Dec 2010 10:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/thoughts/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Beerman&#39;s adventures in voxel-land, part 2 : Blowing Chunks</title>
+
+    
+
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href='http://example.org/css/beercave.css' >
+    <link href="https://fonts.googleapis.com/css?family=Orbitron|Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css" integrity="sha256-PF6MatZtiJ8/c9O9HQ8uSUXr++R9KBYu4gbNG5511WE=" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+
+
+</head><body><nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark-bc">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/" aria-label="home">
+        <img src='http://example.org/img/logo.png'/>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href='http://example.org/games'>Games</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href='http://example.org/blog'>Blog</a>
+            </li>
+        </ul>
+    </div>
+    </div>
+</nav><div id="content">
+<div class="container mt-3">
+    <div class="row">
+        <div class="col-md-8 posts">
+            
+            <article>
+                <header class="post-header">
+                    <h1>
+                        <a href="http://example.org/blog/2015/01/20/beermans-adventures-voxel-land-part-two-blowing-chunks/">Beerman&#39;s adventures in voxel-land, part 2 : Blowing Chunks</a>
+                    </h1>
+                    <time datetime='20001-01-01'>
+                        <span class="day">20</span>
+                        <span class="month">Jan 2015</span>
+                    </time>
+                </header>
+                <section class="post-content">
+                    <p>Been a manic weekend - between getting stranded in a pub all afternoon while out buying a new Beermobile (I know. My life, it is filled with troubles&hellip;) and general weekend activities, I managed to squeeze in a couple more evenings of coding time on the voxel project. It&rsquo;s starting to come together quite nicely now.</p>
+
+<p>Previous Entries : <a href="/blog/2015/01/14/beermans-adventures-voxel-land">Intro</a> <a href="/blog/2015/01/15/beermans-adventures-voxel-land-part-one-triangles-cubes-blocks-oh-my">Part 1</a></p>
+
+<h2 id="day-3">Day 3 :</h2>
+
+<p>Well, that turned out to be a fairly productive evening. First off, I took the working Block rendering code from the end of day two, and broke it out into a separate Chunk class to keep things tidy. With that working, I added a Chunk manager to keep track of multiple chunks.</p>
+
+<p>Since I&rsquo;m in full &ldquo;build one to throw away&rdquo; mode here (also, very lazy), I&rsquo;m keeping it restricted to what I need for the current project. That means the current iteration of the Chunk manager is hard coded to work with a scrollable arbitrary length world of 7x7 chunk &ldquo;slices&rdquo; - effectively a long tunnel (coincidentally, I was thinking a Star Wars style Trench Run game might make a good candidate for a second game to build on this).</p>
+
+<div>
+<figure>
+    <img src="chunks.png"
+         alt="My voxel world. That&#39;s a lot of boxes."/> 
+</figure>
+</div>
+
+<p>So, at the end of day 3 I&rsquo;ve got a functional proof of concept up and running and flying back and forth through a 7x7x100 mesh of voxel Chunks. At 3FPS, performance leaves a little to be desired though - hardly surprising since each individual cube in the world is currently issuing a separate OpenGL drawArrays call for a total of 86240 cubes per frame.</p>
+
+<p>Fixing that will obviously need to be the focus of day four&rsquo;s efforts, but before that :</p>
+
+<div>
+<figure>
+    <img src="error.png"
+         alt="That&#39;s not good"/> <figcaption>
+            <p>Uh-oh!</p>
+        </figcaption>
+</figure>
+</div>
+
+<p>Yeah, I should probably fix that first&hellip;</p>
+
+<h2 id="day-4">Day 4 :</h2>
+
+<p>Didn&rsquo;t get a chance to work on this over the weekend, because cars, but here&rsquo;s the hour or so&rsquo;s development I managed to squeeze in on Monday night.
+First up, I made that annoying memory access error go away - turns out calling win.Close() mid-render isn&rsquo;t very sensible. Moving it to outside the render loop made it start behaving itself.</p>
+
+<p>After that I got down to speeding up the rendering to something slightly more sensible. The main problem was that every single voxel being displayed was making its own OpenGL draw call - hardly efficient, but I&rsquo;m working on the principle that I&rsquo;d rather see the naive implementation working right away than spend a couple of hours crafting something optimised and then not know why it&rsquo;s not doing anything.</p>
+
+<p>So, the obvious speed enhancer is to build a mesh per-chunk, as described <a href="https://sites.google.com/site/letsmakeavoxelengine/home/display-lists-or-vertex-buffers">here</a>.</p>
+
+<p>Right now, again for speed of development, it&rsquo;s generating all the meshes on startup, which gives me something like a 9 second delay before anything starts rendering, but once it does it&rsquo;s hitting a solid 60FPS and we&rsquo;re down from 82000 draw calls to 490.
+There&rsquo;s just one slight problem&hellip;</p>
+
+<div>
+<figure>
+    <img src="wut.png"
+         alt="WAT"/> <figcaption>
+            <p>I&rsquo;m not sure what I&rsquo;ve done here, but it looks pretty cool</p>
+        </figcaption>
+</figure>
+</div> 
+                </section>
+                <section class="post-footer clearfix row justify-content-between">
+                    <div class="col sharing-links">
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=http%2f%2fexample.org%2fblog%2f2015%2f01%2f20%2fbeermans-adventures-voxel-land-part-two-blowing-chunks%2f" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="facebook">
+                            <i class="fab fa-facebook" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                        
+                        <a href="https://twitter.com/intent/tweet?url=http%2f%2fexample.org%2fblog%2f2015%2f01%2f20%2fbeermans-adventures-voxel-land-part-two-blowing-chunks%2f&text=beermans-adventures-in-voxel-land-part-2-blowing-chunks" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="twitter">
+                            <i class="fab fa-twitter" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                        
+                        <a href="https://www.stumbleupon.com/badge/?url=http%2f%2fexample.org%2fblog%2f2015%2f01%2f20%2fbeermans-adventures-voxel-land-part-two-blowing-chunks%2f" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="stumbleupon">
+                            <i class="fab fa-stumbleupon" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                        <a href="https://www.reddit.com/submit?url=http%2f%2fexample.org%2fblog%2f2015%2f01%2f20%2fbeermans-adventures-voxel-land-part-two-blowing-chunks%2f" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="reddit">
+                            <i class="fab fa-reddit-alien" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                    </div>
+                   
+                </section>
+            </article>
+            
+            
+            <section class="prev-next">
+              
+            <a href="http://example.org/blog/2015/01/15/beermans-adventures-voxel-land-part-one-triangles-cubes-blocks-oh-my/" class="float-left">&lt; Beerman&#39;s adventures in voxel-land, part 1 : Triangles and cubes and blocks, oh my!</a>
+            
+        
+              
+                <a href="http://example.org/blog/2015/01/22/beermans-adventures-voxel-land-part-three-it-moves/" class="float-right">Beerman&#39;s adventures in voxel-land, part 3 : It moves! &gt;</a>
+            
+            </section>
+        </div>
+        
+        <div class="col-md-4">
+            <div class="sidebar">
+                <section class="sidebar-content">
+                    <article id="profile">
+                        <a href='http://example.org/img/beerman-cutout.png' data-toggle="lightbox">
+                            <img src='http://example.org/img/beerman-cutout-smol.png' title="Judge Beerman">
+                        </a>
+                        <h1>
+                            Beerman's blog
+                        </h1>
+                        <p>Real nerds. Real talk. Call now.</p>
+                        <div class="social-links">
+                            <a href="https://twitter.com/BeercaveGames">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+
+                            <a href="https://www.youtube.com/user/b33rman/videos">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                            
+                        </div>
+                    </article>
+                    <article id="post-list">
+                        <h1>Latest posts</h1>
+                        
+                        <ul>
+                            
+                            <li>
+                                <a href="http://example.org/blog/2015/07/06/egad-a-post/">Egad! A post!</a>
+                            </li>
+                            
+                            <li>
+                                <a href="http://example.org/blog/2015/03/31/beermans-adventures-voxel-land-part-seven-need-for-speed/">Beerman&#39;s adventures in voxel-land, part 7 : Need for speed</a>
+                            </li>
+                            
+                            <li>
+                                <a href="http://example.org/blog/2015/03/25/beermans-adventures-voxel-land-part-six-the-best-laid-plans/">Beerman&#39;s adventures in voxel-land, part 6 : The best laid plans</a>
+                            </li>
+                            
+                            <li>
+                                <a href="http://example.org/blog/2015/03/25/beermans-adventures-voxel-land-part-five-the-hard-parts/">Beerman&#39;s adventures in voxel-land, part 5 : The hard parts</a>
+                            </li>
+                            
+                            <li>
+                                <a href="http://example.org/blog/2015/01/25/beermans-adventures-voxel-land-part-four-now-featuring-actual-gameplay/">Beerman&#39;s adventures in voxel-land, part 4 : Now featuring actual gameplay</a>
+                            </li>
+                            
+                        </ul>
+                    </article>
+                    <article id="post-tags">
+                        <h1>Tags</h1>
+                        
+                        <ul>
+                        
+                        
+                        
+                        
+                        
+                        
+                        <li>
+                        <a href="/tags/voxel-engine" class="btn btn-default" role="button">voxel-engine <span class="badge badge-dark">3</span></a>
+                        </li>
+                        
+                        
+                        </ul>
+                    </article>
+                    </ul>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+        </div><footer>
+    <section class="container">
+       
+TODO : Add a nice looking footer here with links and stuff
+    </section>
+</footer></body>
+</html>
