@@ -66,7 +66,7 @@ Since the explosions are the most obvious source of slowdown, at least some of t
     <span style="color:#66d9ef">def</span> __init__(self):
         self<span style="color:#f92672">.</span>pool <span style="color:#f92672">=</span> []
 
-<span style="color:#75715e">#gets a particle from the pool if any are available, and creates a new one if not.</span>
+<span style="color:#75715e">#gets a particle from the pool if any are available, and creates a new one if not.</span>
 <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">getParticle</span>(self, list):
     pool <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>pool
     <span style="color:#66d9ef">if</span> len(pool) <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>:
@@ -77,38 +77,38 @@ Since the explosions are the most obvious source of slowdown, at least some of t
         obj<span style="color:#f92672">.</span>pool <span style="color:#f92672">=</span> self
     <span style="color:#66d9ef">return</span> obj
 
-<span style="color:#75715e">#releases a particle back to the pool.</span>
+<span style="color:#75715e">#releases a particle back to the pool.</span>
 <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">release</span>(self, particle):
     self<span style="color:#f92672">.</span>pool<span style="color:#f92672">.</span>append(particle)
 
-<span style="color:#75715e">#empty the pool</span>
+<span style="color:#75715e">#empty the pool</span>
 <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">clean</span>(self):
     self<span style="color:#f92672">.</span>pool <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>pool[:]</code></pre></div>
 
 <p>and a basic test harness to check on how it performs:</p>
 
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e">#function to kill particles, for use in the map function later</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e">#function to kill particles, for use in the map function later</span>
 <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">kill</span>(p):
     p<span style="color:#f92672">.</span>die()
 
 particles <span style="color:#f92672">=</span> []
 
-<span style="color:#75715e">#pool is empty. get some new particles</span>
+<span style="color:#75715e">#pool is empty. get some new particles</span>
 <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">0</span>,count):
     pool<span style="color:#f92672">.</span>getParticle(particles)
 
-<span style="color:#75715e">#return all particles to the pool</span>
+<span style="color:#75715e">#return all particles to the pool</span>
 <span style="color:#66d9ef">for</span> p <span style="color:#f92672">in</span> particles[:]:
     p<span style="color:#f92672">.</span>die()
 
-<span style="color:#75715e">#get some particles again, now that the pool is filled</span>
+<span style="color:#75715e">#get some particles again, now that the pool is filled</span>
 <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">0</span>,count):
     pool<span style="color:#f92672">.</span>getParticle(particles)
 
-<span style="color:#75715e">#return the particles to the pool again</span>
+<span style="color:#75715e">#return the particles to the pool again</span>
     map(kill, particles[:])
 
-<span style="color:#75715e">#remove all particles from the pool</span>
+<span style="color:#75715e">#remove all particles from the pool</span>
     pool<span style="color:#f92672">.</span>clean()</code></pre></div>
 
 <p>Note that the second time I release the particles I&rsquo;m using map() and the kill function. Thought I might as well check how well that outperforms using a regular python loop.</p>

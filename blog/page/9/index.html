@@ -527,14 +527,12 @@ fire <span style="color:#f92672">=</span> input<span style="color:#f92672">.</sp
 
 <p>The input class (which I&rsquo;ll post once it&rsquo;s done) maps the various available controllers to named controls, with the internal mappings looking like:</p>
 
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e">#key/button states
-</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e">#key/button states</span>
 self<span style="color:#f92672">.</span>stateMap <span style="color:#f92672">=</span> {
     <span style="color:#e6db74">&#39;THRUST&#39;</span> : [[<span style="color:#e6db74">&#39;keyboard&#39;</span>, (K_SPACE,)]],
     <span style="color:#e6db74">&#39;FIRE&#39;</span> : [[<span style="color:#e6db74">&#39;keyboard&#39;</span>, (K_LCTRL,)]]
 }
-<span style="color:#75715e">#axis states
-</span>
+<span style="color:#75715e">#axis states</span>
 self<span style="color:#f92672">.</span>axisMap <span style="color:#f92672">=</span> {
     <span style="color:#e6db74">&#39;VERTICAL&#39;</span> : [
         [<span style="color:#e6db74">&#39;keyaxis&#39;</span>, (K_UP, K_DOWN)],
@@ -812,6 +810,7 @@ self<span style="color:#f92672">.</span>axisMap <span style="color:#f92672">=</s
     </li>
     
 </ul>
+
 
            
         </div>

@@ -4,7 +4,7 @@
   
   <url>
     <loc>https://technicalhat.github.io/beercave-web/</loc>
-    <lastmod>2019-07-19T17:57:03+01:00</lastmod>
+    <lastmod>2019-07-19T16:57:03+00:00</lastmod>
   </url>
   
   <url>
@@ -48,12 +48,6 @@
   </url>
   
   <url>
-    <loc>https://technicalhat.github.io/beercave-web/tags/</loc>
-    <lastmod>2015-03-25T20:30:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://technicalhat.github.io/beercave-web/blog/2015/03/25/beermans-adventures-voxel-land-part-five-the-hard-parts/</loc>
     <lastmod>2015-03-25T20:30:00+00:00</lastmod>
   </url>
@@ -61,13 +55,11 @@
   <url>
     <loc>https://technicalhat.github.io/beercave-web/tags/</loc>
     <lastmod>2015-03-25T20:30:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://technicalhat.github.io/beercave-web/tags/voxel-engine/</loc>
     <lastmod>2015-03-25T20:30:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -101,26 +93,33 @@
   </url>
   
   <url>
-    <loc>https://technicalhat.github.io/beercave-web/blog/2014/04/10/things-you-should-be-playing-we-are-doomed/</loc>
-    <lastmod>2014-04-10T21:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://technicalhat.github.io/beercave-web/tags/reviews/</loc>
     <lastmod>2014-04-10T21:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://technicalhat.github.io/beercave-web/tags/things-you-should-be-playing/</loc>
     <lastmod>2014-04-10T21:00:00+00:00</lastmod>
-    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://technicalhat.github.io/beercave-web/blog/2014/04/10/things-you-should-be-playing-we-are-doomed/</loc>
+    <lastmod>2014-04-10T21:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://technicalhat.github.io/beercave-web/tags/events/</loc>
+    <lastmod>2014-04-09T21:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://technicalhat.github.io/beercave-web/tags/retrovision/</loc>
+    <lastmod>2014-04-09T21:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://technicalhat.github.io/beercave-web/tags/rom/</loc>
     <lastmod>2014-04-09T21:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -129,21 +128,8 @@
   </url>
   
   <url>
-    <loc>https://technicalhat.github.io/beercave-web/tags/events/</loc>
-    <lastmod>2014-04-09T21:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://technicalhat.github.io/beercave-web/tags/retrovision/</loc>
-    <lastmod>2014-04-09T21:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://technicalhat.github.io/beercave-web/tags/2013/</loc>
     <lastmod>2013-12-31T02:47:19+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -154,13 +140,21 @@
   <url>
     <loc>https://technicalhat.github.io/beercave-web/tags/recap/</loc>
     <lastmod>2013-12-31T02:47:19+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://technicalhat.github.io/beercave-web/tags/1gam/</loc>
     <lastmod>2013-12-30T18:27:27+00:00</lastmod>
-    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://technicalhat.github.io/beercave-web/tags/brown-christmas/</loc>
+    <lastmod>2013-12-30T18:27:27+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://technicalhat.github.io/beercave-web/tags/december/</loc>
+    <lastmod>2013-12-30T18:27:27+00:00</lastmod>
   </url>
   
   <url>
@@ -169,15 +163,13 @@
   </url>
   
   <url>
-    <loc>https://technicalhat.github.io/beercave-web/tags/brown-christmas/</loc>
-    <lastmod>2013-12-30T18:27:27+00:00</lastmod>
-    <priority>0</priority>
+    <loc>https://technicalhat.github.io/beercave-web/tags/november/</loc>
+    <lastmod>2013-12-04T17:17:17+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://technicalhat.github.io/beercave-web/tags/december/</loc>
-    <lastmod>2013-12-30T18:27:27+00:00</lastmod>
-    <priority>0</priority>
+    <loc>https://technicalhat.github.io/beercave-web/tags/releases/</loc>
+    <lastmod>2013-12-04T17:17:17+00:00</lastmod>
   </url>
   
   <url>
@@ -186,21 +178,8 @@
   </url>
   
   <url>
-    <loc>https://technicalhat.github.io/beercave-web/tags/november/</loc>
-    <lastmod>2013-12-04T17:17:17+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://technicalhat.github.io/beercave-web/tags/releases/</loc>
-    <lastmod>2013-12-04T17:17:17+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://technicalhat.github.io/beercave-web/tags/web-runner/</loc>
     <lastmod>2013-12-04T17:17:17+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -219,20 +198,23 @@
   </url>
   
   <url>
-    <loc>https://technicalhat.github.io/beercave-web/blog/2013/11/03/ten-row/</loc>
-    <lastmod>2013-11-03T20:47:20+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://technicalhat.github.io/beercave-web/tags/candy-castle-chaos/</loc>
     <lastmod>2013-11-03T20:47:20+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://technicalhat.github.io/beercave-web/tags/october/</loc>
     <lastmod>2013-11-03T20:47:20+00:00</lastmod>
-    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://technicalhat.github.io/beercave-web/blog/2013/11/03/ten-row/</loc>
+    <lastmod>2013-11-03T20:47:20+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://technicalhat.github.io/beercave-web/tags/games/</loc>
+    <lastmod>2013-11-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -241,14 +223,13 @@
   </url>
   
   <url>
-    <loc>https://technicalhat.github.io/beercave-web/tags/games/</loc>
-    <lastmod>2013-11-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <loc>https://technicalhat.github.io/beercave-web/blog/2013/10/08/shaping-nicely/</loc>
+    <lastmod>2013-10-08T23:22:25+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://technicalhat.github.io/beercave-web/blog/2013/10/08/shaping-nicely/</loc>
-    <lastmod>2013-10-08T23:22:25+00:00</lastmod>
+    <loc>https://technicalhat.github.io/beercave-web/tags/electric-sex-cannon/</loc>
+    <lastmod>2013-10-03T22:40:06+00:00</lastmod>
   </url>
   
   <url>
@@ -257,15 +238,8 @@
   </url>
   
   <url>
-    <loc>https://technicalhat.github.io/beercave-web/tags/electric-sex-cannon/</loc>
-    <lastmod>2013-10-03T22:40:06+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://technicalhat.github.io/beercave-web/tags/september/</loc>
     <lastmod>2013-10-03T22:40:06+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -281,7 +255,6 @@
   <url>
     <loc>https://technicalhat.github.io/beercave-web/tags/retromission/</loc>
     <lastmod>2013-09-25T21:58:10+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -360,20 +333,18 @@
   </url>
   
   <url>
-    <loc>https://technicalhat.github.io/beercave-web/blog/2013/05/14/checking/</loc>
-    <lastmod>2013-05-14T20:43:57+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://technicalhat.github.io/beercave-web/tags/beercave-racer/</loc>
     <lastmod>2013-05-14T20:43:57+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://technicalhat.github.io/beercave-web/tags/blender/</loc>
     <lastmod>2013-05-14T20:43:57+00:00</lastmod>
-    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://technicalhat.github.io/beercave-web/blog/2013/05/14/checking/</loc>
+    <lastmod>2013-05-14T20:43:57+00:00</lastmod>
   </url>
   
   <url>
@@ -382,20 +353,18 @@
   </url>
   
   <url>
-    <loc>https://technicalhat.github.io/beercave-web/blog/2013/04/30/ludum-dare-26-1gam-april-gunboat/</loc>
-    <lastmod>2013-04-30T23:37:58+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://technicalhat.github.io/beercave-web/tags/gunboat/</loc>
     <lastmod>2013-04-30T23:37:58+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://technicalhat.github.io/beercave-web/tags/ludum-dare/</loc>
     <lastmod>2013-04-30T23:37:58+00:00</lastmod>
-    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://technicalhat.github.io/beercave-web/blog/2013/04/30/ludum-dare-26-1gam-april-gunboat/</loc>
+    <lastmod>2013-04-30T23:37:58+00:00</lastmod>
   </url>
   
   <url>
@@ -406,7 +375,6 @@
   <url>
     <loc>https://technicalhat.github.io/beercave-web/tags/april/</loc>
     <lastmod>2013-04-11T23:36:10+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -420,14 +388,13 @@
   </url>
   
   <url>
-    <loc>https://technicalhat.github.io/beercave-web/blog/2013/04/03/three-apparently-magic-number/</loc>
+    <loc>https://technicalhat.github.io/beercave-web/tags/rogueotron/</loc>
     <lastmod>2013-04-03T22:55:21+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://technicalhat.github.io/beercave-web/tags/rogueotron/</loc>
+    <loc>https://technicalhat.github.io/beercave-web/blog/2013/04/03/three-apparently-magic-number/</loc>
     <lastmod>2013-04-03T22:55:21+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -436,20 +403,18 @@
   </url>
   
   <url>
-    <loc>https://technicalhat.github.io/beercave-web/blog/2013/03/25/one-game-month-week-3-blues/</loc>
-    <lastmod>2013-03-25T20:56:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://technicalhat.github.io/beercave-web/tags/executive-dysfunction/</loc>
     <lastmod>2013-03-25T20:56:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://technicalhat.github.io/beercave-web/tags/moaning/</loc>
     <lastmod>2013-03-25T20:56:00+00:00</lastmod>
-    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://technicalhat.github.io/beercave-web/blog/2013/03/25/one-game-month-week-3-blues/</loc>
+    <lastmod>2013-03-25T20:56:00+00:00</lastmod>
   </url>
   
   <url>
@@ -458,14 +423,13 @@
   </url>
   
   <url>
-    <loc>https://technicalhat.github.io/beercave-web/blog/2013/03/14/rogueotron-adventures-procedural-generation/</loc>
+    <loc>https://technicalhat.github.io/beercave-web/tags/march/</loc>
     <lastmod>2013-03-14T20:46:35+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://technicalhat.github.io/beercave-web/tags/march/</loc>
+    <loc>https://technicalhat.github.io/beercave-web/blog/2013/03/14/rogueotron-adventures-procedural-generation/</loc>
     <lastmod>2013-03-14T20:46:35+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -476,7 +440,6 @@
   <url>
     <loc>https://technicalhat.github.io/beercave-web/tags/rogeuotron/</loc>
     <lastmod>2013-03-11T21:36:49+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -485,14 +448,13 @@
   </url>
   
   <url>
-    <loc>https://technicalhat.github.io/beercave-web/blog/2013/03/04/juno-hunter-prologue-post-mortem-and-march-game-announcement/</loc>
+    <loc>https://technicalhat.github.io/beercave-web/tags/juno-hunter/</loc>
     <lastmod>2013-03-04T19:27:20+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://technicalhat.github.io/beercave-web/tags/juno-hunter/</loc>
+    <loc>https://technicalhat.github.io/beercave-web/blog/2013/03/04/juno-hunter-prologue-post-mortem-and-march-game-announcement/</loc>
     <lastmod>2013-03-04T19:27:20+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -506,14 +468,13 @@
   </url>
   
   <url>
-    <loc>https://technicalhat.github.io/beercave-web/blog/2013/02/04/february-game-insert-title-here/</loc>
+    <loc>https://technicalhat.github.io/beercave-web/tags/february/</loc>
     <lastmod>2013-02-04T20:00:29+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://technicalhat.github.io/beercave-web/tags/february/</loc>
+    <loc>https://technicalhat.github.io/beercave-web/blog/2013/02/04/february-game-insert-title-here/</loc>
     <lastmod>2013-02-04T20:00:29+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -522,14 +483,13 @@
   </url>
   
   <url>
-    <loc>https://technicalhat.github.io/beercave-web/blog/2013/01/20/one-down-eleven-go/</loc>
+    <loc>https://technicalhat.github.io/beercave-web/tags/chaosball/</loc>
     <lastmod>2013-01-20T18:47:17+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://technicalhat.github.io/beercave-web/tags/chaosball/</loc>
+    <loc>https://technicalhat.github.io/beercave-web/blog/2013/01/20/one-down-eleven-go/</loc>
     <lastmod>2013-01-20T18:47:17+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -545,7 +505,6 @@
   <url>
     <loc>https://technicalhat.github.io/beercave-web/tags/2012/</loc>
     <lastmod>2013-01-07T22:33:55+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -576,7 +535,6 @@
   <url>
     <loc>https://technicalhat.github.io/beercave-web/tags/lagertron/</loc>
     <lastmod>2012-11-28T22:49:19+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -627,7 +585,6 @@
   <url>
     <loc>https://technicalhat.github.io/beercave-web/tags/ludumm-dare/</loc>
     <lastmod>2012-01-04T22:32:05+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -801,20 +758,18 @@
   </url>
   
   <url>
+    <loc>https://technicalhat.github.io/beercave-web/tags/angry/</loc>
+    <lastmod>2010-12-31T10:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://technicalhat.github.io/beercave-web/games/dump-and-jump/</loc>
     <lastmod>2010-12-31T10:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://technicalhat.github.io/beercave-web/tags/angry/</loc>
-    <lastmod>2010-12-31T10:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://technicalhat.github.io/beercave-web/tags/thoughts/</loc>
     <lastmod>2010-12-31T10:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -900,7 +855,6 @@
   <url>
     <loc>https://technicalhat.github.io/beercave-web/tags/sheep-snaggers-2/</loc>
     <lastmod>2009-10-27T21:58:15+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -1090,7 +1044,6 @@
   
   <url>
     <loc>https://technicalhat.github.io/beercave-web/categories/</loc>
-    <priority>0</priority>
   </url>
   
 </urlset>

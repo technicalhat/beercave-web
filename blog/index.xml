@@ -1660,12 +1660,12 @@ fire &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; input&lt;span styl
 
 &lt;p&gt;The input class (which I&amp;rsquo;ll post once it&amp;rsquo;s done) maps the various available controllers to named controls, with the internal mappings looking like:&lt;/p&gt;
 
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#key/button states&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#key/button states&lt;/span&gt;
 self&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;stateMap &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; {
     &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;THRUST&amp;#39;&lt;/span&gt; : [[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;keyboard&amp;#39;&lt;/span&gt;, (K_SPACE,)]],
     &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;FIRE&amp;#39;&lt;/span&gt; : [[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;keyboard&amp;#39;&lt;/span&gt;, (K_LCTRL,)]]
 }
-&lt;span style=&#34;color:#75715e&#34;&gt;#axis states&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;#axis states&lt;/span&gt;
 self&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;axisMap &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; {
     &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;VERTICAL&amp;#39;&lt;/span&gt; : [
         [&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;keyaxis&amp;#39;&lt;/span&gt;, (K_UP, K_DOWN)],
@@ -2082,7 +2082,7 @@ Since the explosions are the most obvious source of slowdown, at least some of t
     &lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; __init__(self):
         self&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;pool &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; []
 
-&lt;span style=&#34;color:#75715e&#34;&gt;#gets a particle from the pool if any are available, and creates a new one if not.&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;#gets a particle from the pool if any are available, and creates a new one if not.&lt;/span&gt;
 &lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;getParticle&lt;/span&gt;(self, list):
     pool &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; self&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;pool
     &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; len(pool) &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;:
@@ -2093,38 +2093,38 @@ Since the explosions are the most obvious source of slowdown, at least some of t
         obj&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;pool &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; self
     &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; obj
 
-&lt;span style=&#34;color:#75715e&#34;&gt;#releases a particle back to the pool.&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;#releases a particle back to the pool.&lt;/span&gt;
 &lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;release&lt;/span&gt;(self, particle):
     self&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;pool&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;append(particle)
 
-&lt;span style=&#34;color:#75715e&#34;&gt;#empty the pool&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;#empty the pool&lt;/span&gt;
 &lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;clean&lt;/span&gt;(self):
     self&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;pool &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; self&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;pool[:]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;and a basic test harness to check on how it performs:&lt;/p&gt;
 
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#function to kill particles, for use in the map function later&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#function to kill particles, for use in the map function later&lt;/span&gt;
 &lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;kill&lt;/span&gt;(p):
     p&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;die()
 
 particles &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; []
 
-&lt;span style=&#34;color:#75715e&#34;&gt;#pool is empty. get some new particles&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;#pool is empty. get some new particles&lt;/span&gt;
 &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; i &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; range(&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,count):
     pool&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;getParticle(particles)
 
-&lt;span style=&#34;color:#75715e&#34;&gt;#return all particles to the pool&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;#return all particles to the pool&lt;/span&gt;
 &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; p &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; particles[:]:
     p&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;die()
 
-&lt;span style=&#34;color:#75715e&#34;&gt;#get some particles again, now that the pool is filled&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;#get some particles again, now that the pool is filled&lt;/span&gt;
 &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; i &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; range(&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,count):
     pool&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;getParticle(particles)
 
-&lt;span style=&#34;color:#75715e&#34;&gt;#return the particles to the pool again&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;#return the particles to the pool again&lt;/span&gt;
     map(kill, particles[:])
 
-&lt;span style=&#34;color:#75715e&#34;&gt;#remove all particles from the pool&lt;/span&gt;
+&lt;span style=&#34;color:#75715e&#34;&gt;#remove all particles from the pool&lt;/span&gt;
     pool&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;clean()&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
     
@@ -2396,8 +2396,8 @@ The first obvious point of attack for performance is that I was doing the 3D sca
 &lt;p&gt;I&amp;rsquo;ve come up with a much better design, where the main game loop nice and simple&lt;/p&gt;
 
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;while&lt;/span&gt; running:
-  think() &lt;span style=&#34;color:#75715e&#34;&gt;#handles control input and AI&lt;/span&gt;
-  update() &lt;span style=&#34;color:#75715e&#34;&gt;# move things around&lt;/span&gt;
+  think() &lt;span style=&#34;color:#75715e&#34;&gt;#handles control input and AI&lt;/span&gt;
+  update() &lt;span style=&#34;color:#75715e&#34;&gt;# move things around&lt;/span&gt;
   render() &lt;span style=&#34;color:#75715e&#34;&gt;# draws the end result&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;and the different game modules each have their own versions of the 3 functions. When I switch game modes, I swap out the function pointers for the relevant module and everything stays inside the one loop, which makes handling game events much cleaner.&lt;/p&gt;

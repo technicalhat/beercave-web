@@ -150,10 +150,8 @@
 <p>I&rsquo;ve come up with a much better design, where the main game loop nice and simple</p>
 
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">while</span> running:
-  think() <span style="color:#75715e">#handles control input and AI
-</span>
-  update() <span style="color:#75715e"># move things around
-</span>
+  think() <span style="color:#75715e">#handles control input and AI</span>
+  update() <span style="color:#75715e"># move things around</span>
   render() <span style="color:#75715e"># draws the end result</span></code></pre></div>
 
 <p>and the different game modules each have their own versions of the 3 functions. When I switch game modes, I swap out the function pointers for the relevant module and everything stays inside the one loop, which makes handling game events much cleaner.</p>
@@ -708,6 +706,7 @@
     </li>
     
 </ul>
+
 
            
         </div>
