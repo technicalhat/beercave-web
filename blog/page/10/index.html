@@ -49,6 +49,95 @@
             <article>
                 <header class="post-header">
                     <h1>
+                        <a href="https://technicalhat.github.io/beercave-web/blog/2011/01/04/ss2-keeping-control/">SS2 : Keeping control</a>
+                    </h1>
+                    <time datetime='4001-01-01'>
+                        <span class="day">4</span>
+                        <span class="month">Jan 2011</span>
+                    </time>
+                </header>
+                <section class="post-content">
+                    <p>I&rsquo;ve managed to get the Sheep Snaggers 2 redevelopment off to a good start so far.
+So far I&rsquo;ve got sprites, movement and a simple camera system up and running, which is enough to get me my ship up and flying over a pretty boring and empty landscape.</p>
+
+<p>It helps that Python massively lends itself to component-based architecture. When I started building DethTank in C# I had to build a whole bunch of functionality myself to be able to attach behaviours to components at runtime. With Python, I just define my behaviours as functions and attach them to the GameObject at runtime. Saves a lot of tedious messing about with interfaces&hellip;</p>
+
+<p>I also spent a bit of time this evening abstracting out my input system, which should save me some pain down the line. In the previous games, the input handling code was buried in the player classes and looked something like this:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">if</span> stick:
+    x <span style="color:#f92672">=</span> stick<span style="color:#f92672">.</span>get_axis(<span style="color:#ae81ff">0</span>)
+    y <span style="color:#f92672">=</span> stick<span style="color:#f92672">.</span>get_axis(<span style="color:#ae81ff">1</span>)
+<span style="color:#66d9ef">else</span>:
+    <span style="color:#66d9ef">if</span> keys[K_LEFT]:
+        x <span style="color:#f92672">=</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>
+    <span style="color:#66d9ef">elif</span> keys[K_RIGHT]:
+        x <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+    <span style="color:#66d9ef">if</span> keys[K_UP]:
+        y <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+    <span style="color:#66d9ef">elif</span> keys[K_DOWN]:
+        y <span style="color:#f92672">=</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span></code></pre></div>
+
+<p>Not only was this annoying to keep track of, it basically means there was no chance of adding in user configurable controls.
+The equivalent piece of code in the Sheep Snaggers 2 looks like:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">x <span style="color:#f92672">=</span> input<span style="color:#f92672">.</span>GetAxis(<span style="color:#e6db74">&#34;HORIZONTAL&#34;</span>)
+y <span style="color:#f92672">=</span> input<span style="color:#f92672">.</span>GetAxis(<span style="color:#e6db74">&#34;VERTICAL&#34;</span>)
+fire <span style="color:#f92672">=</span> input<span style="color:#f92672">.</span>GetState(<span style="color:#e6db74">&#34;FIRE&#34;</span>)</code></pre></div>
+
+<p>The input class (which I&rsquo;ll post once it&rsquo;s done) maps the various available controllers to named controls, with the internal mappings looking like:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e">#key/button states</span>
+self<span style="color:#f92672">.</span>stateMap <span style="color:#f92672">=</span> {
+    <span style="color:#e6db74">&#39;THRUST&#39;</span> : [[<span style="color:#e6db74">&#39;keyboard&#39;</span>, (K_SPACE,)]],
+    <span style="color:#e6db74">&#39;FIRE&#39;</span> : [[<span style="color:#e6db74">&#39;keyboard&#39;</span>, (K_LCTRL,)]]
+}
+<span style="color:#75715e">#axis states</span>
+self<span style="color:#f92672">.</span>axisMap <span style="color:#f92672">=</span> {
+    <span style="color:#e6db74">&#39;VERTICAL&#39;</span> : [
+        [<span style="color:#e6db74">&#39;keyaxis&#39;</span>, (K_UP, K_DOWN)],
+        [<span style="color:#e6db74">&#39;joyaxis&#39;</span>, (<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">1</span>)]
+    ],
+    <span style="color:#e6db74">&#39;HORIZONTAL&#39;</span> : [
+        [<span style="color:#e6db74">&#39;keyaxis&#39;</span>, (K_UP, K_DOWN)],
+        [<span style="color:#e6db74">&#39;joyaxis&#39;</span>, (<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>)]
+    ]
+}</code></pre></div>
+ 
+                    
+                </section>
+                <section class="post-footer clearfix row justify-content-between">
+                    <div class="col sharing-links">
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2011%2f01%2f04%2fss2-keeping-control%2f" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="facebook">
+                            <i class="fab fa-facebook" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                        
+                        <a href="https://twitter.com/intent/tweet?url=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2011%2f01%2f04%2fss2-keeping-control%2f&text=ss2-keeping-control" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="twitter">
+                            <i class="fab fa-twitter" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                        
+                        <a href="https://www.stumbleupon.com/badge/?url=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2011%2f01%2f04%2fss2-keeping-control%2f" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="stumbleupon">
+                            <i class="fab fa-stumbleupon" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                        <a href="https://www.reddit.com/submit?url=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2011%2f01%2f04%2fss2-keeping-control%2f" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="reddit">
+                            <i class="fab fa-reddit-alien" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                    </div>
+                    <div class="col text-right">
+                           
+                            <a href='https://technicalhat.github.io/beercave-web/blog/2011/01/04/ss2-keeping-control/'>
+                                    Continue reading <i class="fa fa-angle-right"></i></a>
+                            
+                    </div>
+                </section>
+            </article>
+            
+            <article>
+                <header class="post-header">
+                    <h1>
                         <a href="https://technicalhat.github.io/beercave-web/blog/2011/01/03/ss2-picking-where-i-left/">SS2 : Picking up where I left off</a>
                     </h1>
                     <time datetime='3001-01-01'>
@@ -533,56 +622,6 @@ Windows installer (15MB)</p>
                 </section>
             </article>
             
-            <article>
-                <header class="post-header">
-                    <h1>
-                        <a href="https://technicalhat.github.io/beercave-web/blog/2010/09/27/dethtank-day-2/">DETHTANK day 2</a>
-                    </h1>
-                    <time datetime='27009-09-09'>
-                        <span class="day">27</span>
-                        <span class="month">Sep 2010</span>
-                    </time>
-                </header>
-                <section class="post-content">
-                    <p>Between work, the Dexter season 5 premiere and being struck down with a near terminal case of <a href="http://manflu.org.uk/">man flu</a>, I didn&rsquo;t get a whole lot done today.</p>
-
-<p>I have, however, started work on what I&rsquo;m calling the Beer Engine. A simple (for now) version of a <a href="http://cowboyprogramming.com/2007/01/05/evolve-your-heirachy/">component engine</a>, which will hopefully prevent me from coding myself into a corner as the game code develops.</p>
-
-<p>The basic concept is that the game engine will consist of several subsystems - graphics, scene management, movement, AI etc. All the game components can have multiple behaviours attached which will register them with the relavant subsystem.</p>
-
-<p>So, for example, a particle object would have the Drawable and Moveable behaviours attached on object creation, which would then register the object with the graphics and movement Managers. The Main game loop would then call the Movement and Graphics Managers in turn which would move and draw the particle as determined by its behaviours.</p>
-
-<p>The design isn&rsquo;t 100% nailed down yet, so I&rsquo;m almost certainly missing something vital, but hopefully the general structure should help keep my code manageable enough to get the game out by the end of October - ideally I&rsquo;m aiming to have something playable up and running by the weekend.</p>
- 
-                    
-                </section>
-                <section class="post-footer clearfix row justify-content-between">
-                    <div class="col sharing-links">
-                        <a href="https://www.facebook.com/sharer/sharer.php?u=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2010%2f09%2f27%2fdethtank-day-2%2f" class="Share-buttons-item Share-buttons-item--social"
-                            target="_blank" data-service="facebook">
-                            <i class="fab fa-facebook" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
-                        </a>
-                        
-                        <a href="https://twitter.com/intent/tweet?url=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2010%2f09%2f27%2fdethtank-day-2%2f&text=dethtank-day-2" class="Share-buttons-item Share-buttons-item--social"
-                            target="_blank" data-service="twitter">
-                            <i class="fab fa-twitter" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
-                        </a>
-                        
-                        <a href="https://www.stumbleupon.com/badge/?url=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2010%2f09%2f27%2fdethtank-day-2%2f" class="Share-buttons-item Share-buttons-item--social"
-                            target="_blank" data-service="stumbleupon">
-                            <i class="fab fa-stumbleupon" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
-                        </a>
-                        <a href="https://www.reddit.com/submit?url=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2010%2f09%2f27%2fdethtank-day-2%2f" class="Share-buttons-item Share-buttons-item--social"
-                            target="_blank" data-service="reddit">
-                            <i class="fab fa-reddit-alien" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
-                        </a>
-                    </div>
-                    <div class="col text-right">
-                           
-                    </div>
-                </section>
-            </article>
-            
             
             
 
@@ -805,6 +844,10 @@ Windows installer (15MB)</p>
                         <ul>
                             
                             <li>
+                                <a href="https://technicalhat.github.io/beercave-web/blog/2019/08/20/so-that-redesign-huh/">So, that redesign, huh?</a>
+                            </li>
+                            
+                            <li>
                                 <a href="https://technicalhat.github.io/beercave-web/blog/2019/08/18/he-s-alive-alive/">He&#39;s alive! ALIVE!</a>
                             </li>
                             
@@ -818,10 +861,6 @@ Windows installer (15MB)</p>
                             
                             <li>
                                 <a href="https://technicalhat.github.io/beercave-web/blog/2015/03/25/beermans-adventures-voxel-land-part-six-the-best-laid-plans/">Beerman&#39;s adventures in voxel-land, part 6 : The best laid plans</a>
-                            </li>
-                            
-                            <li>
-                                <a href="https://technicalhat.github.io/beercave-web/blog/2015/03/25/beermans-adventures-voxel-land-part-five-the-hard-parts/">Beerman&#39;s adventures in voxel-land, part 5 : The hard parts</a>
                             </li>
                             
                         </ul>

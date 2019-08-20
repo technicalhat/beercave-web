@@ -49,6 +49,56 @@
             <article>
                 <header class="post-header">
                     <h1>
+                        <a href="https://technicalhat.github.io/beercave-web/blog/2010/09/27/dethtank-day-2/">DETHTANK day 2</a>
+                    </h1>
+                    <time datetime='27009-09-09'>
+                        <span class="day">27</span>
+                        <span class="month">Sep 2010</span>
+                    </time>
+                </header>
+                <section class="post-content">
+                    <p>Between work, the Dexter season 5 premiere and being struck down with a near terminal case of <a href="http://manflu.org.uk/">man flu</a>, I didn&rsquo;t get a whole lot done today.</p>
+
+<p>I have, however, started work on what I&rsquo;m calling the Beer Engine. A simple (for now) version of a <a href="http://cowboyprogramming.com/2007/01/05/evolve-your-heirachy/">component engine</a>, which will hopefully prevent me from coding myself into a corner as the game code develops.</p>
+
+<p>The basic concept is that the game engine will consist of several subsystems - graphics, scene management, movement, AI etc. All the game components can have multiple behaviours attached which will register them with the relavant subsystem.</p>
+
+<p>So, for example, a particle object would have the Drawable and Moveable behaviours attached on object creation, which would then register the object with the graphics and movement Managers. The Main game loop would then call the Movement and Graphics Managers in turn which would move and draw the particle as determined by its behaviours.</p>
+
+<p>The design isn&rsquo;t 100% nailed down yet, so I&rsquo;m almost certainly missing something vital, but hopefully the general structure should help keep my code manageable enough to get the game out by the end of October - ideally I&rsquo;m aiming to have something playable up and running by the weekend.</p>
+ 
+                    
+                </section>
+                <section class="post-footer clearfix row justify-content-between">
+                    <div class="col sharing-links">
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2010%2f09%2f27%2fdethtank-day-2%2f" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="facebook">
+                            <i class="fab fa-facebook" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                        
+                        <a href="https://twitter.com/intent/tweet?url=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2010%2f09%2f27%2fdethtank-day-2%2f&text=dethtank-day-2" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="twitter">
+                            <i class="fab fa-twitter" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                        
+                        <a href="https://www.stumbleupon.com/badge/?url=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2010%2f09%2f27%2fdethtank-day-2%2f" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="stumbleupon">
+                            <i class="fab fa-stumbleupon" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                        <a href="https://www.reddit.com/submit?url=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2010%2f09%2f27%2fdethtank-day-2%2f" class="Share-buttons-item Share-buttons-item--social"
+                            target="_blank" data-service="reddit">
+                            <i class="fab fa-reddit-alien" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
+                        </a>
+                    </div>
+                    <div class="col text-right">
+                           
+                    </div>
+                </section>
+            </article>
+            
+            <article>
+                <header class="post-header">
+                    <h1>
                         <a href="https://technicalhat.github.io/beercave-web/blog/2010/09/26/dethtank-day-1/">DETHTANK day 1</a>
                     </h1>
                     <time datetime='26009-09-09'>
@@ -479,56 +529,6 @@ ended up as this
                 </section>
             </article>
             
-            <article>
-                <header class="post-header">
-                    <h1>
-                        <a href="https://technicalhat.github.io/beercave-web/blog/2009/10/27/sheep-snaggers-2-update/">Sheep Snaggers 2 update</a>
-                    </h1>
-                    <time datetime='27010-10-10'>
-                        <span class="day">27</span>
-                        <span class="month">Oct 2009</span>
-                    </time>
-                </header>
-                <section class="post-content">
-                    <p>SS2&rsquo;s starting to come together a bit now. Still doesn&rsquo;t have that classic Defender twitch feel going on, but the basic groundwork&rsquo;s in place now. Just need to make it <em>fun</em>&hellip;</p>
-
-<p>Spent a bit of time at the weekend gutting the mode switching code, cos the appalling half-arsed state machine I had in there really wasn&rsquo;t up to scratch.</p>
-
-<p>Swapped it out for a scene-based system that&rsquo;s much easier to work with, then used that as the basis of a level switching system that seems to be working out OK.</p>
-
-<p>Next thing on the list is probably going to be lives and scoring, but I wasn&rsquo;t really in the mood tonight. Instead, I spent a bit of time twatting about with a cheesy scanline effect.</p>
-
-<p><img src="http://i24.photobucket.com/albums/c12/b33rman/gamedev/SS2/screen045.jpg" /></p>
- 
-                    
-                </section>
-                <section class="post-footer clearfix row justify-content-between">
-                    <div class="col sharing-links">
-                        <a href="https://www.facebook.com/sharer/sharer.php?u=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2009%2f10%2f27%2fsheep-snaggers-2-update%2f" class="Share-buttons-item Share-buttons-item--social"
-                            target="_blank" data-service="facebook">
-                            <i class="fab fa-facebook" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
-                        </a>
-                        
-                        <a href="https://twitter.com/intent/tweet?url=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2009%2f10%2f27%2fsheep-snaggers-2-update%2f&text=sheep-snaggers-2-update" class="Share-buttons-item Share-buttons-item--social"
-                            target="_blank" data-service="twitter">
-                            <i class="fab fa-twitter" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
-                        </a>
-                        
-                        <a href="https://www.stumbleupon.com/badge/?url=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2009%2f10%2f27%2fsheep-snaggers-2-update%2f" class="Share-buttons-item Share-buttons-item--social"
-                            target="_blank" data-service="stumbleupon">
-                            <i class="fab fa-stumbleupon" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
-                        </a>
-                        <a href="https://www.reddit.com/submit?url=https%2f%2ftechnicalhat.github.io%2fbeercave-web%2fblog%2f2009%2f10%2f27%2fsheep-snaggers-2-update%2f" class="Share-buttons-item Share-buttons-item--social"
-                            target="_blank" data-service="reddit">
-                            <i class="fab fa-reddit-alien" data-toggle="tooltip" title="" data-original-title="Twitter"></i>
-                        </a>
-                    </div>
-                    <div class="col text-right">
-                           
-                    </div>
-                </section>
-            </article>
-            
             
             
 
@@ -751,6 +751,10 @@ ended up as this
                         <ul>
                             
                             <li>
+                                <a href="https://technicalhat.github.io/beercave-web/blog/2019/08/20/so-that-redesign-huh/">So, that redesign, huh?</a>
+                            </li>
+                            
+                            <li>
                                 <a href="https://technicalhat.github.io/beercave-web/blog/2019/08/18/he-s-alive-alive/">He&#39;s alive! ALIVE!</a>
                             </li>
                             
@@ -764,10 +768,6 @@ ended up as this
                             
                             <li>
                                 <a href="https://technicalhat.github.io/beercave-web/blog/2015/03/25/beermans-adventures-voxel-land-part-six-the-best-laid-plans/">Beerman&#39;s adventures in voxel-land, part 6 : The best laid plans</a>
-                            </li>
-                            
-                            <li>
-                                <a href="https://technicalhat.github.io/beercave-web/blog/2015/03/25/beermans-adventures-voxel-land-part-five-the-hard-parts/">Beerman&#39;s adventures in voxel-land, part 5 : The hard parts</a>
                             </li>
                             
                         </ul>

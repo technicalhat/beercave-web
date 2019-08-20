@@ -6,10 +6,19 @@
     <description>Recent content in Tags on Beercave Games - putting the fun back into functional alcoholism!</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 18 Aug 2019 19:36:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 20 Aug 2019 19:33:00 +0000</lastBuildDate>
     
 	<atom:link href="https://technicalhat.github.io/beercave-web/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>techie waffling</title>
+      <link>https://technicalhat.github.io/beercave-web/tags/techie-waffling/</link>
+      <pubDate>Tue, 20 Aug 2019 19:33:00 +0000</pubDate>
+      
+      <guid>https://technicalhat.github.io/beercave-web/tags/techie-waffling/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>burnout</title>
